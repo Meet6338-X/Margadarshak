@@ -8,6 +8,7 @@ import '../../../../domain/models/eligibility_result.dart';
 import '../../../../domain/models/opportunity_recommendation.dart';
 import '../../../../domain/models/student_profile.dart';
 import '../../../../domain/repositories/repositories.dart';
+import '../../../../domain/use_cases/collect_deadline_alerts.dart';
 import '../../../../domain/use_cases/recommend_opportunities.dart';
 
 /// Which slice of the catalogue the student is looking at.
@@ -28,11 +29,14 @@ class OpportunitiesViewModel extends ChangeNotifier {
   OpportunitiesViewModel({
     required OpportunityRepository opportunityRepository,
     required RecommendOpportunities recommendOpportunities,
+    CollectDeadlineAlerts collectDeadlineAlerts = const CollectDeadlineAlerts(),
   })  : _opportunityRepository = opportunityRepository,
-        _recommendOpportunities = recommendOpportunities;
+        _recommendOpportunities = recommendOpportunities,
+        _collectDeadlineAlerts = collectDeadlineAlerts;
 
   final OpportunityRepository _opportunityRepository;
   final RecommendOpportunities _recommendOpportunities;
+  final CollectDeadlineAlerts _collectDeadlineAlerts;
 
   List<OpportunityRecommendation> _all = const [];
   bool _onlyEligible = true;
@@ -76,6 +80,21 @@ class OpportunitiesViewModel extends ChangeNotifier {
 
   /// The number of opportunities that pass the current filters.
   int get visibleCount => visible.length;
+
+  /// The application windows that are about to close, soonest first.
+  ///
+  /// Records the student does not qualify for are left out: an urgent
+  /// deadline for something the student cannot claim is noise, not help.
+  List<DeadlineAlert> get urgentDeadlines {
+    final now = DateTime.now();
+    final candidates = _all
+        .where((item) => !item.eligibility.isNotEligible)
+        .map((item) => item.opportunity)
+        .toList(growable: false);
+    return _collectDeadlineAlerts(opportunities: candidates, now: now)
+        .take(3)
+        .toList(growable: false);
+  }
 
   /// Loads the catalogue for [profile].
   Future<void> load(StudentProfile profile) async {

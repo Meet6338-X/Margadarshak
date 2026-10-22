@@ -628,6 +628,12 @@ abstract class AppLocalizations {
   /// **'National'**
   String get oppNationalSchemes;
 
+  /// No description provided for @deadlineSoonTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Closing soon'**
+  String get deadlineSoonTitle;
+
   /// No description provided for @oppNoResults.
   ///
   /// In en, this message translates to:

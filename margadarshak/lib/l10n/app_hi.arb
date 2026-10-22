@@ -1,9 +1,7 @@
 {
   "@@locale": "hi",
-
   "appTitle": "Margadarshak",
   "appTagline": "आपका अगला कदम, आपकी ही भाषा में",
-
   "commonContinue": "आगे बढ़ें",
   "commonBack": "पीछे",
   "commonNext": "अगला",
@@ -27,11 +25,9 @@
   "commonErrorTitle": "कुछ गड़बड़ हुई",
   "commonErrorBody": "जानकारी लोड नहीं हो पाई। कनेक्शन जाँचें और फिर कोशिश करें।",
   "commonOpenLink": "आधिकारिक पेज खोलें",
-
   "applyNow": "अभी आवेदन करें",
   "howToApplyTitle": "आवेदन कैसे करें",
   "commonOfflineNotice": "आप ऑफ़लाइन हैं। आपको ज़रूरी सब कुछ इसी फ़ोन में सहेजा है।",
-
   "authWelcomeTitle": "स्वागत है",
   "authWelcomeBody": "अपना नाम बताइए, हम आपका रास्ता बनाएँगे। हम कभी आपका फ़ोन नंबर नहीं माँगते।",
   "authYourName": "आपका नाम",
@@ -43,7 +39,6 @@
   "authContinue": "आगे बढ़ें",
   "authSignOut": "साइन आउट",
   "authSignedInAs": "{name} के रूप में साइन इन",
-
   "onbTitle": "कुछ सवाल",
   "onbSubtitle": "आपके जवाब तय करते हैं कि हम कौन-सी छात्रवृत्ति और परीक्षाएँ जाँचें। आपकी मंज़ूरी के बिना कुछ भी साझा नहीं होता।",
   "onbStepOf": "चरण {current} / {total}",
@@ -63,12 +58,10 @@
   "onbStageGraduation": "स्नातक",
   "onbSelectAtLeast": "कम से कम एक चुनें",
   "onbSelectAtMost": "अधिकतम पाँच चुनें",
-
   "navDiscover": "खोजें",
   "navOpportunities": "छात्रवृत्ति",
   "navLearn": "सीखें",
   "navProfile": "प्रोफ़ाइल",
-
   "discoverTitle": "आपका रास्ता",
   "discoverSubtitle": "आपके जैसे किसी के लिए विचार करने योग्य करियर।",
   "discoverTopMatches": "सबसे मिलते-जुलते",
@@ -86,7 +79,6 @@
   "discoverEducationPath": "क्या पढ़ना है",
   "discoverEntrySteps": "पहले कदम",
   "discoverRelatedCareers": "आस-पास के रास्ते",
-
   "oppTitle": "छात्रवृत्ति और परीक्षाएँ",
   "oppSubtitle": "यहाँ हर रिकॉर्ड आधिकारिक स्रोत पर जाँचा गया है और उसका लिंक भी दिया गया है।",
   "oppEligible": "आप आवेदन कर सकते हैं",
@@ -96,6 +88,7 @@
   "oppAllScopes": "सभी",
   "oppStateSchemes": "मेरा राज्य",
   "oppNationalSchemes": "राष्ट्रीय",
+  "deadlineSoonTitle": "जल्द समाप्त हो रहे हैं",
   "oppNoResults": "अभी कोई रिकॉर्ड मेल नहीं खाता",
   "oppNoResultsBody": "हम केवल वही दिखाते हैं जिसकी पुष्टि हो सके। प्रोफ़ाइल पूरी करने के बाद फिर देखिए।",
   "oppDocumentChecklist": "जुटाने वाले दस्तावेज़",
@@ -128,7 +121,6 @@
   "oppApplied": "आवेदन किया हुआ दर्ज",
   "oppMarkApplied": "मैंने आवेदन कर दिया",
   "oppAppliedOn": "{date} को आवेदन किया",
-
   "learnTitle": "सीखें",
   "learnSubtitle": "रोज़ पाँच छोटे क्लिप। बस इतनी ही दिनचर्या।",
   "learnTodayTitle": "आज",
@@ -151,7 +143,6 @@
   "learnCheckinDone": "धन्यवाद। आपके शिक्षक को यह दिखेगा।",
   "learnFreezeUsed": "एक फ़्रीज़ ने आपकी स्ट्रीक ज़िंदा रखी।",
   "learnDuration": "{seconds} से",
-
   "profileTitle": "प्रोफ़ाइल",
   "profileIdentity": "आपकी जानकारी",
   "profileStage": "चरण",
@@ -174,7 +165,6 @@
   "profileNameHint": "आपका नाम",
   "profileFacilitator": "सलाहकार",
   "profileStudent": "छात्र",
-
   "facTitle": "सलाहकार",
   "facSubtitle": "एक साझा फ़ोन पर कक्षा को मार्गदर्शन दें।",
   "facClassesTitle": "आपकी कक्षाएँ",
@@ -208,7 +198,6 @@
   "facSelectStudent": "छात्र चुनें",
   "facClassEmpty": "छात्रों को मार्गदर्शन देने के लिए कक्षा बनाएँ।",
   "facStudentCount": "{count, plural, =0{कोई छात्र नहीं} =1{1 छात्र} other{{count} छात्र}}",
-
   "rule_category_sc_st": "केवल अनुसूचित जाति या अनुसूचित जनजाति के छात्रों के लिए।",
   "rule_category_obc": "केवल अन्य पिछड़ा वर्ग के छात्रों के लिए।",
   "rule_category_sc": "केवल अनुसूचित जाति के छात्रों के लिए।",
@@ -225,7 +214,6 @@
   "rule_class_at_least_8": "आपको कक्षा 8 या उससे ऊपर होना चाहिए।",
   "rule_class_range": "आधिकारिक स्रोत के दी गई कक्षा सीमा पर लागू है।",
   "rule_state_only": "यह रिकॉर्ड केवल आपके राज्य पर लागू है।",
-
   "label_education_stage": "शिक्षा चरण",
   "label_current_class": "वर्तमान कक्षा",
   "label_income_band": "परिवार की आय",
@@ -235,7 +223,6 @@
   "label_district": "ज़िला",
   "label_first_generation_learner": "पहली पीढ़ी का विद्यार्थी",
   "label_life_situation": "पारिवारिक स्थिति",
-
   "value_general": "सामान्य",
   "value_sc": "अनुसूचित जाति",
   "value_st": "अनुसूचित जनजाति",
@@ -251,7 +238,6 @@
   "value_income_1lakh_2_5lakh": "1 से 2.5 लाख",
   "value_income_2_5lakh_5lakh": "2.5 से 5 लाख",
   "value_income_above_5lakh": "5 लाख से ऊपर",
-
   "interest_farming": "खेती",
   "interest_health": "स्वास्थ्य और सेवा",
   "interest_teaching": "पढ़ाना",
@@ -273,7 +259,6 @@
   "interest_books": "किताबें और पढ़ाई",
   "interest_numbers": "गणित और हिसाब",
   "interest_animals": "जानवर",
-
   "category_agriculture": "कृषि",
   "category_business": "व्यवसाय",
   "category_digital": "डिजिटल काम",

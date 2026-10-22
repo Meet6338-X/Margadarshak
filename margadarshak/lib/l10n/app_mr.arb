@@ -1,9 +1,7 @@
 {
   "@@locale": "mr",
-
   "appTitle": "Margadarshak",
   "appTagline": "तुमचा पुढचा पाऊल, तुमच्याच भाषेत",
-
   "commonContinue": "पुढे",
   "commonBack": "मागे",
   "commonNext": "पुढील",
@@ -27,11 +25,9 @@
   "commonErrorTitle": "काहीतरी चुकले",
   "commonErrorBody": "माहिती लोड होऊ शकली नाही. कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.",
   "commonOpenLink": "अधिकृत पेज उघडा",
-
   "applyNow": "आता अर्ज करा",
   "howToApplyTitle": "अर्ज कसा भरावा",
   "commonOfflineNotice": "तुम्ही ऑफलाइन आहात. तुम्हाला लागणारे सर्व काही याच फोनमध्ये साठवलेले आहे.",
-
   "authWelcomeTitle": "स्वागत आहे",
   "authWelcomeBody": "तुमचे नाव सांगा, आम्ही तुमचा मार्ग तयार करू. आम्ही कधीही तुमचा फोन नंबर विचारत नाही.",
   "authYourName": "तुमचे नाव",
@@ -43,7 +39,6 @@
   "authContinue": "पुढे",
   "authSignOut": "बाहेर पडा",
   "authSignedInAs": "{name} म्हणून साइन इन",
-
   "onbTitle": "काही प्रश्न",
   "onbSubtitle": "तुमच्या उत्तरांवरून ठरते की आम्ही कोणत्या शिष्यवृत्ती व परीक्षांचा तपास करू. तुमच्या संमतीशिवाय काहीही शेअर होत नाही.",
   "onbStepOf": "टप्पा {current} / {total}",
@@ -63,12 +58,10 @@
   "onbStageGraduation": "पदव्युत्तर",
   "onbSelectAtLeast": "किमान एक निवडा",
   "onbSelectAtMost": "कमालीचे पाच निवडा",
-
   "navDiscover": "शोधा",
   "navOpportunities": "शिष्यवृत्ती",
   "navLearn": "शिका",
   "navProfile": "प्रोफाइल",
-
   "discoverTitle": "तुमचा मार्ग",
   "discoverSubtitle": "तुमच्यासारख्यांसाठी विचार करण्याजोग्या करिअर.",
   "discoverTopMatches": "सर्वात जवळचे जुळणी",
@@ -86,7 +79,6 @@
   "discoverEducationPath": "काय शिकावे",
   "discoverEntrySteps": "पहिले पाऊल",
   "discoverRelatedCareers": "जवळचे मार्ग",
-
   "oppTitle": "शिष्यवृत्ती व परीक्षा",
   "oppSubtitle": "इथली प्रत्येक नोंद अधिकृत स्रोतावर तपासलेली आहे आणि तिचा दुवा दिलेला आहे.",
   "oppEligible": "तुम्ही अर्ज करू शकता",
@@ -96,6 +88,7 @@
   "oppAllScopes": "सर्व",
   "oppStateSchemes": "माझे राज्य",
   "oppNationalSchemes": "राष्ट्रीय",
+  "deadlineSoonTitle": "लवकर समाप्त होत आहे",
   "oppNoResults": "सध्या कोणतीही नोंद जुळत नाही",
   "oppNoResultsBody": "आम्ही फक्त तेच दाखवतो ज्याची खात्री आहे. प्रोफाइल पूर्ण करून पुन्हा पहा.",
   "oppDocumentChecklist": "जमा करावयाची कागदपत्रे",
@@ -128,7 +121,6 @@
   "oppApplied": "अर्ज केल्याची नोंद",
   "oppMarkApplied": "मी अर्ज केला",
   "oppAppliedOn": "{date} रोजी अर्ज केला",
-
   "learnTitle": "शिका",
   "learnSubtitle": "रोज पाच छोटे क्लिप. एवढीच ही सवय.",
   "learnTodayTitle": "आज",
@@ -151,7 +143,6 @@
   "learnCheckinDone": "आभार. तुमच्या शिक्षकाला हे दिसेल.",
   "learnFreezeUsed": "एक फ्रीझने तुमची स्ट्रीक जिवंत ठेवली.",
   "learnDuration": "{seconds} से",
-
   "profileTitle": "प्रोफाइल",
   "profileIdentity": "तुमची माहिती",
   "profileStage": "टप्पा",
@@ -174,7 +165,6 @@
   "profileNameHint": "तुमचे नाव",
   "profileFacilitator": "मार्गदर्शक",
   "profileStudent": "विद्यार्थी",
-
   "facTitle": "मार्गदर्शक",
   "facSubtitle": "एक शेअर केलेल्या फोनवर वर्गाला मार्गदर्शन द्या.",
   "facClassesTitle": "तुमचे वर्ग",
@@ -208,7 +198,6 @@
   "facSelectStudent": "विद्यार्थी निवडा",
   "facClassEmpty": "विद्यार्थ्यांना मार्गदर्शन देण्यासाठी वर्ग तयार करा.",
   "facStudentCount": "{count, plural, =0{कोणताही विद्यार्थी नाही} =1{१ विद्यार्थी} other{{count} विद्यार्थी}}",
-
   "rule_category_sc_st": "फक्त अनुसूचित जात किंवा अनुसूचित जनजातीतील विद्यार्थ्यांसाठी.",
   "rule_category_obc": "फक्त इतर मागास वर्गातील विद्यार्थ्यांसाठी.",
   "rule_category_sc": "फक्त अनुसूचित जातीतील विद्यार्थ्यांसाठी.",
@@ -225,7 +214,6 @@
   "rule_class_at_least_8": "तुम्ही इयत्ता ८ किंवा त्याहून वर असणे आवश्यक.",
   "rule_class_range": "अधिकृत स्रोताने दिलेल्या इयत्ता मर्यादेला लागू.",
   "rule_state_only": "ही नोंद फक्त तुमच्या राज्याला लागू आहे.",
-
   "label_education_stage": "शिक्षण टप्पा",
   "label_current_class": "सध्याची इयत्ता",
   "label_income_band": "कुटुंबाचे उत्पन्न",
@@ -235,7 +223,6 @@
   "label_district": "जिल्हा",
   "label_first_generation_learner": "पहिल्या पिढीचा विद्यार्थी",
   "label_life_situation": "कुटुंबाची परिस्थिती",
-
   "value_general": "सर्वसाधारण",
   "value_sc": "अनुसूचित जात",
   "value_st": "अनुसूचित जनजात",
@@ -251,7 +238,6 @@
   "value_income_1lakh_2_5lakh": "१ ते २.५ लाख",
   "value_income_2_5lakh_5lakh": "२.५ ते ५ लाख",
   "value_income_above_5lakh": "५ लाखांपेक्षा जास्त",
-
   "interest_farming": "शेती",
   "interest_health": "आरोग्य आणि काळजी",
   "interest_teaching": "अध्ययन",
@@ -273,7 +259,6 @@
   "interest_books": "पुस्तके आणि अभ्यास",
   "interest_numbers": "संख्या आणि हिशेब",
   "interest_animals": "जनावरे",
-
   "category_agriculture": "शेती",
   "category_business": "व्यवसाय",
   "category_digital": "डिजिटल काम",

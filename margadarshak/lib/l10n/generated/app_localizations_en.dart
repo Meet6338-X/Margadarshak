@@ -297,6 +297,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get oppNationalSchemes => 'National';
 
   @override
+  String get deadlineSoonTitle => 'Closing soon';
+
+  @override
   String get oppNoResults => 'No record matches right now';
 
   @override

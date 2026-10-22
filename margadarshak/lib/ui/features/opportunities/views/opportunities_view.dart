@@ -10,6 +10,7 @@ import '../../../../app/session_controller.dart';
 import '../../../../domain/models/localized_text.dart';
 import '../../../../domain/models/opportunity.dart';
 import '../../../../domain/models/opportunity_recommendation.dart';
+import '../../../../domain/use_cases/collect_deadline_alerts.dart';
 import '../../../core/l10n/l10n.dart';
 import '../../../core/l10n/text_maps.dart';
 import '../../../core/theme/app_theme.dart';
@@ -132,6 +133,11 @@ class _OpportunitiesBody extends StatelessWidget {
             ],
           ),
         ),
+        if (viewModel.urgentDeadlines.isNotEmpty)
+          _DeadlineStrip(
+            alerts: viewModel.urgentDeadlines,
+            languageCode: languageCode,
+          ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           child: Align(
@@ -160,6 +166,70 @@ class _OpportunitiesBody extends StatelessWidget {
                     );
                   },
                 ),
+        ),
+      ],
+    );
+  }
+}
+
+class _DeadlineStrip extends StatelessWidget {
+  const _DeadlineStrip({required this.alerts, required this.languageCode});
+
+  final List<DeadlineAlert> alerts;
+  final String languageCode;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+          child: Row(
+            children: [
+              const Icon(Icons.alarm, size: 18),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  l10n.deadlineSoonTitle,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            children: [
+              for (final alert in alerts)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: AppCard(
+                    onTap: () =>
+                        context.push('/opportunity/${alert.opportunity.id}'),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            alert.opportunity.title.resolve(languageCode),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: Theme.of(context).textTheme.bodyMedium,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        InfoChip(
+                          label: l10n.commonDaysLeft(alert.daysLeft),
+                          icon: Icons.schedule,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+            ],
+          ),
         ),
       ],
     );

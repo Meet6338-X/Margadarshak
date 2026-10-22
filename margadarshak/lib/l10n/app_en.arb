@@ -1,6 +1,5 @@
 {
   "@@locale": "en",
-
   "appTitle": "Margadarshak",
   "@appTitle": {
     "description": "The name of the application."
@@ -9,7 +8,6 @@
   "@appTagline": {
     "description": "One line description shown on the welcome screen."
   },
-
   "commonContinue": "Continue",
   "commonBack": "Back",
   "commonNext": "Next",
@@ -40,11 +38,9 @@
   "commonErrorTitle": "Something went wrong",
   "commonErrorBody": "The information could not be loaded. Check your connection and try again.",
   "commonOpenLink": "Open the official page",
-
   "applyNow": "Apply now",
   "howToApplyTitle": "How to apply",
   "commonOfflineNotice": "You are offline. Everything you need is stored on this phone.",
-
   "authWelcomeTitle": "Welcome",
   "authWelcomeBody": "Tell us your name so we can build your path. We never ask for your phone number.",
   "authYourName": "Your name",
@@ -63,7 +59,6 @@
       }
     }
   },
-
   "onbTitle": "A few questions",
   "onbSubtitle": "Your answers decide which schemes and exams we check for you. Nothing is shared without you.",
   "onbStepOf": "Step {current} of {total}",
@@ -93,12 +88,10 @@
   "onbStageGraduation": "Graduation",
   "onbSelectAtLeast": "Pick at least one",
   "onbSelectAtMost": "Pick at most five",
-
   "navDiscover": "Discover",
   "navOpportunities": "Schemes",
   "navLearn": "Learn",
   "navProfile": "Profile",
-
   "discoverTitle": "Your path",
   "discoverSubtitle": "Careers worth considering for someone like you.",
   "discoverTopMatches": "Closest matches",
@@ -116,7 +109,6 @@
   "discoverEducationPath": "What to study",
   "discoverEntrySteps": "First steps",
   "discoverRelatedCareers": "Nearby paths",
-
   "oppTitle": "Schemes and exams",
   "oppSubtitle": "Every record here is checked against an official source and carries a link to it.",
   "oppEligible": "You can apply",
@@ -126,6 +118,7 @@
   "oppAllScopes": "All",
   "oppStateSchemes": "My state",
   "oppNationalSchemes": "National",
+  "deadlineSoonTitle": "Closing soon",
   "oppNoResults": "No record matches right now",
   "oppNoResultsBody": "We only show what we can verify. Try again after your profile is complete.",
   "oppDocumentChecklist": "Documents to collect",
@@ -179,7 +172,6 @@
       }
     }
   },
-
   "learnTitle": "Learn",
   "learnSubtitle": "Five short clips a day. That is the whole routine.",
   "learnTodayTitle": "Today",
@@ -209,7 +201,6 @@
       }
     }
   },
-
   "profileTitle": "Profile",
   "profileIdentity": "Your details",
   "profileStage": "Stage",
@@ -232,7 +223,6 @@
   "profileNameHint": "Your name",
   "profileFacilitator": "Facilitator",
   "profileStudent": "Student",
-
   "facTitle": "Facilitator",
   "facSubtitle": "Guide a class on one shared phone.",
   "facClassesTitle": "Your classes",
@@ -280,7 +270,6 @@
       }
     }
   },
-
   "rule_category_sc_st": "Only for Scheduled Caste or Scheduled Tribe students.",
   "rule_category_obc": "Only for Other Backward Class students.",
   "rule_category_sc": "Only for Scheduled Caste students.",
@@ -297,7 +286,6 @@
   "rule_class_at_least_8": "You need to be in class 8 or above.",
   "rule_class_range": "Applies to the class range given by the official source.",
   "rule_state_only": "This record applies to your state only.",
-
   "label_education_stage": "Education stage",
   "label_current_class": "Current class",
   "label_income_band": "Family income",
@@ -307,7 +295,6 @@
   "label_district": "District",
   "label_first_generation_learner": "First generation learner",
   "label_life_situation": "Family situation",
-
   "value_general": "General",
   "value_sc": "Scheduled Caste",
   "value_st": "Scheduled Tribe",
@@ -323,7 +310,6 @@
   "value_income_1lakh_2_5lakh": "1 to 2.5 lakh",
   "value_income_2_5lakh_5lakh": "2.5 to 5 lakh",
   "value_income_above_5lakh": "Above 5 lakh",
-
   "interest_farming": "Farming",
   "interest_health": "Health and care",
   "interest_teaching": "Teaching",
@@ -345,7 +331,6 @@
   "interest_books": "Books and study",
   "interest_numbers": "Numbers and accounts",
   "interest_animals": "Animals",
-
   "category_agriculture": "Agriculture",
   "category_business": "Business",
   "category_digital": "Digital work",

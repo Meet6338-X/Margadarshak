@@ -55,6 +55,8 @@ Opportunity buildOpportunity({
   List<String> careerIds = const <String>[],
   int? minClass,
   int? maxClass,
+  DateTime? applicationOpensAt,
+  DateTime? applicationClosesAt,
 }) {
   return Opportunity(
     id: id,
@@ -71,6 +73,8 @@ Opportunity buildOpportunity({
     careerIds: careerIds,
     minClass: minClass,
     maxClass: maxClass,
+    applicationOpensAt: applicationOpensAt,
+    applicationClosesAt: applicationClosesAt,
     amountDisclosed: true,
   );
 }

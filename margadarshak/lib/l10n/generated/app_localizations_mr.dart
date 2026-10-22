@@ -296,6 +296,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get oppNationalSchemes => 'राष्ट्रीय';
 
   @override
+  String get deadlineSoonTitle => 'लवकर समाप्त होत आहे';
+
+  @override
   String get oppNoResults => 'सध्या कोणतीही नोंद जुळत नाही';
 
   @override

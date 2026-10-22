@@ -71,8 +71,8 @@ margadarshak/assets/data/
   national/apprenticeships.json       national apprenticeships
   national/careers.json               the career catalogue
   national/clips.json                 the short learning clips
-  states/maharashtra/schemes.json     the Maharashtra pack
-  states/bihar/schemes.json           a second state, to show adding one is data
+  states/mh/schemes.json              the Maharashtra pack
+  states/bi/schemes.json              a second state, to show adding one is data
 ```
 
 Every record carries an **official source URL** and a **last-verified date**.
@@ -108,6 +108,33 @@ flutter test
 * `test/domain/` — unit tests for every use case.
 * `test/data/` — the data-pack integrity tests that keep the records honest.
 * `test/widget_test.dart` — widget tests for the sign-in screen.
+
+## What's new in v0.4
+
+* **Deadline alerts.** `CollectDeadlineAlerts` picks the records closing soon
+  and the Opportunities screen shows them in a strip above the list — each
+  entry opens its detail page and shows the days left (`=0{Last day today}`
+  pluralisation ships in all three languages).
+* **Life situation in the engine.** The profile now carries the
+  `lifeSituation` — `firstGraduate`, `orphan`, `singleGirlChild`,
+  `disabilityCertificate`, `none` — and the rules engine checks it, with
+  subclass checks per situation.
+* **Real apply links.** Records additionally carry the point of application:
+  National Scholarship Portal (`https://scholarships.gov.in/
+  ApplicationForm/`, OTR at `/otrapplication/#/login-page`) for the national
+  records, `aaplesarkardbt.gov.in` for Maharashtra and
+  `7nishchay-yuvaupmission.bihar.gov.in` for Bihar — each `applyUrl` and
+  `officialSourceUrl` was checked against the live portal on 2026-10-22.
+
+## Pilot prerequisites
+
+Speech recording and playback are adapter-ready behind `SpeechService`, but
+the pilot build ships with the offline implementation: device text-to-speech
+only, no cloud transcription. Turning real speech recognition on needs the
+official Bhashini / ULCA contract and API keys (service_BASE_URL in
+`--dart-define`, no endpoint or key is committed). The official portal is
+<https://bhashini.gov.in/> — verified live on 2026-10-22. Until the contract
+is signed the app stays honest: it never pretends to transcribe.
 
 ## Status
 
