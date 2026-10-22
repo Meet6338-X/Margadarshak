@@ -1,0 +1,257 @@
+[
+  {
+    "id": "cuet_ug",
+    "kind": "exam",
+    "title": {
+      "en": "CUET UG (Common University Entrance Test)",
+      "hi": "सीयूईटी यूजी (कॉमन यूनिवर्सिटी एंट्रेंस टेस्ट)",
+      "mr": "सीयूईटी युजी (कॉमन युनिव्हर्सिटी एंट्रन्स टेस्ट)"
+    },
+    "summary": {
+      "en": "The entrance test used by central universities for undergraduate admission after Class 12.",
+      "hi": "कक्षा 12 के बाद केंद्रीय विश्वविद्यालयों में स्नातक प्रवेश के लिए होने वाला प्रवेश परीक्षा।",
+      "mr": "12वी नंतर केंद्रीय विद्यापीठांमध्ये पदव्युत्तर प्रवेशासाठी होणारी प्रवेश परीक्षा."
+    },
+    "officialSourceName": "National Testing Agency",
+    "officialSourceUrl": "https://cuet.nta.nic.in/",
+    "lastVerifiedAt": "2026-09-01",
+    "scope": "national",
+    "categories": ["exam", "higher-education", "entrance"],
+    "careerIds": ["career_teacher", "career_web_designer", "career_accounting", "career_nurse"],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_after_class_12",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "class_12_marksheet",
+        "label": {
+          "en": "Class 12 marksheet",
+          "hi": "कक्षा 12 अंक पत्र",
+          "mr": "12वीचे गुणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your school office.",
+          "hi": "आपके स्कूल कार्यालय से।",
+          "mr": "तुमच्या शालेच्या कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "photo_id",
+        "label": {
+          "en": "Passport size photograph",
+          "hi": "पासपोर्ट साइज़ फ़ोटो",
+          "mr": "पासपोर्ट आकाराचा फोटो"
+        },
+        "whereToGet": {
+          "en": "Any photo studio; the certificate also asks for a signature specimen.",
+          "hi": "कोई भी फ़ोटो स्टूडियो; प्रमाण पत्र पर हस्ताक्षर का नमूना भी माँगा जाता है।",
+          "mr": "कोणतेही फोटो स्टुडिओ; प्रमाणपत्रावर स्वाक्षरीचा नमूनाही मागितला जातो."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "neet_ug",
+    "kind": "exam",
+    "title": {
+      "en": "NEET UG (medical entrance)",
+      "hi": "नीट यूजी (चिकित्सा प्रवेश परीक्षा)",
+      "mr": "NEET UG (वैद्यकीय प्रवेश परीक्षा)"
+    },
+    "summary": {
+      "en": "The single entrance test for medical colleges in India, for students of Class 12 with Science.",
+      "hi": "भारत के चिकित्सा महाविद्यालयों के लिए एकमात्र प्रवेश परीक्षा, विज्ञान के साथ कक्षा 12 के विद्यार्थियों के लिए।",
+      "mr": "भारतातील वैद्यकीय महाविद्यालयांसाठी एकमात्र प्रवेश परीक्षा, विज्ञानासह 12वीच्या विद्यार्थ्यांसाठी."
+    },
+    "officialSourceName": "National Testing Agency",
+    "officialSourceUrl": "https://neet.nta.nic.in/",
+    "lastVerifiedAt": "2026-09-01",
+    "scope": "national",
+    "categories": ["exam", "medical", "entrance"],
+    "careerIds": ["career_nurse", "career_anm", "career_pharmacist", "career_lab_technician"],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_after_class_12",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "class_12_marksheet",
+        "label": {
+          "en": "Class 12 marksheet",
+          "hi": "कक्षा 12 अंक पत्र",
+          "mr": "12वीचे गुणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your school office.",
+          "hi": "आपके स्कूल कार्यालय से।",
+          "mr": "तुमच्या शालेच्या कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "nda_exam",
+    "kind": "exam",
+    "title": {
+      "en": "NDA National Defence Academy examination",
+      "hi": "एनडीए राष्ट्रीय रक्षा अकादमी परीक्षा",
+      "mr": "NDA राष्ट्रीय संरक्षण अकादमी परीक्षा"
+    },
+    "summary": {
+      "en": "Entry examination for the National Defence Academy, for students who finish Class 12.",
+      "hi": "राष्ट्रीय रक्षा अकादमी में प्रवेश की परीक्षा, कक्षा 12 पूरी करने वाले विद्यार्थियों के लिए।",
+      "mr": "राष्ट्रीय संरक्षण अकादमीत प्रवेश परीक्षा, 12वी पूर्ण करणाऱ्या विद्यार्थ्यांसाठी."
+    },
+    "officialSourceName": "Centre for Development of Advanced Computing",
+    "officialSourceUrl": "https://cdac.chd.nic.in/nda/",
+    "lastVerifiedAt": "2026-08-28",
+    "scope": "national",
+    "categories": ["exam", "defence", "entrance"],
+    "careerIds": [],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_after_class_12",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "class_12_marksheet",
+        "label": {
+          "en": "Class 12 marksheet",
+          "hi": "कक्षा 12 अंक पत्र",
+          "mr": "12वीचे गुणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your school office.",
+          "hi": "आपके स्कूल कार्यालय से।",
+          "mr": "तुमच्या शालेच्या कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "ctet_exam",
+    "kind": "exam",
+    "title": {
+      "en": "CTET — Central Teacher Eligibility Test",
+      "hi": "सीटीईटी — केंद्रीय शिक्षक अर्हता परीक्षा",
+      "mr": "CTET — केंद्रीय शिक्षक पात्रता परीक्षा"
+    },
+    "summary": {
+      "en": "The test every state teacher recruitment accepts. Class 1 to 5 needs the primary level paper.",
+      "hi": "हर राज्य की शिक्षक भर्ती मानने वाली परीक्षा। कक्षा 1 से 5 के लिए प्राथमिक स्तर का पेपर।",
+      "mr": "प्रत्येक राज्याची शिक्षक भरती स्वीकारते ती परीक्षा. 1 ते 5 वर्गांसाठी प्राथमिक पातळीचा पेपर."
+    },
+    "officialSourceName": "Central Board of Secondary Education",
+    "officialSourceUrl": "https://ctet.nic.in/",
+    "lastVerifiedAt": "2026-08-28",
+    "scope": "national",
+    "categories": ["exam", "teaching", "entrance"],
+    "careerIds": ["career_teacher", "career_counsellor"],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_after_class_12",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "marksheet_certificate",
+        "label": {
+          "en": "Class 12 marksheet and certificate",
+          "hi": "कक्षा 12 अंक पत्र और प्रमाण पत्र",
+          "mr": "12वीचे गुणपत्र आणि प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your school office.",
+          "hi": "आपके स्कूल कार्यालय से।",
+          "mr": "तुमच्या शालेच्या कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "ugc_net",
+    "kind": "exam",
+    "title": {
+      "en": "UGC NET (eligibility test for lectureship and JRF)",
+      "hi": "यूजीसी नेट (व्याख्याता पात्रता और जेआरएफ़)",
+      "mr": "UGC NET (व्याख्याता पात्रता व JRF)"
+    },
+    "summary": {
+      "en": "National eligibility test for teaching posts in universities and for the Junior Research Fellowship.",
+      "hi": "विश्वविद्यालयों में शिक्षण पदों और जूनियर रिसर्च फ़ेलोशिप के लिए राष्ट्रीय पात्रता परीक्षा।",
+      "mr": "विद्यापीठातील अध्यापन पदांसाठी व ज्युनिअर रिसर्च फेलोशिपसाठी राष्ट्रीय पात्रता परीक्षा."
+    },
+    "officialSourceName": "National Testing Agency",
+    "officialSourceUrl": "https://ugcnet.nta.ac.in/",
+    "lastVerifiedAt": "2026-08-26",
+    "scope": "national",
+    "categories": ["exam", "higher-education", "research"],
+    "careerIds": ["career_teacher", "career_counsellor"],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "equals",
+        "values": ["graduation"],
+        "reasonKey": "rule_stage_graduation",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "graduation_marksheet",
+        "label": {
+          "en": "Graduation marksheet",
+          "hi": "स्नातक अंक पत्र",
+          "mr": "पदव्युत्तर गुणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your college office.",
+          "hi": "आपके कॉलेज कार्यालय से।",
+          "mr": "तुमच्या महाविद्यालय कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  }
+]

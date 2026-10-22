@@ -1,0 +1,523 @@
+{
+  "scope": "mh",
+  "stateName": {
+    "en": "Maharashtra",
+    "hi": "महाराष्ट्र",
+    "mr": "महाराष्ट्र"
+  },
+  "lastVerifiedAt": "2026-09-28",
+  "opportunities": [
+    {
+      "id": "maha_dbt_obc_postmatric",
+      "kind": "scholarship",
+      "title": {
+        "en": "Maharashtra OBC Post-Matric Scholarship",
+        "hi": "महाराष्ट्र ओबीसी पोस्ट-मैट्रिक छात्रवृत्ति",
+        "mr": "महाराष्ट्र ओबीसी पोस्ट-मॅट्रिक स्कॉलरशिप"
+      },
+      "summary": {
+        "en": "State scholarship for OBC students studying from class 11 onwards, paid through the Maharashtra DBT portal.",
+        "hi": "कक्षा 11 से अध्ययन करने वाले ओबीसी छात्रों के लिए राज्य छात्रवृत्ति, महाराष्ट्र DBT पोर्टल के माध्यम से।",
+        "mr": "इयत्ता ११ पासून अध्ययन करणाऱ्या ओबीसी विद्यार्थ्यांसाठी राज्य शिष्यवृत्ती, महाराष्ट्र DBT पोर्टलद्वारे."
+      },
+      "officialSourceName": "Maharashtra DBT (MahaDBT)",
+      "officialSourceUrl": "https://mahadbt.maharashtra.gov.in/",
+      "lastVerifiedAt": "2026-10-22",
+      "applyUrl": "https://www.aaplesarkardbt.gov.in/",
+      "scope": "mh",
+      "categories": ["education", "scholarship"],
+      "careerIds": ["career_teacher", "career_nurse", "career_accounting"],
+      "amountDisclosed": true,
+      "minClass": 11,
+      "eligibilityRules": [
+        {
+          "id": "maha_dbt_obc_postmatric_category",
+          "field": "social_category",
+          "operator": "one_of",
+          "values": ["obc"],
+          "reasonKey": "rule_category_obc",
+          "isBlocking": true
+        },
+        {
+          "id": "maha_dbt_obc_postmatric_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["higher_secondary", "graduation"],
+          "reasonKey": "rule_stage_after_class_12",
+          "isBlocking": true
+        },
+        {
+          "id": "maha_dbt_obc_postmatric_income",
+          "field": "income_band",
+          "operator": "at_most",
+          "values": ["2_5lakh_5lakh"],
+          "reasonKey": "rule_income_at_most",
+          "isBlocking": false
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "caste_certificate",
+          "label": {
+            "en": "Caste certificate (Maharashtra)",
+            "hi": "जाति प्रमाण पत्र (महाराष्ट्र)",
+            "mr": "जात प्रमाणपत्र (महाराष्ट्र)"
+          },
+          "whereToGet": {
+            "en": "Tehsildar office",
+            "hi": "तहसील कार्यालय",
+            "mr": "तहसील कार्यालय"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "income_certificate",
+          "label": {
+            "en": "Income certificate",
+            "hi": "आय प्रमाण पत्र",
+            "mr": "उत्पन्न प्रमाणपत्र"
+          },
+          "whereToGet": {
+            "en": "Tehsildar office",
+            "hi": "तहसील कार्यालय",
+            "mr": "तहसील कार्यालय"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "bank_account",
+          "label": {
+            "en": "Bank account linked to Aadhaar",
+            "hi": "आधार से जुड़ा बैंक खाता",
+            "mr": "आधाराशी जोडलेले बँक खाते"
+          },
+          "whereToGet": {
+            "en": "Your bank branch",
+            "hi": "आपकी बैंक शाखा",
+            "mr": "तुमची बँक शाखा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "marksheet_12",
+          "label": {
+            "en": "Previous class marksheet",
+            "hi": "पिछली कक्षा की मार्कशीट",
+            "mr": "मागील इयत्तेचे गुणपत्रक"
+          },
+          "whereToGet": {
+            "en": "Your school",
+            "hi": "आपका स्कूल",
+            "mr": "तुमची शाळा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-08-01",
+      "applicationClosesAt": "2026-11-30"
+    },
+    {
+      "id": "maha_fee_waiver_shahu",
+      "kind": "scheme",
+      "title": {
+        "en": "Shahu Maharaj Fee Waiver",
+        "hi": "शाहू महाराज फी माफी",
+        "mr": "शाहू महाराज शुल्क सवलत"
+      },
+      "summary": {
+        "en": "Maharashtra government fee waiver for students from economically weaker families pursuing class 11 to graduation.",
+        "hi": "कक्षा 11 से स्नातक तक पढ़ने वाले आर्थिक रूप से कमजोर परिवारों के छात्रों के लिए महाराष्ट्र सरकार की फी माफी।",
+        "mr": "इयत्ता ११ ते पदव्युत्तरपर्यंत शिकत असलेल्या आर्थिकदृष्ट्या दुर्बल कुटुंबांतील विद्यार्थ्यांसाठी महाराष्ट्र शासनाची शुल्क सवलत."
+      },
+      "officialSourceName": "Maharashtra DBT (MahaDBT)",
+      "officialSourceUrl": "https://mahadbt.maharashtra.gov.in/",
+      "lastVerifiedAt": "2026-10-22",
+      "applyUrl": "https://www.aaplesarkardbt.gov.in/",
+      "scope": "mh",
+      "categories": ["education", "fee_waiver"],
+      "careerIds": ["career_teacher", "career_nurse"],
+      "amountDisclosed": true,
+      "minClass": 11,
+      "eligibilityRules": [
+        {
+          "id": "maha_fee_waiver_shahu_income",
+          "field": "income_band",
+          "operator": "at_most",
+          "values": ["1lakh_2_5lakh"],
+          "reasonKey": "rule_income_at_most",
+          "isBlocking": true
+        },
+        {
+          "id": "maha_fee_waiver_shahu_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["secondary", "higher_secondary", "graduation"],
+          "reasonKey": "rule_stage_school",
+          "isBlocking": true
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "income_certificate",
+          "label": {
+            "en": "Income certificate",
+            "hi": "आय प्रमाण पत्र",
+            "mr": "उत्पन्न प्रमाणपत्र"
+          },
+          "whereToGet": {
+            "en": "Tehsildar office",
+            "hi": "तहसील कार्यालय",
+            "mr": "तहसील कार्यालय"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "aadhaar",
+          "label": {
+            "en": "Aadhaar card",
+            "hi": "आधार कार्ड",
+            "mr": "आधार कार्ड"
+          },
+          "whereToGet": {
+            "en": "Common service centre or post office",
+            "hi": "जन सेवा केंद्र या डाकघर",
+            "mr": "जनसेवा केंद्र किंवा डाकघर"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "bank_account",
+          "label": {
+            "en": "Bank account linked to Aadhaar",
+            "hi": "आधार से जुड़ा बैंक खाता",
+            "mr": "आधाराशी जोडलेले बँक खाते"
+          },
+          "whereToGet": {
+            "en": "Your bank branch",
+            "hi": "आपकी बैंक शाखा",
+            "mr": "तुमची बँक शाखा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-07-15",
+      "applicationClosesAt": "2026-12-15"
+    },
+    {
+      "id": "maha_dbt_ebc_fee",
+      "kind": "scheme",
+      "title": {
+        "en": "Maharashtra EBC Fee Waiver",
+        "hi": "महाराष्ट्र ईबीसी फी माफी",
+        "mr": "महाराष्ट्र ईबीसी शुल्क सवलत"
+      },
+      "summary": {
+        "en": "Fee waiver for Economically Backward Class students in Maharashtra, applied through MahaDBT.",
+        "hi": "महाराष्ट्र के आर्थिक रूप से पिछड़े वर्ग के छात्रों के लिए फी माफी, MahaDBT से आवेदन।",
+        "mr": "महाराष्ट्रातील आर्थिकदृष्ट्या मागास वर्गातील विद्यार्थ्यांसाठी शुल्क सवलत, MahaDBTद्वारे अर्ज."
+      },
+      "officialSourceName": "Maharashtra DBT (MahaDBT)",
+      "officialSourceUrl": "https://mahadbt.maharashtra.gov.in/",
+      "lastVerifiedAt": "2026-10-22",
+      "applyUrl": "https://www.aaplesarkardbt.gov.in/",
+      "scope": "mh",
+      "categories": ["education", "fee_waiver"],
+      "careerIds": ["career_teacher", "career_nurse", "career_pharmacist"],
+      "amountDisclosed": true,
+      "minClass": 9,
+      "eligibilityRules": [
+        {
+          "id": "maha_dbt_ebc_fee_income",
+          "field": "income_band",
+          "operator": "at_most",
+          "values": ["1lakh_2_5lakh"],
+          "reasonKey": "rule_income_at_most",
+          "isBlocking": true
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "income_certificate",
+          "label": {
+            "en": "Income certificate",
+            "hi": "आय प्रमाण पत्र",
+            "mr": "उत्पन्न प्रमाणपत्र"
+          },
+          "whereToGet": {
+            "en": "Tehsildar office",
+            "hi": "तहसील कार्यालय",
+            "mr": "तहसील कार्यालय"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "class_10_marksheet",
+          "label": {
+            "en": "Class 10 marksheet",
+            "hi": "कक्षा 10 की मार्कशीट",
+            "mr": "इयत्ता १० चे गुणपत्रक"
+          },
+          "whereToGet": {
+            "en": "Your school",
+            "hi": "आपका स्कूल",
+            "mr": "तुमची शाळा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "bank_account",
+          "label": {
+            "en": "Bank account linked to Aadhaar",
+            "hi": "आधार से जुड़ा बैंक खाता",
+            "mr": "आधाराशी जोडलेले बँक खाते"
+          },
+          "whereToGet": {
+            "en": "Your bank branch",
+            "hi": "आपकी बैंक शाखा",
+            "mr": "तुमची बँक शाखा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-08-15",
+      "applicationClosesAt": "2026-12-20"
+    },
+    {
+      "id": "maha_dhe_cap",
+      "kind": "scheme",
+      "title": {
+        "en": "Directorate of Higher Education CAP Admission",
+        "hi": "उच्च शिक्षा निदेशालय CAP प्रवेश",
+        "mr": "उच्च शिक्षा निदेशालय CAP प्रवेश"
+      },
+      "summary": {
+        "en": "Centralised admission process for undergraduate first-year courses in Maharashtra colleges.",
+        "hi": "महाराष्ट्र के महाविद्यालयों में स्नातक प्रथम वर्ष के लिए केंद्रीकृत प्रवेश प्रक्रिया।",
+        "mr": "महाराष्ट्रातील महाविद्यालयांमध्ये पदव्युत्तर पहिल्या वर्षासाठी केंद्रीकृत प्रवेश प्रक्रिया."
+      },
+      "officialSourceName": "Directorate of Higher Education, Maharashtra",
+      "officialSourceUrl": "https://www.dhe.org.in/",
+      "lastVerifiedAt": "2026-09-20",
+      "scope": "mh",
+      "categories": ["admission", "education"],
+      "careerIds": ["career_teacher", "career_nurse", "career_accounting", "career_web_designer"],
+      "amountDisclosed": false,
+      "minClass": 12,
+      "eligibilityRules": [
+        {
+          "id": "maha_dhe_cap_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["higher_secondary", "graduation"],
+          "reasonKey": "rule_stage_after_class_12",
+          "isBlocking": true
+        },
+        {
+          "id": "maha_dhe_cap_state",
+          "field": "state",
+          "operator": "equals",
+          "values": ["mh"],
+          "reasonKey": "rule_state_only",
+          "isBlocking": false
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "class_12_marksheet",
+          "label": {
+            "en": "Class 12 marksheet",
+            "hi": "कक्षा 12 की मार्कशीट",
+            "mr": "इयत्ता १२ चे गुणपत्रक"
+          },
+          "whereToGet": {
+            "en": "Your school",
+            "hi": "आपका स्कूल",
+            "mr": "तुमची शाळा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "photo_id",
+          "label": {
+            "en": "Passport size photograph",
+            "hi": "पासपोर्ट आकार का फोटो",
+            "mr": "पासपोर्ट आकाराचा फोटो"
+          },
+          "whereToGet": {
+            "en": "Any photo studio",
+            "hi": "कोई फोटो स्टूडियो",
+            "mr": "कोणतीही फोटो स्टुडिओ"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "aadhaar",
+          "label": {
+            "en": "Aadhaar card",
+            "hi": "आधार कार्ड",
+            "mr": "आधार कार्ड"
+          },
+          "whereToGet": {
+            "en": "Common service centre or post office",
+            "hi": "जन सेवा केंद्र या डाकघर",
+            "mr": "जनसेवा केंद्र किंवा डाकघर"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-06-01",
+      "applicationClosesAt": "2026-10-31"
+    },
+    {
+      "id": "maha_rozgar_hami",
+      "kind": "scheme",
+      "title": {
+        "en": "MahaRozgar Hami (Apprenticeship Support)",
+        "hi": "महारोजगार हमी (शिक्षुता सहायता)",
+        "mr": "महारोजगार हमी (शिक्षुता सहाय्य)"
+      },
+      "summary": {
+        "en": "Maharashtra government support that links youth with apprenticeship vacancies through the apprenticeship portal.",
+        "hi": "महाराष्ट्र सरकार की सहायता जो युवाओं को शिक्षुता पोर्टल के माध्यम से रिक्त पदों से जोड़ती है।",
+        "mr": "महाराष्ट्र शासनाची सहाय्य जी तरुणांना शिक्षुता पोर्टलद्वारे रिक्त पदांशी जोडते."
+      },
+      "officialSourceName": "Directorate of Higher Education, Maharashtra",
+      "officialSourceUrl": "https://www.dhe.org.in/",
+      "lastVerifiedAt": "2026-09-20",
+      "scope": "mh",
+      "categories": ["apprenticeship", "employment"],
+      "careerIds": ["career_electrician", "career_plumber", "career_automobile", "career_food_processing"],
+      "amountDisclosed": false,
+      "minClass": 9,
+      "eligibilityRules": [
+        {
+          "id": "maha_rozgar_hami_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["secondary", "higher_secondary", "graduation"],
+          "reasonKey": "rule_stage_school",
+          "isBlocking": true
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "school_learning_certificate",
+          "label": {
+            "en": "School leaving certificate",
+            "hi": "स्कूल छोड़ने का प्रमाण पत्र",
+            "mr": "शाळा सोडल्याचे प्रमाणपत्र"
+          },
+          "whereToGet": {
+            "en": "Your school",
+            "hi": "आपका स्कूल",
+            "mr": "तुमची शाळा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "aadhaar",
+          "label": {
+            "en": "Aadhaar card",
+            "hi": "आधार कार्ड",
+            "mr": "आधार कार्ड"
+          },
+          "whereToGet": {
+            "en": "Common service centre or post office",
+            "hi": "जन सेवा केंद्र या डाकघर",
+            "mr": "जनसेवा केंद्र किंवा डाकघर"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-01-01",
+      "applicationClosesAt": "2027-03-31"
+    },
+    {
+      "id": "maha_saksham_shalak",
+      "kind": "scheme",
+      "title": {
+        "en": "Saksham Shalar (District Skill Development)",
+        "hi": "सक्षम शालक (जिला कौशल विकास)",
+        "mr": "सक्षम शालक (जिल्हा कौशल्य विकास)"
+      },
+      "summary": {
+        "en": "District-level skill development programme that runs short vocational batches for school and junior college students.",
+        "hi": "जिला स्तरीय कौशल विकास कार्यक्रम जो स्कूल और जूनियर कॉलेज के छात्रों के लिए संक्षिप्त व्यावसायिक बैच चलाता है।",
+        "mr": "जिल्हा स्तरीय कौशल्य विकास कार्यक्रम जो शाळा आणि जूनियर कॉलेजच्या विद्यार्थ्यांसाठी संक्षिप्त व्यावसायिक बॅच चालवतो."
+      },
+      "officialSourceName": "Directorate of Higher Education, Maharashtra",
+      "officialSourceUrl": "https://www.dhe.org.in/",
+      "lastVerifiedAt": "2026-09-20",
+      "scope": "mh",
+      "categories": ["skill", "vocational"],
+      "careerIds": [
+        "career_electrician",
+        "career_solar_installer",
+        "career_tailoring",
+        "career_beauty",
+        "career_web_designer"
+      ],
+      "amountDisclosed": false,
+      "minClass": 9,
+      "eligibilityRules": [
+        {
+          "id": "maha_saksham_shalak_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["secondary", "higher_secondary"],
+          "reasonKey": "rule_stage_school",
+          "isBlocking": true
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "school_learning_certificate",
+          "label": {
+            "en": "School leaving certificate",
+            "hi": "स्कूल छोड़ने का प्रमाण पत्र",
+            "mr": "शाळा सोडल्याचे प्रमाणपत्र"
+          },
+          "whereToGet": {
+            "en": "Your school",
+            "hi": "आपका स्कूल",
+            "mr": "तुमची शाळा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "photo_id",
+          "label": {
+            "en": "Passport size photograph",
+            "hi": "पासपोर्ट आकार का फोटो",
+            "mr": "पासपोर्ट आकाराचा फोटो"
+          },
+          "whereToGet": {
+            "en": "Any photo studio",
+            "hi": "कोई फोटो स्टूडियो",
+            "mr": "कोणतीही फोटो स्टुडिओ"
+          },
+          "isMandatory": false,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-06-01",
+      "applicationClosesAt": "2027-01-31"
+    }
+  ]
+}

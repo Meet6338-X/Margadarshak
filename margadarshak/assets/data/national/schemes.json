@@ -1,0 +1,839 @@
+[
+  {
+    "id": "nsp_postmatric_sc_st",
+    "kind": "scholarship",
+    "title": {
+      "en": "Post-Matric Scholarship for SC and ST Students",
+      "hi": "एससी और एसटी छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति",
+      "mr": "अनुसूचित जाती व जमाती विद्यार्थ्यांसाठी पोस्ट-मॅट्रिक शिष्यवृत्ती"
+    },
+    "summary": {
+      "en": "Central government scholarship for Scheduled Caste and Scheduled Tribe students studying at government recognised institutions.",
+      "hi": "अनुसूचित जाति और अनुसूचित जनजाति के छात्रों के लिए केंद्र सरकार की छात्रवृत्ति, जो सरकारी मान्यता प्राप्त संस्थानों में पढ़ने वालों को मिलती है।",
+      "mr": "अनुसूचित जाती व जमाती विद्यार्थ्यांसाठी केंद्र सरकारची शिष्यवृत्ती, जी सरकारी मान्यता प्राप्त संस्थांमध्ये शिकत असलेल्या विद्यार्थ्यांना मिळते."
+    },
+    "officialSourceName": "National Scholarship Portal, Ministry of Education",
+    "officialSourceUrl": "https://scholarships.gov.in/",
+    "lastVerifiedAt": "2026-10-22",
+    "applyUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "scope": "national",
+    "categories": ["scholarship", "government", "higher-education"],
+    "careerIds": ["career_teacher", "career_nurse", "career_accounting"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "category",
+        "field": "social_category",
+        "operator": "one_of",
+        "values": ["sc", "st"],
+        "reasonKey": "rule_category_sc_st",
+        "isBlocking": true
+      },
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "caste_certificate",
+        "label": {
+          "en": "Caste certificate",
+          "hi": "जाति प्रमाण पत्र",
+          "mr": "जात प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office or the online caste certificate portal of your state.",
+          "hi": "तहसील कार्यालय या अपने राज्य के ऑनलाइन जाति प्रमाण पत्र पोर्टल से।",
+          "mr": "तहसील कार्यालय किंवा तुमच्या राज्याच्या ऑनलाइन जात प्रमाणपत्र पोर्टलवरून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "income_certificate",
+        "label": {
+          "en": "Income certificate",
+          "hi": "आय प्रमाण पत्र",
+          "mr": "उत्पन्न प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office; usually takes a few working days.",
+          "hi": "तहसील कार्यालय; आमतौर पर कुछ कार्यदिवस लगते हैं।",
+          "mr": "तहसील कार्यालय; साधारणपणे काही कार्यदिवस लागतात."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "bank_account",
+        "label": {
+          "en": "Bank account in your own name with IFSC",
+          "hi": "अपने नाम का बैंक खाता और IFSC",
+          "mr": "तुमच्या नावाचे बँक खाते आणि IFSC"
+        },
+        "whereToGet": {
+          "en": "Any bank branch or post office; the account must be in the student's own name.",
+          "hi": "कोई भी बैंक शाखा या डाकघर; खाता विद्यार्थी के अपने नाम होना चाहिए।",
+          "mr": "कोणतीही बँक शाखा किंवा पोस्ट ऑफिस; खाते विद्यार्थ्याच्या स्वतःच्या नावे असावे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "nsp_postmatric_obc",
+    "kind": "scholarship",
+    "title": {
+      "en": "Post-Matric Scholarship for OBC Students",
+      "hi": "ओबीसी छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति",
+      "mr": "अनुसूचित जाती (OBC) विद्यार्थ्यांसाठी पोस्ट-मॅट्रिक शिष्यवृत्ती"
+    },
+    "summary": {
+      "en": "Central government scholarship for Other Backward Class students in recognised institutions.",
+      "hi": "मान्यता प्राप्त संस्थानों में अन्य पिछड़ा वर्ग के छात्रों के लिए केंद्र सरकार की छात्रवृत्ति।",
+      "mr": "मान्यता प्राप्त संस्थांमध्ये इतर मागासवर्गीय विद्यार्थ्यांसाठी केंद्र सरकारची शिष्यवृत्ती."
+    },
+    "officialSourceName": "National Scholarship Portal, Ministry of Social Justice and Empowerment",
+    "officialSourceUrl": "https://scholarships.gov.in/",
+    "lastVerifiedAt": "2026-10-22",
+    "applyUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "scope": "national",
+    "categories": ["scholarship", "government", "higher-education"],
+    "careerIds": ["career_teacher", "career_nurse", "career_accounting"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "category",
+        "field": "social_category",
+        "operator": "equals",
+        "values": ["obc"],
+        "reasonKey": "rule_category_obc",
+        "isBlocking": true
+      },
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "caste_certificate",
+        "label": {
+          "en": "Caste certificate",
+          "hi": "जाति प्रमाण पत्र",
+          "mr": "जात प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office or the online caste certificate portal of your state.",
+          "hi": "तहसील कार्यालय या अपने राज्य के ऑनलाइन जाति प्रमाण पत्र पोर्टल से।",
+          "mr": "तहसील कार्यालय किंवा तुमच्या राज्याच्या ऑनलाइन जात प्रमाणपत्र पोर्टलवरून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "income_certificate",
+        "label": {
+          "en": "Income certificate",
+          "hi": "आय प्रमाण पत्र",
+          "mr": "उत्पन्न प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office; usually takes a few working days.",
+          "hi": "तहसील कार्यालय; आमतौर पर कुछ कार्यदिवस लगते हैं।",
+          "mr": "तहसील कार्यालय; साधारणपणे काही कार्यदिवस लागतात."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "nsp_central_sector",
+    "kind": "scholarship",
+    "title": {
+      "en": "Central Sector Scheme of Scholarship (CSSS)",
+      "hi": "केंद्रीय क्षेत्र छात्रवृत्ति योजना",
+      "mr": "केंद्रीय क्षेत्र शिष्यवृत्ती योजना"
+    },
+    "summary": {
+      "en": "Merit-cum-means scholarship for students who scored well in Class 12 and whose family income is low.",
+      "hi": "कक्षा 12 में अच्छे अंक लाने वाले और कम आय वाले परिवारों के विद्यार्थियों के लिए मेरिट-कम-मीन्स छात्रवृत्ति।",
+      "mr": "12वीत चांगले गुण आणि कमी उत्पन्न असलेल्या कुटुंबातील विद्यार्थ्यांसाठी गुणवत्ता-आधारित शिष्यवृत्ती."
+    },
+    "officialSourceName": "National Scholarship Portal, Ministry of Education",
+    "officialSourceUrl": "https://scholarships.gov.in/",
+    "lastVerifiedAt": "2026-10-22",
+    "applyUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "scope": "national",
+    "categories": ["scholarship", "government", "higher-education"],
+    "careerIds": ["career_teacher", "career_nurse", "career_accounting", "career_web_designer"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      },
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_after_class_12",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "income_certificate",
+        "label": {
+          "en": "Income certificate",
+          "hi": "आय प्रमाण पत्र",
+          "mr": "उत्पन्न प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office; usually takes a few working days.",
+          "hi": "तहसील कार्यालय; आमतौर पर कुछ कार्यदिवस लगते हैं।",
+          "mr": "तहसील कार्यालय; साधारणपणे काही कार्यदिवस लागतात."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "marksheet_12",
+        "label": {
+          "en": "Class 12 marksheet",
+          "hi": "कक्षा 12 अंक पत्र",
+          "mr": "12वीचे गुणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your school office; the board issues it a few weeks after the results.",
+          "hi": "आपके स्कूल कार्यालय से; परिणाम के कुछ सप्ताह बाद बोर्ड जारी करता है।",
+          "mr": "तुमच्या शालेच्या कार्यालयातून; निकाल आल्यानंतर काही आठवड्यांनी बोर्ड देतो."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "nsp_top_class_sc",
+    "kind": "scholarship",
+    "title": {
+      "en": "Top Class Education Scheme for SC Students",
+      "hi": "एससी छात्रों के लिए टॉप क्लास शिक्षा योजना",
+      "mr": "अनुसूचित जाती विद्यार्थ्यांसाठी टॉप क्लास शिक्षण योजना"
+    },
+    "summary": {
+      "en": "Full support for Scheduled Caste students admitted to notified institutions, from Class 9 to degree level.",
+      "hi": "अनुसूचित जाति के छात्रों को कक्षा 9 से डिग्री स्तर तक पूरी सहायता, जो अधिसूचित संस्थानों में प्रवेश पाते हैं।",
+      "mr": "अनुसूचित जाती विद्यार्थ्यांना 9वी ते पदव्युत्तर स्तरापर्यंत पूर्ण सहाय्य, जे अधिसूचित संस्थांत प्रवेश मिळवतात."
+    },
+    "officialSourceName": "National Scholarship Portal, Ministry of Social Justice and Empowerment",
+    "officialSourceUrl": "https://scholarships.gov.in/",
+    "lastVerifiedAt": "2026-10-22",
+    "applyUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "scope": "national",
+    "categories": ["scholarship", "government", "school"],
+    "careerIds": ["career_teacher", "career_nurse", "career_accounting"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "category",
+        "field": "social_category",
+        "operator": "equals",
+        "values": ["sc"],
+        "reasonKey": "rule_category_sc",
+        "isBlocking": true
+      },
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "caste_certificate",
+        "label": {
+          "en": "Caste certificate",
+          "hi": "जाति प्रमाण पत्र",
+          "mr": "जात प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office or the online caste certificate portal of your state.",
+          "hi": "तहसील कार्यालय या अपने राज्य के ऑनलाइन जाति प्रमाण पत्र पोर्टल से।",
+          "mr": "तहसील कार्यालय किंवा तुमच्या राज्याच्या ऑनलाइन जात प्रमाणपत्र पोर्टलवरून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "ews_fee_waiver",
+    "kind": "scheme",
+    "title": {
+      "en": "Tuition Fee Waiver for EWS Students",
+      "hi": "ईडब्ल्यूएस छात्रों के लिए शुल्क छूट",
+      "mr": "EWS विद्यार्थ्यांसाठी शिक्षण शुल्क सवलत"
+    },
+    "summary": {
+      "en": "Government institutions cannot take tuition fees from students whose family income is up to one lakh rupees.",
+      "hi": "ईडब्ल्यूएस श्रेणी के छात्रों, जिनके परिवार की आय एक लाख रुपये तक है, से सरकारी संस्थान शुल्क नहीं ले सकतीं।",
+      "mr": "EWS प्रवर्गातील विद्यार्थ्यांकडून (कुटुंब उत्पन्न एक लाखांपर्यंत) सरकारी संस्था शिक्षण शुल्क घेऊ शकत नाही."
+    },
+    "officialSourceName": "Department of Higher Education, Ministry of Education",
+    "officialSourceUrl": "https://ews.gov.in/",
+    "lastVerifiedAt": "2026-09-18",
+    "scope": "national",
+    "categories": ["government", "higher-education", "fee-waiver"],
+    "careerIds": ["career_teacher", "career_nurse", "career_accounting", "career_web_designer"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["below_1lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      },
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_after_class_12",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "income_certificate",
+        "label": {
+          "en": "Income certificate",
+          "hi": "आय प्रमाण पत्र",
+          "mr": "उत्पन्न प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office; usually takes a few working days.",
+          "hi": "तहसील कार्यालय; आमतौर पर कुछ कार्यदिवस लगते हैं।",
+          "mr": "तहसील कार्यालय; साधारणपणे काही कार्यदिवस लागतात."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "ews_certificate",
+        "label": {
+          "en": "EWS income certificate",
+          "hi": "ईडब्ल्यूएस आय प्रमाण पत्र",
+          "mr": "EWS उत्पन्न प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "The same income certificate used for the EWS category; issued by the Tehsildar.",
+          "hi": "ईडब्ल्यूएस श्रेणी के लिए इस्तेमाल होने वाला ही आय प्रमाण पत्र; तहसील द्वारा जारी।",
+          "mr": "EWS प्रवर्गासाठी वापरले जाणारेच उत्पन्न प्रमाणपत्र; तहसीलदार जारी करते."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "nmms_scholarship",
+    "kind": "scholarship",
+    "title": {
+      "en": "National Means-cum-Merit Scholarship (NMMS)",
+      "hi": "राष्ट्रीय साधन-सह-मेधा छात्रवृत्ति",
+      "mr": "राष्ट्रीय साधन-सह-गुणवत्ता शिष्यवृत्ती"
+    },
+    "summary": {
+      "en": "For students who scored well in Class 8 and come from a low income family. It continues through Class 10.",
+      "hi": "कक्षा 8 में अच्छे अंक लाने वाले कम आय वाले परिवारों के विद्यार्थियों के लिए। यह कक्षा 10 तक चलती है।",
+      "mr": "8वीत चांगले गुण आणि कमी उत्पन्न असलेल्या कुटुंबातील विद्यार्थ्यांसाठी. 10वीपर्यंत सुरू."
+    },
+    "officialSourceName": "National Scholarship Portal, Department of School Education and Literacy",
+    "officialSourceUrl": "https://scholarships.gov.in/",
+    "lastVerifiedAt": "2026-10-22",
+    "applyUrl": "https://scholarships.gov.in/ApplicationForm/",
+    "scope": "national",
+    "categories": ["scholarship", "government", "school"],
+    "careerIds": ["career_teacher", "career_nurse"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["1lakh_2_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      },
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "equals",
+        "values": ["secondary"],
+        "reasonKey": "rule_stage_secondary",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "income_certificate",
+        "label": {
+          "en": "Income certificate",
+          "hi": "आय प्रमाण पत्र",
+          "mr": "उत्पन्न प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office; usually takes a few working days.",
+          "hi": "तहसील कार्यालय; आमतौर पर कुछ कार्यदिवस लगते हैं।",
+          "mr": "तहसील कार्यालय; साधारणपणे काही कार्यदिवस लागतात."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "inspire_scholarship",
+    "kind": "scholarship",
+    "title": {
+      "en": "INSPIRE Scholarship (Department of Science and Technology)",
+      "hi": "इंस्पायर छात्रवृत्ति (विज्ञान और प्रौद्योगिकी विभाग)",
+      "mr": "इन्स्पायर शिष्यवृत्ती (विज्ञान व प्रौद्योगिकी विभाग)"
+    },
+    "summary": {
+      "en": "Encourages students in Class 9 to 12 to study science, with an annual scholarship and a summer programme.",
+      "hi": "कक्षा 9 से 12 के विज्ञान पढ़ने वाले विद्यार्थियों को प्रोत्साहित करता है, वार्षिक छात्रवृत्ति और ग्रीष्म कार्यक्रम के साथ।",
+      "mr": "9वी ते 12वीतील विज्ञान शिकणाऱ्या विद्यार्थ्यांना प्रोत्साहित करते, वार्षिक शिष्यवृत्ती व उन्माळ अभ्यासक्रमासह."
+    },
+    "officialSourceName": "Department of Science and Technology, Government of India",
+    "officialSourceUrl": "https://inspire.gov.in/",
+    "lastVerifiedAt": "2026-09-15",
+    "scope": "national",
+    "categories": ["scholarship", "government", "science"],
+    "careerIds": ["career_lab_technician", "career_electrician", "career_web_designer"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["secondary", "higher_secondary"],
+        "reasonKey": "rule_stage_school",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "class_10_marksheet",
+        "label": {
+          "en": "Class 10 marksheet",
+          "hi": "कक्षा 10 अंक पत्र",
+          "mr": "10वीचे गुणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your school office.",
+          "hi": "आपके स्कूल कार्यालय से।",
+          "mr": "तुमच्या शालेच्या कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "aicte_pragati",
+    "kind": "scholarship",
+    "title": {
+      "en": "AICTE Pragati Scholarship for Girl Students",
+      "hi": "ईडब्ल्यूएस छात्रों के लिए एआईसीटीई प्रगति छात्रवृत्ति",
+      "mr": "मुलींसाठी AICTE प्रगती शिष्यवृत्ती"
+    },
+    "summary": {
+      "en": "AICTE gives two scholarships a year to girl students who are admitted to a first year degree or diploma course.",
+      "hi": "एआईसीटीई पहले वर्ष की डिग्री या डिप्लोमा में प्रवेश पाने वाली छात्राओं को साल में दो छात्रवृत्तियाँ देती है।",
+      "mr": "पहिल्या वर्षाच्या पदव्युत्तर किंवा डिप्लोमा अभ्यासक्रमात प्रवेश मिळालेल्या मुलींना AICTE दरवर्षी दोन शिष्यवृत्त्या देते."
+    },
+    "officialSourceName": "All India Council for Technical Education",
+    "officialSourceUrl": "https://www.aicte-india.org/schemes/students-development-schemes",
+    "lastVerifiedAt": "2026-09-12",
+    "scope": "national",
+    "categories": ["scholarship", "girls", "technical-education"],
+    "careerIds": ["career_web_designer", "career_accounting", "career_nurse"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "gender",
+        "field": "gender",
+        "operator": "equals",
+        "values": ["female"],
+        "reasonKey": "rule_gender_female",
+        "isBlocking": true
+      },
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      },
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_after_class_12",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "income_certificate",
+        "label": {
+          "en": "Income certificate",
+          "hi": "आय प्रमाण पत्र",
+          "mr": "उत्पन्न प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Tehsildar office; usually takes a few working days.",
+          "hi": "तहसील कार्यालय; आमतौर पर कुछ कार्यदिवस लगते हैं।",
+          "mr": "तहसील कार्यालय; साधारणपणे काही कार्यदिवस लागतात."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "bank_account",
+        "label": {
+          "en": "Bank account in your own name with IFSC",
+          "hi": "अपने नाम का बैंक खाता और IFSC",
+          "mr": "तुमच्या नावाचे बँक खाते आणि IFSC"
+        },
+        "whereToGet": {
+          "en": "Any bank branch or post office; the account must be in the student's own name.",
+          "hi": "कोई भी बैंक शाखा या डाकघर; खाता विद्यार्थी के अपने नाम होना चाहिए।",
+          "mr": "कोणतीही बँक शाखा किंवा पोस्ट ऑफिस; खाते विद्यार्थ्याच्या स्वतःच्या नावे असावे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "aicte_swanidhi",
+    "kind": "scholarship",
+    "title": {
+      "en": "AICTE Swanidhi Scholarship for First Generation Learners",
+      "hi": "एआईसीटीई स्वनिधि छात्रवृत्ति",
+      "mr": "AICTE स्वनिधी शिष्यवृत्ती"
+    },
+    "summary": {
+      "en": "For students whose family has never gone to college and who had no schooling before Class 9.",
+      "hi": "उन विद्यार्थियों के लिए जिनके परिवार में कभी कोई नहीं पढ़ा और कक्षा 9 से पहले उनकी स्कूलिंग नहीं हुई।",
+      "mr": "त्या विद्यार्थ्यांसाठी ज्यांच्या कुटुंबात कोणीही कॉलेजला गेले नाही आणि 9वीपूर्वी शालेय शिक्षण झाले नाही."
+    },
+    "officialSourceName": "All India Council for Technical Education",
+    "officialSourceUrl": "https://www.aicte-india.org/schemes/students-development-schemes",
+    "lastVerifiedAt": "2026-09-12",
+    "scope": "national",
+    "categories": ["scholarship", "first-generation", "technical-education"],
+    "careerIds": ["career_web_designer", "career_accounting", "career_electrician"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "first_generation",
+        "field": "first_generation_learner",
+        "operator": "equals",
+        "values": ["yes"],
+        "reasonKey": "rule_first_generation",
+        "isBlocking": true
+      },
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "school_learning_certificate",
+        "label": {
+          "en": "School leaving certificate showing Class 9 entry",
+          "hi": "कक्षा 9 में प्रवेश दर्शाने वाला स्कूल छोड़ने का प्रमाण पत्र",
+          "mr": "9वीत प्रवेश दाखवणारे शालेय बहिष्कार प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your previous school office.",
+          "hi": "आपके पिछले स्कूल कार्यालय से।",
+          "mr": "तुमच्या मागील शालेच्या कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "skill_india_pmkvy",
+    "kind": "scheme",
+    "title": {
+      "en": "Skill India / PMKVY 4.0 Free Skill Certification",
+      "hi": "स्किल इंडिया / पीएमकेवीवाई 4.0 निःशुल्क प्रमाणन",
+      "mr": "स्किल इंडिया / पीएमकेवीवाई 4.0 मोफत कौशल्य प्रमाणीकरण"
+    },
+    "summary": {
+      "en": "Free short training and a national skill certificate in a trade of your choice, at a nearby training centre.",
+      "hi": "आपकी पसंद के व्यवसाय में निकटतम प्रशिक्षण केंद्र पर निःशुल्क अल्प प्रशिक्षण और राष्ट्रीय कौशल प्रमाण पत्र।",
+      "mr": "तुमच्या आवडीच्या व्यवसायात जवळच्या प्रशिक्षण केंद्रावर मोफत अल्प प्रशिक्षण आणि राष्ट्रीय कौशल्य प्रमाणपत्र."
+    },
+    "officialSourceName": "Skill India Digital Hub, Ministry of Skill Development and Entrepreneurship",
+    "officialSourceUrl": "https://www.skillindiadigital.gov.in/",
+    "lastVerifiedAt": "2026-09-10",
+    "scope": "national",
+    "categories": ["skill", "vocational", "government"],
+    "careerIds": [
+      "career_electrician",
+      "career_plumber",
+      "career_automobile",
+      "career_tailoring",
+      "career_beauty",
+      "career_food_processing"
+    ],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["secondary", "higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_school",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "aadhaar",
+        "label": {
+          "en": "Aadhaar or any government photo identity document",
+          "hi": "आधार या कोई सरकारी फ़ोटो पहचान पत्र",
+          "mr": "आधार किंवा कोणतेही सरकारी फोटो ओळखपत्र"
+        },
+        "whereToGet": {
+          "en": "Enrolment centre; Aadhaar is free for the first enrolment.",
+          "hi": "नामांकन केंद्र; पहली बार नामांकन में आधार निःशुल्क है।",
+          "mr": "नोंदणी केंद्र; पहिल्या नोंदणीत आधार मोफत आहे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "ncs_employment_exchange",
+    "kind": "scheme",
+    "title": {
+      "en": "National Career Service (employment exchange)",
+      "hi": "राष्ट्रीय कैरियर सेवा (रोज़गार कार्यालय)",
+      "mr": "राष्ट्रीय कारिअर सेवा (रोजगार कार्यालय)"
+    },
+    "summary": {
+      "en": "Register once and get job vacancies, skill advice and career counselling from a nearby centre.",
+      "hi": "एक बार पंजीकरण करें और निकटतम केंद्र से नौकरी के अवसर, कौशल सलाह और कैरियर परामर्श पाएँ।",
+      "mr": "एकदा नोंदणी करा आणि जवळच्या केंद्रवरून नोकरीच्या संधी, कौशल्य सल्ला व कारिअर मार्गदर्शन मिळवा."
+    },
+    "officialSourceName": "Ministry of Labour and Employment, Government of India",
+    "officialSourceUrl": "https://www.ncs.gov.in/",
+    "lastVerifiedAt": "2026-09-08",
+    "scope": "national",
+    "categories": ["employment", "government", "counselling"],
+    "careerIds": ["career_counsellor", "career_shopkeeper", "career_accounting"],
+    "amountDisclosed": false,
+    "eligibilityRules": [],
+    "requiredDocuments": [
+      {
+        "id": "aadhaar",
+        "label": {
+          "en": "Aadhaar or any government photo identity document",
+          "hi": "आधार या कोई सरकारी फ़ोटो पहचान पत्र",
+          "mr": "आधार किंवा कोणतेही सरकारी फोटो ओळखपत्र"
+        },
+        "whereToGet": {
+          "en": "Enrolment centre; Aadhaar is free for the first enrolment.",
+          "hi": "नामांकन केंद्र; पहली बार नामांकन में आधार निःशुल्क है।",
+          "mr": "नोंदणी केंद्र; पहिल्या नोंदणीत आधार मोफत आहे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "mgnrega_work",
+    "kind": "scheme",
+    "title": {
+      "en": "MGNREGA Guaranteed Rural Work",
+      "hi": "मनरेगा गारंटीशीर ग्रामीण रोज़गार",
+      "mr": "मनरेगा हमीभंग ग्रामीण रोजगार"
+    },
+    "summary": {
+      "en": "Every rural household adult has a legal right to at least 100 days of unskilled manual work in a year.",
+      "hi": "हर ग्रामीण परिवार के वयस्क को एक वर्ष में कम से कम 100 दिन का अकुशल शारीरिक काम पाने का कानूनी अधिकार है।",
+      "mr": "प्रत्येक ग्रामीण कुटुंबातील प्रौसदाला व्यक्तीला वर्षातून किमान १०० दिवस अकुशल श्रमाचा कायदेशीर हक्क आहे."
+    },
+    "officialSourceName": "Ministry of Rural Development, Government of India",
+    "officialSourceUrl": "https://nrega.nic.in/",
+    "lastVerifiedAt": "2026-09-05",
+    "scope": "national",
+    "categories": ["employment", "rural", "government", "livelihood"],
+    "careerIds": ["career_dairy", "career_organic_farming", "career_construction"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "job_card",
+        "label": {
+          "en": "Job card",
+          "hi": "जॉब कार्ड",
+          "mr": "जॉब कार्ड"
+        },
+        "whereToGet": {
+          "en": "Your Gram Panchayat or the block office; it is free.",
+          "hi": "आपकी ग्राम पंचायत या ब्लॉक कार्यालय; यह निःशुल्क है।",
+          "mr": "तुमची ग्रामपंचायत किंवा ब्लॉक कार्यालय; हे मोफत आहे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "rozgar_mela",
+    "kind": "scheme",
+    "title": {
+      "en": "Rozgar Mela (job fairs by the government)",
+      "hi": "रोज़गार मेला (सरकारी नौकरी मेले)",
+      "mr": "रोजगार मेळा (सरकारी नोकरी मेळे)"
+    },
+    "summary": {
+      "en": "Government organised job fairs where employers hire on the spot, without a separate application.",
+      "hi": "सरकार द्वारा आयोजित नौकरी मेले, जहाँ नियोक्ता सीधे भर्ती करते हैं, अलग आवेदन के बिना।",
+      "mr": "सरकार आयोजित नोकरी मेळे, जिथे नियोक्ते थेट भरती करतात, स्वतंत्र अर्जाशिवाय."
+    },
+    "officialSourceName": "Ministry of Employment and Labour, Government of India",
+    "officialSourceUrl": "https://www.rozgarmela.gov.in/",
+    "lastVerifiedAt": "2026-09-05",
+    "scope": "national",
+    "categories": ["employment", "government"],
+    "careerIds": ["career_shopkeeper", "career_automobile", "career_electrician"],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["secondary", "higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_school",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "aadhaar",
+        "label": {
+          "en": "Aadhaar or any government photo identity document",
+          "hi": "आधार या कोई सरकारी फ़ोटो पहचान पत्र",
+          "mr": "आधार किंवा कोणतेही सरकारी फोटो ओळखपत्र"
+        },
+        "whereToGet": {
+          "en": "Enrolment centre; Aadhaar is free for the first enrolment.",
+          "hi": "नामांकन केंद्र; पहली बार नामांकन में आधार निःशुल्क है।",
+          "mr": "नोंदणी केंद्र; पहिल्या नोंदणीत आधार मोफत आहे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "pmfme_food_processing",
+    "kind": "scheme",
+    "title": {
+      "en": "PMFME — food processing machinery subsidy",
+      "hi": "पीएमएफ़एमई — खाद्य प्रसंस्करण मशीनरी सब्सिडी",
+      "mr": "पीएमएफएमई — अन्नप्रक्रिया यंत्र अनुदान"
+    },
+    "summary": {
+      "en": "Credit support and a capital subsidy for setting up a small food processing unit, including cold chain.",
+      "hi": "छोटी खाद्य प्रसंस्करण इकाई और कोल्ड चेन स्थापित करने के लिए ऋण सहायता और पूंजी सब्सिडी।",
+      "mr": "लहान अन्नप्रक्रिया प्रकल्प व कोल्ड चेन सुरू करण्यासाठी कर्ज सहाय्य व भांडवल अनुदान."
+    },
+    "officialSourceName": "Ministry of Food Processing Industries, Government of India",
+    "officialSourceUrl": "https://pmfme.gov.in/",
+    "lastVerifiedAt": "2026-09-03",
+    "scope": "national",
+    "categories": ["livelihood", "government", "food-processing"],
+    "careerIds": ["career_food_processing", "career_organic_farming", "career_dairy"],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "income",
+        "field": "income_band",
+        "operator": "at_most",
+        "values": ["2_5lakh_5lakh"],
+        "reasonKey": "rule_income_at_most",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "udyam_certificate",
+        "label": {
+          "en": "Udyam registration certificate",
+          "hi": "उद्यम पंजीकरण प्रमाण पत्र",
+          "mr": "उद्यम नोंदणी प्रमाणपत्र"
+        },
+        "whereToGet": {
+          "en": "The Udyam portal, free of cost, in about ten minutes.",
+          "hi": "उद्यम पोर्टल, निःशुल्क, लगभग दस मिनट में।",
+          "mr": "उद्यम पोर्टल, मोफत, अंदाजे दहा मिनिटांत."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  }
+]
