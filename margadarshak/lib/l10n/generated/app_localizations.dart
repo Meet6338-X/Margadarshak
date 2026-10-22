@@ -1342,6 +1342,18 @@ abstract class AppLocalizations {
   /// **'Open to first generation learners.'**
   String get rule_first_generation;
 
+  /// No description provided for @rule_life_situation_special.
+  ///
+  /// In en, this message translates to:
+  /// **'For students who lost a parent, a martyr\'s child, or whose parent has a critical disease or a disability above 80%.'**
+  String get rule_life_situation_special;
+
+  /// No description provided for @rule_category_pwd.
+  ///
+  /// In en, this message translates to:
+  /// **'For students with a disability certificate.'**
+  String get rule_category_pwd;
+
   /// No description provided for @rule_class_at_least_9.
   ///
   /// In en, this message translates to:
@@ -1413,6 +1425,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'First generation learner'**
   String get label_first_generation_learner;
+
+  /// No description provided for @label_life_situation.
+  ///
+  /// In en, this message translates to:
+  /// **'Family situation'**
+  String get label_life_situation;
 
   /// No description provided for @value_general.
   ///

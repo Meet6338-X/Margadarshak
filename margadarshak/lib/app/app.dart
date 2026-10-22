@@ -9,6 +9,8 @@ import 'package:provider/provider.dart';
 import '../core/config/app_config.dart';
 import '../l10n/generated/app_localizations.dart';
 import '../ui/core/theme/app_theme.dart';
+import '../ui/features/auth/view_models/auth_view_model.dart';
+import '../ui/features/onboarding/view_models/onboarding_view_model.dart';
 import 'dependency_injection.dart';
 import 'locale_controller.dart';
 import 'router.dart';
@@ -29,6 +31,8 @@ class MargadarshakApp extends StatefulWidget {
 class _MargadarshakAppState extends State<MargadarshakApp> {
   late final SessionController _session;
   late final LocaleController _locale;
+  late final AuthViewModel _auth;
+  late final OnboardingViewModel _onboarding;
   late final GoRouter _router;
 
   @override
@@ -39,6 +43,10 @@ class _MargadarshakAppState extends State<MargadarshakApp> {
       studentRepository: widget.dependencies.studentRepository,
     );
     _locale = LocaleController();
+    _auth = AuthViewModel(authRepository: widget.dependencies.authRepository);
+    _onboarding = OnboardingViewModel(
+      studentRepository: widget.dependencies.studentRepository,
+    );
     _router = createRouter(_session);
     _session.start();
   }
@@ -48,6 +56,8 @@ class _MargadarshakAppState extends State<MargadarshakApp> {
     _router.dispose();
     _locale.dispose();
     _session.dispose();
+    _auth.dispose();
+    _onboarding.dispose();
     super.dispose();
   }
 
@@ -58,6 +68,8 @@ class _MargadarshakAppState extends State<MargadarshakApp> {
         Provider<AppDependencies>.value(value: widget.dependencies),
         ChangeNotifierProvider<SessionController>.value(value: _session),
         ChangeNotifierProvider<LocaleController>.value(value: _locale),
+        ChangeNotifierProvider<AuthViewModel>.value(value: _auth),
+        ChangeNotifierProvider<OnboardingViewModel>.value(value: _onboarding),
       ],
       child: ListenableBuilder(
         listenable: _locale,

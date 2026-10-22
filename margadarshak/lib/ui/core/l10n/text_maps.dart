@@ -22,6 +22,8 @@ String reasonText(AppLocalizations l10n, String reasonKey) => switch (reasonKey)
       'rule_stage_graduation' => l10n.rule_stage_graduation,
       'rule_gender_female' => l10n.rule_gender_female,
       'rule_first_generation' => l10n.rule_first_generation,
+      'rule_life_situation_special' => l10n.rule_life_situation_special,
+      'rule_category_pwd' => l10n.rule_category_pwd,
       'rule_class_at_least_9' => l10n.rule_class_at_least_9,
       'rule_class_at_least_8' => l10n.rule_class_at_least_8,
       'rule_class_range' => l10n.rule_class_range,
@@ -39,6 +41,7 @@ String eligibilityFieldText(AppLocalizations l10n, EligibilityField field) => sw
       EligibilityField.state => l10n.label_state,
       EligibilityField.district => l10n.label_district,
       EligibilityField.firstGenerationLearner => l10n.label_first_generation_learner,
+      EligibilityField.lifeSituation => l10n.label_life_situation,
     };
 
 /// The name of an education stage.

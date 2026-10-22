@@ -291,6 +291,8 @@
   "rule_stage_graduation": "Open to students in graduation.",
   "rule_gender_female": "Open to girls and women.",
   "rule_first_generation": "Open to first generation learners.",
+  "rule_life_situation_special": "For students who lost a parent, a martyr's child, or whose parent has a critical disease or a disability above 80%.",
+  "rule_category_pwd": "For students with a disability certificate.",
   "rule_class_at_least_9": "You need to be in class 9 or above.",
   "rule_class_at_least_8": "You need to be in class 8 or above.",
   "rule_class_range": "Applies to the class range given by the official source.",
@@ -304,6 +306,7 @@
   "label_state": "State",
   "label_district": "District",
   "label_first_generation_learner": "First generation learner",
+  "label_life_situation": "Family situation",
 
   "value_general": "General",
   "value_sc": "Scheduled Caste",

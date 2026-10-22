@@ -691,6 +691,14 @@ class AppLocalizationsMr extends AppLocalizations {
       'पहिल्या पिढीच्या विद्यार्थ्यांसाठी खुले.';
 
   @override
+  String get rule_life_situation_special =>
+      'त्या विद्यार्थ्यांसाठी ज्यांचे पालक नाहीत, शहीदाची मुले, किंवा ज्यांच्या पालकांना गंभीर आजार किंवा 80 पेक्षा जास्त अपंगत्व आहे.';
+
+  @override
+  String get rule_category_pwd =>
+      'अपंगत्व प्रमाणपत्र असलेल्या विद्यार्थ्यांसाठी.';
+
+  @override
   String get rule_class_at_least_9 =>
       'तुम्ही इयत्ता ९ किंवा त्याहून वर असणे आवश्यक.';
 
@@ -728,6 +736,9 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get label_first_generation_learner => 'पहिल्या पिढीचा विद्यार्थी';
+
+  @override
+  String get label_life_situation => 'कुटुंबाची परिस्थिती';
 
   @override
   String get value_general => 'सर्वसाधारण';

@@ -691,6 +691,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get rule_first_generation => 'Open to first generation learners.';
 
   @override
+  String get rule_life_situation_special =>
+      'For students who lost a parent, a martyr\'s child, or whose parent has a critical disease or a disability above 80%.';
+
+  @override
+  String get rule_category_pwd => 'For students with a disability certificate.';
+
+  @override
   String get rule_class_at_least_9 => 'You need to be in class 9 or above.';
 
   @override
@@ -726,6 +733,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get label_first_generation_learner => 'First generation learner';
+
+  @override
+  String get label_life_situation => 'Family situation';
 
   @override
   String get value_general => 'General';

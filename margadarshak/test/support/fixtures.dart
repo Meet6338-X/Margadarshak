@@ -24,6 +24,7 @@ StudentProfile buildProfile({
   IncomeBand incomeBand = IncomeBand.belowOneLakh,
   Gender gender = Gender.female,
   bool firstGenerationLearner = true,
+  String? lifeSituation,
   Set<String> interests = const <String>{'health', 'books'},
 }) {
   return StudentProfile(
@@ -37,6 +38,7 @@ StudentProfile buildProfile({
     incomeBand: incomeBand,
     gender: gender,
     firstGenerationLearner: firstGenerationLearner,
+    lifeSituation: lifeSituation,
     interests: interests,
     createdAt: DateTime(2026, 1, 1),
   );

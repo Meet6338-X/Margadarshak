@@ -85,6 +85,24 @@
           "careerIds": []
         }
       ],
+      "applyUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in/howToApply",
+      "applySteps": [
+        {
+          "en": "Apply online on the Nishchay Swayam Sahayata Bhata portal.",
+          "hi": "निश्चय स्वयं सहयोगी भत्ता पोर्टल पर ऑनलाइन आवेदन करें।",
+          "mr": "निश्चय स्वयंसहाय्यता भत्ता पोर्टलवर ऑनलाइन अर्ज करा."
+        },
+        {
+          "en": "Check that your college is on the approved college list.",
+          "hi": "अपने कॉलेज को मंजूर कॉलेज सूची में जाँचें।",
+          "mr": "तुमचे महाविद्यालय मंजूर यादीत आहे का ते पहा."
+        },
+        {
+          "en": "Follow the status on the BSCC student portal afterwards.",
+          "hi": "इसके बाद BSCC छात्र पोर्टल पर स्थिति देखें।",
+          "mr": "त्यानंतर BSCC विद्यार्थी पोर्टलवर स्थिती पहा."
+        }
+      ],
       "applicationOpensAt": "2026-07-01",
       "applicationClosesAt": "2026-12-31"
     },
@@ -193,7 +211,6 @@
       "officialSourceName": "7 Nishchay Yuva Mission, Bihar",
       "officialSourceUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in/",
       "lastVerifiedAt": "2026-10-22",
-      "applyUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in/howToApply",
       "applyUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in/howToApply",
       "applySteps": [
         {

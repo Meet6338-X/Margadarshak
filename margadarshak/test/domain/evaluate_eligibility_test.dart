@@ -173,6 +173,59 @@ void main() {
       expect(no.status, EligibilityStatus.notEligible);
     });
 
+    test('needs info when the family situation was never shared', () {
+      final opportunity = buildOpportunity(
+        eligibilityRules: <EligibilityRule>[
+          const EligibilityRule(
+            id: 'r_life',
+            field: EligibilityField.lifeSituation,
+            operator: EligibilityOperator.oneOf,
+            values: <String>['orphan', 'parent_covid_lost'],
+            reasonKey: 'rule_life_situation_special',
+          ),
+        ],
+      );
+
+      final result = evaluator.call(
+        opportunity: opportunity,
+        profile: buildProfile(),
+      );
+
+      expect(result.status, EligibilityStatus.needsInfo);
+      expect(result.missingFields, contains('life_situation'));
+    });
+
+    test('matches the family situation without regard to case', () {
+      final opportunity = buildOpportunity(
+        eligibilityRules: <EligibilityRule>[
+          const EligibilityRule(
+            id: 'r_life',
+            field: EligibilityField.lifeSituation,
+            operator: EligibilityOperator.oneOf,
+            values: <String>[
+              'orphan',
+              'parent_covid_lost',
+              'martyr_ward',
+              'parent_critical_illness',
+            ],
+            reasonKey: 'rule_life_situation_special',
+          ),
+        ],
+      );
+
+      final passing = evaluator.call(
+        opportunity: opportunity,
+        profile: buildProfile(lifeSituation: 'Martyr_Ward'),
+      );
+      final failing = evaluator.call(
+        opportunity: opportunity,
+        profile: buildProfile(lifeSituation: 'whole_family_alone'),
+      );
+
+      expect(passing.status, EligibilityStatus.eligible);
+      expect(failing.status, EligibilityStatus.notEligible);
+    });
+
     test('always points back at the official source', () {
       final opportunity = buildOpportunity();
       final result = evaluator.call(

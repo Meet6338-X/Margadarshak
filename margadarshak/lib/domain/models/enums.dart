@@ -220,7 +220,12 @@ enum EligibilityField {
 
   /// Whether nobody in the family has gone to college.
   @JsonValue('first_generation_learner')
-  firstGenerationLearner('first_generation_learner');
+  firstGenerationLearner('first_generation_learner'),
+
+  /// The family situation special schemes ask about: orphan, a lost parent,
+  /// a martyr's ward, or a parent with a critical disease or disability.
+  @JsonValue('life_situation')
+  lifeSituation('life_situation');
 
   /// Creates a field with its wire value.
   const EligibilityField(this.code);

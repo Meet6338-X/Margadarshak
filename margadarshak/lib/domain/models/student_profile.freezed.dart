@@ -25,7 +25,10 @@ mixin _$StudentProfile {
  SocialCategory get category;/// The family income band.
  IncomeBand get incomeBand;/// Gender, recorded because some schemes are gender specific.
  Gender get gender;/// Whether nobody in the family has gone to college.
- bool get firstGenerationLearner;/// Free-form interest tags used to match careers.
+ bool get firstGenerationLearner;/// The family situation some special schemes ask about: `orphan`,
+/// `parent_covid_lost`, `martyr_ward` or `parent_critical_illness`.
+/// Left empty until the student chooses to share it.
+ String? get lifeSituation;/// Free-form interest tags used to match careers.
  Set<String> get interests;/// When the profile was created.
  DateTime get createdAt;
 /// Create a copy of StudentProfile
@@ -40,16 +43,16 @@ $StudentProfileCopyWith<StudentProfile> get copyWith => _$StudentProfileCopyWith
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is StudentProfile&&(identical(other.studentId, studentId) || other.studentId == studentId)&&(identical(other.displayName, displayName) || other.displayName == displayName)&&(identical(other.stage, stage) || other.stage == stage)&&(identical(other.currentClass, currentClass) || other.currentClass == currentClass)&&(identical(other.state, state) || other.state == state)&&(identical(other.district, district) || other.district == district)&&(identical(other.category, category) || other.category == category)&&(identical(other.incomeBand, incomeBand) || other.incomeBand == incomeBand)&&(identical(other.gender, gender) || other.gender == gender)&&(identical(other.firstGenerationLearner, firstGenerationLearner) || other.firstGenerationLearner == firstGenerationLearner)&&const DeepCollectionEquality().equals(other.interests, interests)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is StudentProfile&&(identical(other.studentId, studentId) || other.studentId == studentId)&&(identical(other.displayName, displayName) || other.displayName == displayName)&&(identical(other.stage, stage) || other.stage == stage)&&(identical(other.currentClass, currentClass) || other.currentClass == currentClass)&&(identical(other.state, state) || other.state == state)&&(identical(other.district, district) || other.district == district)&&(identical(other.category, category) || other.category == category)&&(identical(other.incomeBand, incomeBand) || other.incomeBand == incomeBand)&&(identical(other.gender, gender) || other.gender == gender)&&(identical(other.firstGenerationLearner, firstGenerationLearner) || other.firstGenerationLearner == firstGenerationLearner)&&(identical(other.lifeSituation, lifeSituation) || other.lifeSituation == lifeSituation)&&const DeepCollectionEquality().equals(other.interests, interests)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,studentId,displayName,stage,currentClass,state,district,category,incomeBand,gender,firstGenerationLearner,const DeepCollectionEquality().hash(interests),createdAt);
+int get hashCode => Object.hash(runtimeType,studentId,displayName,stage,currentClass,state,district,category,incomeBand,gender,firstGenerationLearner,lifeSituation,const DeepCollectionEquality().hash(interests),createdAt);
 
 @override
 String toString() {
-  return 'StudentProfile(studentId: $studentId, displayName: $displayName, stage: $stage, currentClass: $currentClass, state: $state, district: $district, category: $category, incomeBand: $incomeBand, gender: $gender, firstGenerationLearner: $firstGenerationLearner, interests: $interests, createdAt: $createdAt)';
+  return 'StudentProfile(studentId: $studentId, displayName: $displayName, stage: $stage, currentClass: $currentClass, state: $state, district: $district, category: $category, incomeBand: $incomeBand, gender: $gender, firstGenerationLearner: $firstGenerationLearner, lifeSituation: $lifeSituation, interests: $interests, createdAt: $createdAt)';
 }
 
 
@@ -60,7 +63,7 @@ abstract mixin class $StudentProfileCopyWith<$Res>  {
   factory $StudentProfileCopyWith(StudentProfile value, $Res Function(StudentProfile) _then) = _$StudentProfileCopyWithImpl;
 @useResult
 $Res call({
- String studentId, String displayName, EducationStage stage, int currentClass, String state, String district, SocialCategory category, IncomeBand incomeBand, Gender gender, bool firstGenerationLearner, Set<String> interests, DateTime createdAt
+ String studentId, String displayName, EducationStage stage, int currentClass, String state, String district, SocialCategory category, IncomeBand incomeBand, Gender gender, bool firstGenerationLearner, String? lifeSituation, Set<String> interests, DateTime createdAt
 });
 
 
@@ -77,7 +80,7 @@ class _$StudentProfileCopyWithImpl<$Res>
 
 /// Create a copy of StudentProfile
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? studentId = null,Object? displayName = null,Object? stage = null,Object? currentClass = null,Object? state = null,Object? district = null,Object? category = null,Object? incomeBand = null,Object? gender = null,Object? firstGenerationLearner = null,Object? interests = null,Object? createdAt = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? studentId = null,Object? displayName = null,Object? stage = null,Object? currentClass = null,Object? state = null,Object? district = null,Object? category = null,Object? incomeBand = null,Object? gender = null,Object? firstGenerationLearner = null,Object? lifeSituation = freezed,Object? interests = null,Object? createdAt = null,}) {
   return _then(_self.copyWith(
 studentId: null == studentId ? _self.studentId : studentId // ignore: cast_nullable_to_non_nullable
 as String,displayName: null == displayName ? _self.displayName : displayName // ignore: cast_nullable_to_non_nullable
@@ -89,7 +92,8 @@ as String,category: null == category ? _self.category : category // ignore: cast
 as SocialCategory,incomeBand: null == incomeBand ? _self.incomeBand : incomeBand // ignore: cast_nullable_to_non_nullable
 as IncomeBand,gender: null == gender ? _self.gender : gender // ignore: cast_nullable_to_non_nullable
 as Gender,firstGenerationLearner: null == firstGenerationLearner ? _self.firstGenerationLearner : firstGenerationLearner // ignore: cast_nullable_to_non_nullable
-as bool,interests: null == interests ? _self.interests : interests // ignore: cast_nullable_to_non_nullable
+as bool,lifeSituation: freezed == lifeSituation ? _self.lifeSituation : lifeSituation // ignore: cast_nullable_to_non_nullable
+as String?,interests: null == interests ? _self.interests : interests // ignore: cast_nullable_to_non_nullable
 as Set<String>,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
 as DateTime,
   ));
@@ -176,10 +180,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String studentId,  String displayName,  EducationStage stage,  int currentClass,  String state,  String district,  SocialCategory category,  IncomeBand incomeBand,  Gender gender,  bool firstGenerationLearner,  Set<String> interests,  DateTime createdAt)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String studentId,  String displayName,  EducationStage stage,  int currentClass,  String state,  String district,  SocialCategory category,  IncomeBand incomeBand,  Gender gender,  bool firstGenerationLearner,  String? lifeSituation,  Set<String> interests,  DateTime createdAt)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _StudentProfile() when $default != null:
-return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass,_that.state,_that.district,_that.category,_that.incomeBand,_that.gender,_that.firstGenerationLearner,_that.interests,_that.createdAt);case _:
+return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass,_that.state,_that.district,_that.category,_that.incomeBand,_that.gender,_that.firstGenerationLearner,_that.lifeSituation,_that.interests,_that.createdAt);case _:
   return orElse();
 
 }
@@ -197,10 +201,10 @@ return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String studentId,  String displayName,  EducationStage stage,  int currentClass,  String state,  String district,  SocialCategory category,  IncomeBand incomeBand,  Gender gender,  bool firstGenerationLearner,  Set<String> interests,  DateTime createdAt)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String studentId,  String displayName,  EducationStage stage,  int currentClass,  String state,  String district,  SocialCategory category,  IncomeBand incomeBand,  Gender gender,  bool firstGenerationLearner,  String? lifeSituation,  Set<String> interests,  DateTime createdAt)  $default,) {final _that = this;
 switch (_that) {
 case _StudentProfile():
-return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass,_that.state,_that.district,_that.category,_that.incomeBand,_that.gender,_that.firstGenerationLearner,_that.interests,_that.createdAt);case _:
+return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass,_that.state,_that.district,_that.category,_that.incomeBand,_that.gender,_that.firstGenerationLearner,_that.lifeSituation,_that.interests,_that.createdAt);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -217,10 +221,10 @@ return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String studentId,  String displayName,  EducationStage stage,  int currentClass,  String state,  String district,  SocialCategory category,  IncomeBand incomeBand,  Gender gender,  bool firstGenerationLearner,  Set<String> interests,  DateTime createdAt)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String studentId,  String displayName,  EducationStage stage,  int currentClass,  String state,  String district,  SocialCategory category,  IncomeBand incomeBand,  Gender gender,  bool firstGenerationLearner,  String? lifeSituation,  Set<String> interests,  DateTime createdAt)?  $default,) {final _that = this;
 switch (_that) {
 case _StudentProfile() when $default != null:
-return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass,_that.state,_that.district,_that.category,_that.incomeBand,_that.gender,_that.firstGenerationLearner,_that.interests,_that.createdAt);case _:
+return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass,_that.state,_that.district,_that.category,_that.incomeBand,_that.gender,_that.firstGenerationLearner,_that.lifeSituation,_that.interests,_that.createdAt);case _:
   return null;
 
 }
@@ -232,7 +236,7 @@ return $default(_that.studentId,_that.displayName,_that.stage,_that.currentClass
 @JsonSerializable()
 
 class _StudentProfile implements StudentProfile {
-  const _StudentProfile({required this.studentId, required this.displayName, required this.stage, required this.currentClass, required this.state, required this.district, required this.category, required this.incomeBand, required this.gender, required this.firstGenerationLearner, final  Set<String> interests = const <String>{}, required this.createdAt}): _interests = interests;
+  const _StudentProfile({required this.studentId, required this.displayName, required this.stage, required this.currentClass, required this.state, required this.district, required this.category, required this.incomeBand, required this.gender, required this.firstGenerationLearner, this.lifeSituation, final  Set<String> interests = const <String>{}, required this.createdAt}): _interests = interests;
   factory _StudentProfile.fromJson(Map<String, dynamic> json) => _$StudentProfileFromJson(json);
 
 /// A stable, non-identifying identifier. Never a phone number.
@@ -255,6 +259,10 @@ class _StudentProfile implements StudentProfile {
 @override final  Gender gender;
 /// Whether nobody in the family has gone to college.
 @override final  bool firstGenerationLearner;
+/// The family situation some special schemes ask about: `orphan`,
+/// `parent_covid_lost`, `martyr_ward` or `parent_critical_illness`.
+/// Left empty until the student chooses to share it.
+@override final  String? lifeSituation;
 /// Free-form interest tags used to match careers.
  final  Set<String> _interests;
 /// Free-form interest tags used to match careers.
@@ -280,16 +288,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _StudentProfile&&(identical(other.studentId, studentId) || other.studentId == studentId)&&(identical(other.displayName, displayName) || other.displayName == displayName)&&(identical(other.stage, stage) || other.stage == stage)&&(identical(other.currentClass, currentClass) || other.currentClass == currentClass)&&(identical(other.state, state) || other.state == state)&&(identical(other.district, district) || other.district == district)&&(identical(other.category, category) || other.category == category)&&(identical(other.incomeBand, incomeBand) || other.incomeBand == incomeBand)&&(identical(other.gender, gender) || other.gender == gender)&&(identical(other.firstGenerationLearner, firstGenerationLearner) || other.firstGenerationLearner == firstGenerationLearner)&&const DeepCollectionEquality().equals(other._interests, _interests)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _StudentProfile&&(identical(other.studentId, studentId) || other.studentId == studentId)&&(identical(other.displayName, displayName) || other.displayName == displayName)&&(identical(other.stage, stage) || other.stage == stage)&&(identical(other.currentClass, currentClass) || other.currentClass == currentClass)&&(identical(other.state, state) || other.state == state)&&(identical(other.district, district) || other.district == district)&&(identical(other.category, category) || other.category == category)&&(identical(other.incomeBand, incomeBand) || other.incomeBand == incomeBand)&&(identical(other.gender, gender) || other.gender == gender)&&(identical(other.firstGenerationLearner, firstGenerationLearner) || other.firstGenerationLearner == firstGenerationLearner)&&(identical(other.lifeSituation, lifeSituation) || other.lifeSituation == lifeSituation)&&const DeepCollectionEquality().equals(other._interests, _interests)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,studentId,displayName,stage,currentClass,state,district,category,incomeBand,gender,firstGenerationLearner,const DeepCollectionEquality().hash(_interests),createdAt);
+int get hashCode => Object.hash(runtimeType,studentId,displayName,stage,currentClass,state,district,category,incomeBand,gender,firstGenerationLearner,lifeSituation,const DeepCollectionEquality().hash(_interests),createdAt);
 
 @override
 String toString() {
-  return 'StudentProfile(studentId: $studentId, displayName: $displayName, stage: $stage, currentClass: $currentClass, state: $state, district: $district, category: $category, incomeBand: $incomeBand, gender: $gender, firstGenerationLearner: $firstGenerationLearner, interests: $interests, createdAt: $createdAt)';
+  return 'StudentProfile(studentId: $studentId, displayName: $displayName, stage: $stage, currentClass: $currentClass, state: $state, district: $district, category: $category, incomeBand: $incomeBand, gender: $gender, firstGenerationLearner: $firstGenerationLearner, lifeSituation: $lifeSituation, interests: $interests, createdAt: $createdAt)';
 }
 
 
@@ -300,7 +308,7 @@ abstract mixin class _$StudentProfileCopyWith<$Res> implements $StudentProfileCo
   factory _$StudentProfileCopyWith(_StudentProfile value, $Res Function(_StudentProfile) _then) = __$StudentProfileCopyWithImpl;
 @override @useResult
 $Res call({
- String studentId, String displayName, EducationStage stage, int currentClass, String state, String district, SocialCategory category, IncomeBand incomeBand, Gender gender, bool firstGenerationLearner, Set<String> interests, DateTime createdAt
+ String studentId, String displayName, EducationStage stage, int currentClass, String state, String district, SocialCategory category, IncomeBand incomeBand, Gender gender, bool firstGenerationLearner, String? lifeSituation, Set<String> interests, DateTime createdAt
 });
 
 
@@ -317,7 +325,7 @@ class __$StudentProfileCopyWithImpl<$Res>
 
 /// Create a copy of StudentProfile
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? studentId = null,Object? displayName = null,Object? stage = null,Object? currentClass = null,Object? state = null,Object? district = null,Object? category = null,Object? incomeBand = null,Object? gender = null,Object? firstGenerationLearner = null,Object? interests = null,Object? createdAt = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? studentId = null,Object? displayName = null,Object? stage = null,Object? currentClass = null,Object? state = null,Object? district = null,Object? category = null,Object? incomeBand = null,Object? gender = null,Object? firstGenerationLearner = null,Object? lifeSituation = freezed,Object? interests = null,Object? createdAt = null,}) {
   return _then(_StudentProfile(
 studentId: null == studentId ? _self.studentId : studentId // ignore: cast_nullable_to_non_nullable
 as String,displayName: null == displayName ? _self.displayName : displayName // ignore: cast_nullable_to_non_nullable
@@ -329,7 +337,8 @@ as String,category: null == category ? _self.category : category // ignore: cast
 as SocialCategory,incomeBand: null == incomeBand ? _self.incomeBand : incomeBand // ignore: cast_nullable_to_non_nullable
 as IncomeBand,gender: null == gender ? _self.gender : gender // ignore: cast_nullable_to_non_nullable
 as Gender,firstGenerationLearner: null == firstGenerationLearner ? _self.firstGenerationLearner : firstGenerationLearner // ignore: cast_nullable_to_non_nullable
-as bool,interests: null == interests ? _self._interests : interests // ignore: cast_nullable_to_non_nullable
+as bool,lifeSituation: freezed == lifeSituation ? _self.lifeSituation : lifeSituation // ignore: cast_nullable_to_non_nullable
+as String?,interests: null == interests ? _self._interests : interests // ignore: cast_nullable_to_non_nullable
 as Set<String>,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
 as DateTime,
   ));

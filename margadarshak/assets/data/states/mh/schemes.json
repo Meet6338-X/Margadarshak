@@ -444,6 +444,19 @@
           "careerIds": []
         }
       ],
+      "applyUrl": "https://maps.dvet.gov.in:8443/Portal/Login",
+      "applySteps": [
+        {
+          "en": "Register as an apprentice on the Maharashtra Apprenticeship Promotion Scheme portal.",
+          "hi": "महाराष्ट्र अप्रेंटिसशिप प्रोमोशन स्कीम पोर्टल पर अप्रेंटिस के रूप में पंजीकरण करें।",
+          "mr": "महाराष्ट्र अप्रेंटिसशिप प्रोमोशन स्कीम पोर्टलवर अप्रेंटिस म्हणून नोंदणी करा."
+        },
+        {
+          "en": "Choose a trade and an employer to start the apprenticeship.",
+          "hi": "अप्रेंटिसशिप शुरू करने के लिए एक ट्रेड और नियोक्ता चुनें।",
+          "mr": "अप्रेंटिसशिप सुरू करण्यासाठी एक ट्रेड आणि नियोक्ता निवडा."
+        }
+      ],
       "applicationOpensAt": "2026-01-01",
       "applicationClosesAt": "2027-03-31"
     },

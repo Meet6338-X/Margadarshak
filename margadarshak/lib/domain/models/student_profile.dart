@@ -46,6 +46,11 @@ abstract class StudentProfile with _$StudentProfile {
     /// Whether nobody in the family has gone to college.
     required bool firstGenerationLearner,
 
+    /// The family situation some special schemes ask about: `orphan`,
+    /// `parent_covid_lost`, `martyr_ward` or `parent_critical_illness`.
+    /// Left empty until the student chooses to share it.
+    String? lifeSituation,
+
     /// Free-form interest tags used to match careers.
     @Default(<String>{}) Set<String> interests,
 

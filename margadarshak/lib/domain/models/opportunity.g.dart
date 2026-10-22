@@ -113,6 +113,7 @@ const _$EligibilityFieldEnumMap = {
   EligibilityField.state: 'state',
   EligibilityField.district: 'district',
   EligibilityField.firstGenerationLearner: 'first_generation_learner',
+  EligibilityField.lifeSituation: 'life_situation',
 };
 
 const _$EligibilityOperatorEnumMap = {

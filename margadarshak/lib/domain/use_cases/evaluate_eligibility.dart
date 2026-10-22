@@ -162,6 +162,12 @@ class EvaluateEligibility {
         return _FieldValue(profile.district.trim().toLowerCase());
       case EligibilityField.firstGenerationLearner:
         return _FieldValue(profile.firstGenerationLearner ? 'yes' : 'no');
+      case EligibilityField.lifeSituation:
+        final situation = profile.lifeSituation;
+        if (situation == null || situation.trim().isEmpty) {
+          return const _MissingField();
+        }
+        return _FieldValue(situation.trim().toLowerCase());
     }
   }
 }

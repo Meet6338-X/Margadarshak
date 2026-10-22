@@ -18,6 +18,7 @@ _StudentProfile _$StudentProfileFromJson(Map<String, dynamic> json) =>
       incomeBand: $enumDecode(_$IncomeBandEnumMap, json['incomeBand']),
       gender: $enumDecode(_$GenderEnumMap, json['gender']),
       firstGenerationLearner: json['firstGenerationLearner'] as bool,
+      lifeSituation: json['lifeSituation'] as String?,
       interests:
           (json['interests'] as List<dynamic>?)
               ?.map((e) => e as String)
@@ -38,6 +39,7 @@ Map<String, dynamic> _$StudentProfileToJson(_StudentProfile instance) =>
       'incomeBand': _$IncomeBandEnumMap[instance.incomeBand]!,
       'gender': _$GenderEnumMap[instance.gender]!,
       'firstGenerationLearner': instance.firstGenerationLearner,
+      'lifeSituation': instance.lifeSituation,
       'interests': instance.interests.toList(),
       'createdAt': instance.createdAt.toIso8601String(),
     };
