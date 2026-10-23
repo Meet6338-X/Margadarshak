@@ -61,6 +61,42 @@ data packs, the eligibility rules engine, the career catalogue and the daily
 clips are always local — that is what makes the app work offline and what
 makes "no fabricated schemes" enforceable.
 
+## Connecting Firebase — checklist
+
+Everything the app needs already exists in code (`FirebaseAuthService`,
+`FirebaseUserDataService`, manual init from the six `--dart-define` keys,
+automatic offline fallback). The remaining work is on the console side:
+
+1. Create a Firebase project (free Spark plan suffices for the pilot).
+2. Register the Android app with package name `com.example.margadarshak`,
+   then copy the API key, App ID, project id, messaging sender id and
+   `authDomain` out of Project Settings.
+3. Authentication → Sign-in method → enable **Anonymous** (the only provider
+   the app uses; no SHA-1 needed).
+4. Firestore → Create database (`asia-south1`), start in locked mode, then
+   allow only the signed-in owner of each document:
+
+   ```
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{db}/documents {
+       match /users/{userId}/{document=**} {
+         allow read, write: if request.auth != null
+                            && request.auth.uid == userId;
+       }
+     }
+   }
+   ```
+
+5. `flutter run --dart-define=USE_FIREBASE=true` plus the five values.
+6. Verify a `users/{uid}` document appears after sign-in; if the app behaves
+   offline instead, logcat prints *Firebase was requested but is not
+   configured*, which means one of the defines was empty.
+
+Note: the.objects were initialised manually without `google-services.json`,
+so push notifications and App Check are not available on this path; add the
+file and the Gradle plugin later only if the app needs them.
+
 ## Data packs
 
 ```
