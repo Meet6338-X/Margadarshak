@@ -12,6 +12,7 @@ _Clip _$ClipFromJson(Map<String, dynamic> json) => _Clip(
   summary: LocalizedText.fromJson(json['summary'] as Map<String, dynamic>),
   durationSeconds: (json['durationSeconds'] as num).toInt(),
   language: json['language'] as String,
+  videoUrl: json['videoUrl'] as String?,
   slides:
       (json['slides'] as List<dynamic>?)?.map((e) => e as String).toList() ??
       const <String>[],
@@ -30,6 +31,7 @@ Map<String, dynamic> _$ClipToJson(_Clip instance) => <String, dynamic>{
   'summary': instance.summary,
   'durationSeconds': instance.durationSeconds,
   'language': instance.language,
+  'videoUrl': instance.videoUrl,
   'slides': instance.slides,
   'tags': instance.tags,
   'careerIds': instance.careerIds,

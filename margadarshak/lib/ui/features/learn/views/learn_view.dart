@@ -10,6 +10,7 @@ import '../../../../domain/models/clip.dart';
 import '../../../../domain/models/localized_text.dart';
 import '../../../core/l10n/l10n.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/utils/url_opener.dart';
 import '../../../core/widgets/app_widgets.dart';
 import '../../../core/widgets/state_views.dart';
 import '../view_models/learn_view_model.dart';
@@ -201,11 +202,17 @@ class _ClipCard extends StatelessWidget {
     final l10n = context.l10n;
 
     return AppCard(
-      onTap: () => showModalBottomSheet<void>(
-        context: context,
-        isScrollControlled: true,
-        builder: (_) => _ClipSheet(clip: clip, viewModel: viewModel),
-      ),
+      onTap: () async {
+        final fresh =
+            await context.read<AppDependencies>().clipRepository.getById(clip.id);
+        final current = fresh.valueOrNull ?? clip;
+        if (!context.mounted) return;
+        await showModalBottomSheet<void>(
+          context: context,
+          isScrollControlled: true,
+          builder: (_) => _ClipSheet(clip: current, viewModel: viewModel),
+        );
+      },
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -225,6 +232,11 @@ class _ClipCard extends StatelessWidget {
                 icon: Icons.play_circle_outline,
               ),
               InfoChip(label: clip.language.toUpperCase()),
+              if ((clip.videoUrl ?? '').isNotEmpty)
+                InfoChip(
+                  label: l10n.commonVideoChip,
+                  icon: Icons.ondemand_video_outlined,
+                ),
             ],
           ),
         ],
@@ -245,7 +257,7 @@ class _ClipSheet extends StatelessWidget {
     final languageCode = context.languageCode;
 
     return SafeArea(
-      child: Padding(
+      child: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -262,6 +274,17 @@ class _ClipSheet extends StatelessWidget {
                 child: Text('• $slide'),
               ),
             ),
+            if ((clip.videoUrl ?? '').isNotEmpty) ...[
+              const SizedBox(height: 12),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  onPressed: () => openOfficialSource(context, clip.videoUrl!),
+                  icon: const Icon(Icons.ondemand_video_outlined),
+                  label: Text(l10n.commonWatchVideo),
+                ),
+              ),
+            ],
             const SizedBox(height: 16),
             Row(
               children: [

@@ -369,6 +369,7 @@ class ClipDto {
     required this.tags,
     required this.careerIds,
     required this.slides,
+    this.videoUrl,
   });
 
   /// Reads a clip payload from JSON.
@@ -389,6 +390,7 @@ class ClipDto {
       tags: _stringList(json['tags']),
       careerIds: _stringList(json['careerIds']),
       slides: _stringList(json['slides']),
+      videoUrl: _optString(json['videoUrl']),
     );
   }
 
@@ -418,6 +420,9 @@ class ClipDto {
 
   /// The text of the slides shown while the clip plays.
   final List<String> slides;
+
+  /// An optional link to a video version of the clip.
+  final String? videoUrl;
 }
 
 /// The manifest describing the shipped data packs.
@@ -618,6 +623,7 @@ extension ClipDtoMapping on ClipDto {
       tags: tags,
       careerIds: careerIds,
       slides: slides,
+      videoUrl: videoUrl,
     );
   }
 }

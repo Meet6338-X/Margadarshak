@@ -2300,6 +2300,276 @@ class ModuleRowsCompanion extends UpdateCompanion<ModuleRow> {
   }
 }
 
+class $ContentOverrideRowsTable extends ContentOverrideRows
+    with TableInfo<$ContentOverrideRowsTable, ContentOverrideRow> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $ContentOverrideRowsTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<String> id = GeneratedColumn<String>(
+    'id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _payloadMeta = const VerificationMeta(
+    'payload',
+  );
+  @override
+  late final GeneratedColumn<String> payload = GeneratedColumn<String>(
+    'payload',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _updatedAtMeta = const VerificationMeta(
+    'updatedAt',
+  );
+  @override
+  late final GeneratedColumn<DateTime> updatedAt = GeneratedColumn<DateTime>(
+    'updated_at',
+    aliasedName,
+    false,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: true,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [id, payload, updatedAt];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'content_override_rows';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<ContentOverrideRow> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    } else if (isInserting) {
+      context.missing(_idMeta);
+    }
+    if (data.containsKey('payload')) {
+      context.handle(
+        _payloadMeta,
+        payload.isAcceptableOrUnknown(data['payload']!, _payloadMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_payloadMeta);
+    }
+    if (data.containsKey('updated_at')) {
+      context.handle(
+        _updatedAtMeta,
+        updatedAt.isAcceptableOrUnknown(data['updated_at']!, _updatedAtMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_updatedAtMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  ContentOverrideRow map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return ContentOverrideRow(
+      id: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}id'],
+      )!,
+      payload: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}payload'],
+      )!,
+      updatedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}updated_at'],
+      )!,
+    );
+  }
+
+  @override
+  $ContentOverrideRowsTable createAlias(String alias) {
+    return $ContentOverrideRowsTable(attachedDatabase, alias);
+  }
+}
+
+class ContentOverrideRow extends DataClass
+    implements Insertable<ContentOverrideRow> {
+  /// The record the edit applies to, for example `clip:clip-health-01`.
+  final String id;
+
+  /// The serialized domain model of the edited record.
+  final String payload;
+
+  /// The moment the edit was saved.
+  final DateTime updatedAt;
+  const ContentOverrideRow({
+    required this.id,
+    required this.payload,
+    required this.updatedAt,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<String>(id);
+    map['payload'] = Variable<String>(payload);
+    map['updated_at'] = Variable<DateTime>(updatedAt);
+    return map;
+  }
+
+  ContentOverrideRowsCompanion toCompanion(bool nullToAbsent) {
+    return ContentOverrideRowsCompanion(
+      id: Value(id),
+      payload: Value(payload),
+      updatedAt: Value(updatedAt),
+    );
+  }
+
+  factory ContentOverrideRow.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return ContentOverrideRow(
+      id: serializer.fromJson<String>(json['id']),
+      payload: serializer.fromJson<String>(json['payload']),
+      updatedAt: serializer.fromJson<DateTime>(json['updatedAt']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<String>(id),
+      'payload': serializer.toJson<String>(payload),
+      'updatedAt': serializer.toJson<DateTime>(updatedAt),
+    };
+  }
+
+  ContentOverrideRow copyWith({
+    String? id,
+    String? payload,
+    DateTime? updatedAt,
+  }) => ContentOverrideRow(
+    id: id ?? this.id,
+    payload: payload ?? this.payload,
+    updatedAt: updatedAt ?? this.updatedAt,
+  );
+  ContentOverrideRow copyWithCompanion(ContentOverrideRowsCompanion data) {
+    return ContentOverrideRow(
+      id: data.id.present ? data.id.value : this.id,
+      payload: data.payload.present ? data.payload.value : this.payload,
+      updatedAt: data.updatedAt.present ? data.updatedAt.value : this.updatedAt,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ContentOverrideRow(')
+          ..write('id: $id, ')
+          ..write('payload: $payload, ')
+          ..write('updatedAt: $updatedAt')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(id, payload, updatedAt);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ContentOverrideRow &&
+          other.id == this.id &&
+          other.payload == this.payload &&
+          other.updatedAt == this.updatedAt);
+}
+
+class ContentOverrideRowsCompanion extends UpdateCompanion<ContentOverrideRow> {
+  final Value<String> id;
+  final Value<String> payload;
+  final Value<DateTime> updatedAt;
+  final Value<int> rowid;
+  const ContentOverrideRowsCompanion({
+    this.id = const Value.absent(),
+    this.payload = const Value.absent(),
+    this.updatedAt = const Value.absent(),
+    this.rowid = const Value.absent(),
+  });
+  ContentOverrideRowsCompanion.insert({
+    required String id,
+    required String payload,
+    required DateTime updatedAt,
+    this.rowid = const Value.absent(),
+  }) : id = Value(id),
+       payload = Value(payload),
+       updatedAt = Value(updatedAt);
+  static Insertable<ContentOverrideRow> custom({
+    Expression<String>? id,
+    Expression<String>? payload,
+    Expression<DateTime>? updatedAt,
+    Expression<int>? rowid,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (payload != null) 'payload': payload,
+      if (updatedAt != null) 'updated_at': updatedAt,
+      if (rowid != null) 'rowid': rowid,
+    });
+  }
+
+  ContentOverrideRowsCompanion copyWith({
+    Value<String>? id,
+    Value<String>? payload,
+    Value<DateTime>? updatedAt,
+    Value<int>? rowid,
+  }) {
+    return ContentOverrideRowsCompanion(
+      id: id ?? this.id,
+      payload: payload ?? this.payload,
+      updatedAt: updatedAt ?? this.updatedAt,
+      rowid: rowid ?? this.rowid,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<String>(id.value);
+    }
+    if (payload.present) {
+      map['payload'] = Variable<String>(payload.value);
+    }
+    if (updatedAt.present) {
+      map['updated_at'] = Variable<DateTime>(updatedAt.value);
+    }
+    if (rowid.present) {
+      map['rowid'] = Variable<int>(rowid.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('ContentOverrideRowsCompanion(')
+          ..write('id: $id, ')
+          ..write('payload: $payload, ')
+          ..write('updatedAt: $updatedAt, ')
+          ..write('rowid: $rowid')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$AppDatabase extends GeneratedDatabase {
   _$AppDatabase(QueryExecutor e) : super(e);
   $AppDatabaseManager get managers => $AppDatabaseManager(this);
@@ -2317,6 +2587,8 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   late final $FacilitatorClassRowsTable facilitatorClassRows =
       $FacilitatorClassRowsTable(this);
   late final $ModuleRowsTable moduleRows = $ModuleRowsTable(this);
+  late final $ContentOverrideRowsTable contentOverrideRows =
+      $ContentOverrideRowsTable(this);
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
@@ -2329,6 +2601,7 @@ abstract class _$AppDatabase extends GeneratedDatabase {
     pendingSyncRows,
     facilitatorClassRows,
     moduleRows,
+    contentOverrideRows,
   ];
 }
 
@@ -3669,6 +3942,184 @@ typedef $$ModuleRowsTableProcessedTableManager =
       ModuleRow,
       PrefetchHooks Function()
     >;
+typedef $$ContentOverrideRowsTableCreateCompanionBuilder =
+    ContentOverrideRowsCompanion Function({
+      required String id,
+      required String payload,
+      required DateTime updatedAt,
+      Value<int> rowid,
+    });
+typedef $$ContentOverrideRowsTableUpdateCompanionBuilder =
+    ContentOverrideRowsCompanion Function({
+      Value<String> id,
+      Value<String> payload,
+      Value<DateTime> updatedAt,
+      Value<int> rowid,
+    });
+
+class $$ContentOverrideRowsTableFilterComposer
+    extends Composer<_$AppDatabase, $ContentOverrideRowsTable> {
+  $$ContentOverrideRowsTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get payload => $composableBuilder(
+    column: $table.payload,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<DateTime> get updatedAt => $composableBuilder(
+    column: $table.updatedAt,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $$ContentOverrideRowsTableOrderingComposer
+    extends Composer<_$AppDatabase, $ContentOverrideRowsTable> {
+  $$ContentOverrideRowsTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get payload => $composableBuilder(
+    column: $table.payload,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<DateTime> get updatedAt => $composableBuilder(
+    column: $table.updatedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $$ContentOverrideRowsTableAnnotationComposer
+    extends Composer<_$AppDatabase, $ContentOverrideRowsTable> {
+  $$ContentOverrideRowsTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get payload =>
+      $composableBuilder(column: $table.payload, builder: (column) => column);
+
+  GeneratedColumn<DateTime> get updatedAt =>
+      $composableBuilder(column: $table.updatedAt, builder: (column) => column);
+}
+
+class $$ContentOverrideRowsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $ContentOverrideRowsTable,
+          ContentOverrideRow,
+          $$ContentOverrideRowsTableFilterComposer,
+          $$ContentOverrideRowsTableOrderingComposer,
+          $$ContentOverrideRowsTableAnnotationComposer,
+          $$ContentOverrideRowsTableCreateCompanionBuilder,
+          $$ContentOverrideRowsTableUpdateCompanionBuilder,
+          (
+            ContentOverrideRow,
+            BaseReferences<
+              _$AppDatabase,
+              $ContentOverrideRowsTable,
+              ContentOverrideRow
+            >,
+          ),
+          ContentOverrideRow,
+          PrefetchHooks Function()
+        > {
+  $$ContentOverrideRowsTableTableManager(
+    _$AppDatabase db,
+    $ContentOverrideRowsTable table,
+  ) : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $$ContentOverrideRowsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$ContentOverrideRowsTableOrderingComposer(
+                $db: db,
+                $table: table,
+              ),
+          createComputedFieldComposer: () =>
+              $$ContentOverrideRowsTableAnnotationComposer(
+                $db: db,
+                $table: table,
+              ),
+          updateCompanionCallback:
+              ({
+                Value<String> id = const Value.absent(),
+                Value<String> payload = const Value.absent(),
+                Value<DateTime> updatedAt = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => ContentOverrideRowsCompanion(
+                id: id,
+                payload: payload,
+                updatedAt: updatedAt,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String id,
+                required String payload,
+                required DateTime updatedAt,
+                Value<int> rowid = const Value.absent(),
+              }) => ContentOverrideRowsCompanion.insert(
+                id: id,
+                payload: payload,
+                updatedAt: updatedAt,
+                rowid: rowid,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $$ContentOverrideRowsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $ContentOverrideRowsTable,
+      ContentOverrideRow,
+      $$ContentOverrideRowsTableFilterComposer,
+      $$ContentOverrideRowsTableOrderingComposer,
+      $$ContentOverrideRowsTableAnnotationComposer,
+      $$ContentOverrideRowsTableCreateCompanionBuilder,
+      $$ContentOverrideRowsTableUpdateCompanionBuilder,
+      (
+        ContentOverrideRow,
+        BaseReferences<
+          _$AppDatabase,
+          $ContentOverrideRowsTable,
+          ContentOverrideRow
+        >,
+      ),
+      ContentOverrideRow,
+      PrefetchHooks Function()
+    >;
 
 class $AppDatabaseManager {
   final _$AppDatabase _db;
@@ -3687,4 +4138,6 @@ class $AppDatabaseManager {
       $$FacilitatorClassRowsTableTableManager(_db, _db.facilitatorClassRows);
   $$ModuleRowsTableTableManager get moduleRows =>
       $$ModuleRowsTableTableManager(_db, _db.moduleRows);
+  $$ContentOverrideRowsTableTableManager get contentOverrideRows =>
+      $$ContentOverrideRowsTableTableManager(_db, _db.contentOverrideRows);
 }

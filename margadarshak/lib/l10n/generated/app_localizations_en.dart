@@ -868,4 +868,142 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get category_trades => 'Skilled trades';
+
+  @override
+  String get adminTitle => 'Admin console';
+
+  @override
+  String get adminSubtitle =>
+      'Edit the users and content stored on this device.';
+
+  @override
+  String get adminManage => 'Manage';
+
+  @override
+  String get adminControls => 'Controls';
+
+  @override
+  String get adminStudents => 'Students';
+
+  @override
+  String get adminClips => 'Learning clips';
+
+  @override
+  String get adminOpportunities => 'Opportunities';
+
+  @override
+  String get adminEdited => 'Edited';
+
+  @override
+  String get adminDataPack => 'Data pack';
+
+  @override
+  String get adminResetAll => 'Reset all edits';
+
+  @override
+  String get adminResetAllBody =>
+      'This removes every saved edit and restores the shipped data pack. Student profiles and progress stay untouched.';
+
+  @override
+  String get adminResetDone => 'All edits were removed.';
+
+  @override
+  String get adminSaveDone => 'Saved.';
+
+  @override
+  String get adminDeletedDone => 'Deleted.';
+
+  @override
+  String get adminDelete => 'Delete';
+
+  @override
+  String get adminDeleteStudentTitle => 'Delete this student?';
+
+  @override
+  String get adminDeleteStudentBody =>
+      'The profile and all learning progress for this student will be removed from this device.';
+
+  @override
+  String get adminNoStudents => 'No student profiles on this device yet.';
+
+  @override
+  String get adminNoClips => 'No learning clips are available.';
+
+  @override
+  String get adminNoOpportunities => 'No opportunities are available.';
+
+  @override
+  String get adminDisplayName => 'Display name';
+
+  @override
+  String get adminTitleEn => 'Title (English)';
+
+  @override
+  String get adminTitleHi => 'Title (Hindi)';
+
+  @override
+  String get adminTitleMr => 'Title (Marathi)';
+
+  @override
+  String get adminSummaryEn => 'Summary (English)';
+
+  @override
+  String get adminSummaryHi => 'Summary (Hindi)';
+
+  @override
+  String get adminSummaryMr => 'Summary (Marathi)';
+
+  @override
+  String get adminDurationSeconds => 'Duration in seconds';
+
+  @override
+  String get adminVideoUrl => 'Video link (optional)';
+
+  @override
+  String get adminSlides => 'Slides, one per line';
+
+  @override
+  String get adminRestoreFromPack => 'Restore from the data pack';
+
+  @override
+  String get adminSourceName => 'Official source name';
+
+  @override
+  String get adminSourceUrl => 'Official source link';
+
+  @override
+  String get adminDeadline => 'Last date to apply';
+
+  @override
+  String get adminApplyUrl => 'Apply link (optional)';
+
+  @override
+  String get adminAmountDisclosed => 'Amount is disclosed';
+
+  @override
+  String get adminMinClass => 'Minimum class';
+
+  @override
+  String get adminMaxClass => 'Maximum class';
+
+  @override
+  String get adminClearDate => 'Clear date';
+
+  @override
+  String get adminSetDate => 'Pick date';
+
+  @override
+  String get adminStudentEditor => 'Edit student';
+
+  @override
+  String get adminClipEditor => 'Edit clip';
+
+  @override
+  String get adminOpportunityEditor => 'Edit opportunity';
+
+  @override
+  String get commonVideoChip => 'Video';
+
+  @override
+  String get commonWatchVideo => 'Watch video';
 }

@@ -871,4 +871,142 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get category_trades => 'कौशल्य व्यवसाय';
+
+  @override
+  String get adminTitle => 'प्रशासक कन्सोल';
+
+  @override
+  String get adminSubtitle =>
+      'या डिव्हाइसवर असलेले वापरकर्ते आणि सामग्री संपादित करा.';
+
+  @override
+  String get adminManage => 'व्यवस्थापित करा';
+
+  @override
+  String get adminControls => 'नियंत्रणे';
+
+  @override
+  String get adminStudents => 'विद्यार्थी';
+
+  @override
+  String get adminClips => 'शिक्षण क्लिप';
+
+  @override
+  String get adminOpportunities => 'संधी';
+
+  @override
+  String get adminEdited => 'संपादित';
+
+  @override
+  String get adminDataPack => 'डेटा पॅक';
+
+  @override
+  String get adminResetAll => 'सर्व संपादने काढा';
+
+  @override
+  String get adminResetAllBody =>
+      'यामुळे जतन केलेले प्रत्येक संपादन काढले जाईल आणि मूळ डेटा पॅक पुन्हा येईल. विद्यार्थ्यांचे प्रोफाइल आणि प्रगती तशीच राहील.';
+
+  @override
+  String get adminResetDone => 'सर्व संपादने काढली.';
+
+  @override
+  String get adminSaveDone => 'जतन केले.';
+
+  @override
+  String get adminDeletedDone => 'काढले.';
+
+  @override
+  String get adminDelete => 'काढा';
+
+  @override
+  String get adminDeleteStudentTitle => 'हा विद्यार्थी काढायचा?';
+
+  @override
+  String get adminDeleteStudentBody =>
+      'या विद्यार्थ्याचे प्रोफाइल आणि संपूर्ण शिक्षण प्रगती या डिव्हाइसवरून काढली जाईल.';
+
+  @override
+  String get adminNoStudents => 'या डिव्हाइसवर अजून विद्यार्थी प्रोफाइल नाही.';
+
+  @override
+  String get adminNoClips => 'कोणतीही शिक्षण क्लिप उपलब्ध नाही.';
+
+  @override
+  String get adminNoOpportunities => 'कोणतीही संधी उपलब्ध नाही.';
+
+  @override
+  String get adminDisplayName => 'दाखवायचे नाव';
+
+  @override
+  String get adminTitleEn => 'शीर्षक (इंग्रजी)';
+
+  @override
+  String get adminTitleHi => 'शीर्षक (हिंदी)';
+
+  @override
+  String get adminTitleMr => 'शीर्षक (मराठी)';
+
+  @override
+  String get adminSummaryEn => 'सारांश (इंग्रजी)';
+
+  @override
+  String get adminSummaryHi => 'सारांश (हिंदी)';
+
+  @override
+  String get adminSummaryMr => 'सारांश (मराठी)';
+
+  @override
+  String get adminDurationSeconds => 'कालावधी सेकंदात';
+
+  @override
+  String get adminVideoUrl => 'व्हिडिओ लिंक (ऐच्छिक)';
+
+  @override
+  String get adminSlides => 'स्लाइड्स, प्रत्येक ओळीत एक';
+
+  @override
+  String get adminRestoreFromPack => 'डेटा पॅकमधून पुन्हा आणा';
+
+  @override
+  String get adminSourceName => 'अधिकृत स्रोताचे नाव';
+
+  @override
+  String get adminSourceUrl => 'अधिकृत स्रोत लिंक';
+
+  @override
+  String get adminDeadline => 'अर्जाची शेवटची तारीख';
+
+  @override
+  String get adminApplyUrl => 'अर्ज लिंक (ऐच्छिक)';
+
+  @override
+  String get adminAmountDisclosed => 'रक्कम जाहीर आहे';
+
+  @override
+  String get adminMinClass => 'किमान इयत्ता';
+
+  @override
+  String get adminMaxClass => 'कमाल इयत्ता';
+
+  @override
+  String get adminClearDate => 'तारीख काढा';
+
+  @override
+  String get adminSetDate => 'तारीख निवडा';
+
+  @override
+  String get adminStudentEditor => 'विद्यार्थी संपादित करा';
+
+  @override
+  String get adminClipEditor => 'क्लिप संपादित करा';
+
+  @override
+  String get adminOpportunityEditor => 'संधी संपादित करा';
+
+  @override
+  String get commonVideoChip => 'व्हिडिओ';
+
+  @override
+  String get commonWatchVideo => 'व्हिडिओ पहा';
 }

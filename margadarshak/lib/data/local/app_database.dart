@@ -137,6 +137,25 @@ class ModuleRows extends Table {
   Set<Column<Object>> get primaryKey => {moduleId};
 }
 
+/// Local edits made from the admin console.
+///
+/// The shipped packs stay untouched; an edited record is stored here under an
+/// identifier such as `clip:<id>` or `opportunity:<id>` and is merged over the
+/// pack when the repository loads it. Clearing a row restores the original.
+class ContentOverrideRows extends Table {
+  /// The record the edit applies to, for example `clip:clip-health-01`.
+  TextColumn get id => text()();
+
+  /// The serialized domain model of the edited record.
+  TextColumn get payload => text()();
+
+  /// The moment the edit was saved.
+  DateTimeColumn get updatedAt => dateTime()();
+
+  @override
+  Set<Column<Object>> get primaryKey => {id};
+}
+
 /// The Drift database for the app.
 @DriftDatabase(
   tables: [
@@ -147,6 +166,7 @@ class ModuleRows extends Table {
     PendingSyncRows,
     FacilitatorClassRows,
     ModuleRows,
+    ContentOverrideRows,
   ],
 )
 class AppDatabase extends _$AppDatabase {
@@ -159,10 +179,18 @@ class AppDatabase extends _$AppDatabase {
       : super(driftDatabase(name: 'margadarshak', native: const DriftNativeOptions()));
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
+        onCreate: (Migrator migrator) async {
+          await migrator.createAll();
+        },
+        onUpgrade: (Migrator migrator, int from, int to) async {
+          if (from < 2) {
+            await migrator.createTable(contentOverrideRows);
+          }
+        },
         beforeOpen: (details) async {
           await customStatement('PRAGMA foreign_keys = ON');
         },
@@ -198,6 +226,45 @@ class AppDatabase extends _$AppDatabase {
   /// Removes a queued write once it has reached the server.
   Future<void> removeSync(int id) async {
     await (delete(pendingSyncRows)..where((row) => row.id.equals(id))).go();
+  }
+
+  /// Saves an edit of a shipped record, replacing any earlier edit.
+  Future<void> upsertContentOverride({
+    required String id,
+    required String payload,
+    required DateTime updatedAt,
+  }) {
+    return into(contentOverrideRows).insertOnConflictUpdate(
+      ContentOverrideRowsCompanion.insert(
+        id: id,
+        payload: payload,
+        updatedAt: updatedAt,
+      ),
+    );
+  }
+
+  /// Returns every saved edit.
+  Future<List<ContentOverrideRow>> allContentOverrides() {
+    return select(contentOverrideRows).get();
+  }
+
+  /// Removes one saved edit so the shipped record shows again.
+  Future<void> deleteContentOverride(String id) async {
+    await (delete(contentOverrideRows)..where((row) => row.id.equals(id))).go();
+  }
+
+  /// Removes every saved edit.
+  Future<void> clearContentOverrides() async {
+    await delete(contentOverrideRows).go();
+  }
+
+  /// Removes a student and everything stored for them on this device.
+  Future<void> deleteStudentData(String studentId) async {
+    await transaction(() async {
+      await (delete(userProfileRows)..where((row) => row.studentId.equals(studentId))).go();
+      await (delete(progressRows)..where((row) => row.studentId.equals(studentId))).go();
+      await (delete(dailyProgressRows)..where((row) => row.studentId.equals(studentId))).go();
+    });
   }
 }
 

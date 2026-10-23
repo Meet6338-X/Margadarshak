@@ -10,6 +10,7 @@ import 'package:firebase_core/firebase_core.dart';
 import '../core/config/app_config.dart';
 import '../core/logging/app_logger.dart';
 import '../data/local/app_database.dart';
+import '../data/repositories/admin_repository.dart';
 import '../data/repositories/auth_repository.dart';
 import '../data/repositories/career_repository.dart';
 import '../data/repositories/class_repository.dart';
@@ -42,6 +43,7 @@ class AppDependencies {
     required this.clipRepository,
     required this.classRepository,
     required this.explanationRepository,
+    required this.adminRepository,
     required this.speechService,
     required this.evaluateEligibility,
     required this.discoverCareers,
@@ -76,6 +78,9 @@ class AppDependencies {
 
   /// The personalised explanation.
   final ExplanationRepository explanationRepository;
+
+  /// The admin console data access.
+  final AdminRepository adminRepository;
 
   /// Speech input and output.
   final SpeechService speechService;
@@ -130,9 +135,10 @@ class AppDependencies {
       studentRepository: LocalStudentRepository(userDataService: userDataService),
       opportunityRepository: opportunityRepository,
       careerRepository: LocalCareerRepository(dataPackService: dataPackService),
-      clipRepository: LocalClipRepository(dataPackService: dataPackService),
+      clipRepository: LocalClipRepository(dataPackService: dataPackService, database: database),
       classRepository: LocalClassRepository(userDataService: userDataService),
       explanationRepository: LocalExplanationRepository(),
+      adminRepository: LocalAdminRepository(database: database),
       speechService: DeviceSpeechService(),
       evaluateEligibility: const EvaluateEligibility(),
       discoverCareers: const DiscoverCareers(),

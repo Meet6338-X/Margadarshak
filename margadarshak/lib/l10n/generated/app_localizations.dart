@@ -1695,6 +1695,276 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Skilled trades'**
   String get category_trades;
+
+  /// No description provided for @adminTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin console'**
+  String get adminTitle;
+
+  /// No description provided for @adminSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit the users and content stored on this device.'**
+  String get adminSubtitle;
+
+  /// No description provided for @adminManage.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage'**
+  String get adminManage;
+
+  /// No description provided for @adminControls.
+  ///
+  /// In en, this message translates to:
+  /// **'Controls'**
+  String get adminControls;
+
+  /// No description provided for @adminStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'Students'**
+  String get adminStudents;
+
+  /// No description provided for @adminClips.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning clips'**
+  String get adminClips;
+
+  /// No description provided for @adminOpportunities.
+  ///
+  /// In en, this message translates to:
+  /// **'Opportunities'**
+  String get adminOpportunities;
+
+  /// No description provided for @adminEdited.
+  ///
+  /// In en, this message translates to:
+  /// **'Edited'**
+  String get adminEdited;
+
+  /// No description provided for @adminDataPack.
+  ///
+  /// In en, this message translates to:
+  /// **'Data pack'**
+  String get adminDataPack;
+
+  /// No description provided for @adminResetAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset all edits'**
+  String get adminResetAll;
+
+  /// No description provided for @adminResetAllBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This removes every saved edit and restores the shipped data pack. Student profiles and progress stay untouched.'**
+  String get adminResetAllBody;
+
+  /// No description provided for @adminResetDone.
+  ///
+  /// In en, this message translates to:
+  /// **'All edits were removed.'**
+  String get adminResetDone;
+
+  /// No description provided for @adminSaveDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved.'**
+  String get adminSaveDone;
+
+  /// No description provided for @adminDeletedDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Deleted.'**
+  String get adminDeletedDone;
+
+  /// No description provided for @adminDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get adminDelete;
+
+  /// No description provided for @adminDeleteStudentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this student?'**
+  String get adminDeleteStudentTitle;
+
+  /// No description provided for @adminDeleteStudentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The profile and all learning progress for this student will be removed from this device.'**
+  String get adminDeleteStudentBody;
+
+  /// No description provided for @adminNoStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'No student profiles on this device yet.'**
+  String get adminNoStudents;
+
+  /// No description provided for @adminNoClips.
+  ///
+  /// In en, this message translates to:
+  /// **'No learning clips are available.'**
+  String get adminNoClips;
+
+  /// No description provided for @adminNoOpportunities.
+  ///
+  /// In en, this message translates to:
+  /// **'No opportunities are available.'**
+  String get adminNoOpportunities;
+
+  /// No description provided for @adminDisplayName.
+  ///
+  /// In en, this message translates to:
+  /// **'Display name'**
+  String get adminDisplayName;
+
+  /// No description provided for @adminTitleEn.
+  ///
+  /// In en, this message translates to:
+  /// **'Title (English)'**
+  String get adminTitleEn;
+
+  /// No description provided for @adminTitleHi.
+  ///
+  /// In en, this message translates to:
+  /// **'Title (Hindi)'**
+  String get adminTitleHi;
+
+  /// No description provided for @adminTitleMr.
+  ///
+  /// In en, this message translates to:
+  /// **'Title (Marathi)'**
+  String get adminTitleMr;
+
+  /// No description provided for @adminSummaryEn.
+  ///
+  /// In en, this message translates to:
+  /// **'Summary (English)'**
+  String get adminSummaryEn;
+
+  /// No description provided for @adminSummaryHi.
+  ///
+  /// In en, this message translates to:
+  /// **'Summary (Hindi)'**
+  String get adminSummaryHi;
+
+  /// No description provided for @adminSummaryMr.
+  ///
+  /// In en, this message translates to:
+  /// **'Summary (Marathi)'**
+  String get adminSummaryMr;
+
+  /// No description provided for @adminDurationSeconds.
+  ///
+  /// In en, this message translates to:
+  /// **'Duration in seconds'**
+  String get adminDurationSeconds;
+
+  /// No description provided for @adminVideoUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Video link (optional)'**
+  String get adminVideoUrl;
+
+  /// No description provided for @adminSlides.
+  ///
+  /// In en, this message translates to:
+  /// **'Slides, one per line'**
+  String get adminSlides;
+
+  /// No description provided for @adminRestoreFromPack.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore from the data pack'**
+  String get adminRestoreFromPack;
+
+  /// No description provided for @adminSourceName.
+  ///
+  /// In en, this message translates to:
+  /// **'Official source name'**
+  String get adminSourceName;
+
+  /// No description provided for @adminSourceUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Official source link'**
+  String get adminSourceUrl;
+
+  /// No description provided for @adminDeadline.
+  ///
+  /// In en, this message translates to:
+  /// **'Last date to apply'**
+  String get adminDeadline;
+
+  /// No description provided for @adminApplyUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply link (optional)'**
+  String get adminApplyUrl;
+
+  /// No description provided for @adminAmountDisclosed.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount is disclosed'**
+  String get adminAmountDisclosed;
+
+  /// No description provided for @adminMinClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum class'**
+  String get adminMinClass;
+
+  /// No description provided for @adminMaxClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum class'**
+  String get adminMaxClass;
+
+  /// No description provided for @adminClearDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear date'**
+  String get adminClearDate;
+
+  /// No description provided for @adminSetDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick date'**
+  String get adminSetDate;
+
+  /// No description provided for @adminStudentEditor.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit student'**
+  String get adminStudentEditor;
+
+  /// No description provided for @adminClipEditor.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit clip'**
+  String get adminClipEditor;
+
+  /// No description provided for @adminOpportunityEditor.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit opportunity'**
+  String get adminOpportunityEditor;
+
+  /// No description provided for @commonVideoChip.
+  ///
+  /// In en, this message translates to:
+  /// **'Video'**
+  String get commonVideoChip;
+
+  /// No description provided for @commonWatchVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch video'**
+  String get commonWatchVideo;
 }
 
 class _AppLocalizationsDelegate

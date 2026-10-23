@@ -31,6 +31,12 @@ abstract class Clip with _$Clip {
     /// The language code the clip is spoken in, `mr` or `hi`.
     required String language,
 
+    /// An optional link to a video version of the clip.
+    ///
+    /// When it is present the Learn screen offers a "watch video" action next
+    /// to the voice playback. Only links to real, official videos belong here.
+    String? videoUrl,
+
     /// The text of each slide, shown next to the voice.
     @Default(<String>[]) List<String> slides,
 

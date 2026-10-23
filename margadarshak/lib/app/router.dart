@@ -5,6 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../ui/core/l10n/l10n.dart';
+import '../ui/features/admin/views/admin_clips_view.dart';
+import '../ui/features/admin/views/admin_dashboard_view.dart';
+import '../ui/features/admin/views/admin_opportunities_view.dart';
+import '../ui/features/admin/views/admin_students_view.dart';
 import '../ui/features/auth/views/login_view.dart';
 import '../ui/features/discover/views/career_detail_view.dart';
 import '../ui/features/discover/views/discover_view.dart';
@@ -141,6 +145,22 @@ GoRouter createRouter(SessionController session) {
         builder: (context, state) => CareerDetailView(
           careerId: state.pathParameters['id'] ?? '',
         ),
+      ),
+      GoRoute(
+        path: '/admin',
+        builder: (context, state) => const AdminDashboardView(),
+      ),
+      GoRoute(
+        path: '/admin/students',
+        builder: (context, state) => const AdminStudentsView(),
+      ),
+      GoRoute(
+        path: '/admin/clips',
+        builder: (context, state) => const AdminClipsView(),
+      ),
+      GoRoute(
+        path: '/admin/opportunities',
+        builder: (context, state) => const AdminOpportunitiesView(),
       ),
       GoRoute(
         path: '/facilitator',

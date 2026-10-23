@@ -2,6 +2,7 @@
 library;
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../app/dependency_injection.dart';
@@ -200,6 +201,34 @@ class _ProfileBody extends StatelessWidget {
                 onTap: () => localeController.setLocale(locale),
               );
             }).toList(growable: false),
+          ),
+        ),
+        const SizedBox(height: 16),
+        SectionHeader(title: l10n.adminTitle),
+        AppCard(
+          onTap: () => context.push('/admin'),
+          child: Row(
+            children: [
+              const Icon(Icons.admin_panel_settings_outlined),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l10n.adminTitle,
+                      style: Theme.of(context).textTheme.titleSmall,
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      l10n.adminSubtitle,
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right),
+            ],
           ),
         ),
         const SizedBox(height: 16),

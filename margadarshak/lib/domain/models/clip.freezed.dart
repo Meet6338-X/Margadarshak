@@ -20,7 +20,11 @@ mixin _$Clip {
  LocalizedText get title;/// A one line summary of what the clip covers.
  LocalizedText get summary;/// How long the clip runs, in seconds.
  int get durationSeconds;/// The language code the clip is spoken in, `mr` or `hi`.
- String get language;/// The text of each slide, shown next to the voice.
+ String get language;/// An optional link to a video version of the clip.
+///
+/// When it is present the Learn screen offers a "watch video" action next
+/// to the voice playback. Only links to real, official videos belong here.
+ String? get videoUrl;/// The text of each slide, shown next to the voice.
  List<String> get slides;/// Tags used to pick clips that match the student's interests.
  List<String> get tags;/// Career ids this clip is about.
  List<String> get careerIds;/// The stable position of this clip inside the whole catalogue.
@@ -37,16 +41,16 @@ $ClipCopyWith<Clip> get copyWith => _$ClipCopyWithImpl<Clip>(this as Clip, _$ide
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is Clip&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.durationSeconds, durationSeconds) || other.durationSeconds == durationSeconds)&&(identical(other.language, language) || other.language == language)&&const DeepCollectionEquality().equals(other.slides, slides)&&const DeepCollectionEquality().equals(other.tags, tags)&&const DeepCollectionEquality().equals(other.careerIds, careerIds)&&(identical(other.order, order) || other.order == order));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Clip&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.durationSeconds, durationSeconds) || other.durationSeconds == durationSeconds)&&(identical(other.language, language) || other.language == language)&&(identical(other.videoUrl, videoUrl) || other.videoUrl == videoUrl)&&const DeepCollectionEquality().equals(other.slides, slides)&&const DeepCollectionEquality().equals(other.tags, tags)&&const DeepCollectionEquality().equals(other.careerIds, careerIds)&&(identical(other.order, order) || other.order == order));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,title,summary,durationSeconds,language,const DeepCollectionEquality().hash(slides),const DeepCollectionEquality().hash(tags),const DeepCollectionEquality().hash(careerIds),order);
+int get hashCode => Object.hash(runtimeType,id,title,summary,durationSeconds,language,videoUrl,const DeepCollectionEquality().hash(slides),const DeepCollectionEquality().hash(tags),const DeepCollectionEquality().hash(careerIds),order);
 
 @override
 String toString() {
-  return 'Clip(id: $id, title: $title, summary: $summary, durationSeconds: $durationSeconds, language: $language, slides: $slides, tags: $tags, careerIds: $careerIds, order: $order)';
+  return 'Clip(id: $id, title: $title, summary: $summary, durationSeconds: $durationSeconds, language: $language, videoUrl: $videoUrl, slides: $slides, tags: $tags, careerIds: $careerIds, order: $order)';
 }
 
 
@@ -57,7 +61,7 @@ abstract mixin class $ClipCopyWith<$Res>  {
   factory $ClipCopyWith(Clip value, $Res Function(Clip) _then) = _$ClipCopyWithImpl;
 @useResult
 $Res call({
- String id, LocalizedText title, LocalizedText summary, int durationSeconds, String language, List<String> slides, List<String> tags, List<String> careerIds, int order
+ String id, LocalizedText title, LocalizedText summary, int durationSeconds, String language, String? videoUrl, List<String> slides, List<String> tags, List<String> careerIds, int order
 });
 
 
@@ -74,14 +78,15 @@ class _$ClipCopyWithImpl<$Res>
 
 /// Create a copy of Clip
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? title = null,Object? summary = null,Object? durationSeconds = null,Object? language = null,Object? slides = null,Object? tags = null,Object? careerIds = null,Object? order = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? title = null,Object? summary = null,Object? durationSeconds = null,Object? language = null,Object? videoUrl = freezed,Object? slides = null,Object? tags = null,Object? careerIds = null,Object? order = null,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
 as LocalizedText,summary: null == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
 as LocalizedText,durationSeconds: null == durationSeconds ? _self.durationSeconds : durationSeconds // ignore: cast_nullable_to_non_nullable
 as int,language: null == language ? _self.language : language // ignore: cast_nullable_to_non_nullable
-as String,slides: null == slides ? _self.slides : slides // ignore: cast_nullable_to_non_nullable
+as String,videoUrl: freezed == videoUrl ? _self.videoUrl : videoUrl // ignore: cast_nullable_to_non_nullable
+as String?,slides: null == slides ? _self.slides : slides // ignore: cast_nullable_to_non_nullable
 as List<String>,tags: null == tags ? _self.tags : tags // ignore: cast_nullable_to_non_nullable
 as List<String>,careerIds: null == careerIds ? _self.careerIds : careerIds // ignore: cast_nullable_to_non_nullable
 as List<String>,order: null == order ? _self.order : order // ignore: cast_nullable_to_non_nullable
@@ -188,10 +193,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  LocalizedText title,  LocalizedText summary,  int durationSeconds,  String language,  List<String> slides,  List<String> tags,  List<String> careerIds,  int order)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  LocalizedText title,  LocalizedText summary,  int durationSeconds,  String language,  String? videoUrl,  List<String> slides,  List<String> tags,  List<String> careerIds,  int order)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _Clip() when $default != null:
-return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.language,_that.slides,_that.tags,_that.careerIds,_that.order);case _:
+return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.language,_that.videoUrl,_that.slides,_that.tags,_that.careerIds,_that.order);case _:
   return orElse();
 
 }
@@ -209,10 +214,10 @@ return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.l
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  LocalizedText title,  LocalizedText summary,  int durationSeconds,  String language,  List<String> slides,  List<String> tags,  List<String> careerIds,  int order)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  LocalizedText title,  LocalizedText summary,  int durationSeconds,  String language,  String? videoUrl,  List<String> slides,  List<String> tags,  List<String> careerIds,  int order)  $default,) {final _that = this;
 switch (_that) {
 case _Clip():
-return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.language,_that.slides,_that.tags,_that.careerIds,_that.order);case _:
+return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.language,_that.videoUrl,_that.slides,_that.tags,_that.careerIds,_that.order);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -229,10 +234,10 @@ return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.l
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  LocalizedText title,  LocalizedText summary,  int durationSeconds,  String language,  List<String> slides,  List<String> tags,  List<String> careerIds,  int order)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  LocalizedText title,  LocalizedText summary,  int durationSeconds,  String language,  String? videoUrl,  List<String> slides,  List<String> tags,  List<String> careerIds,  int order)?  $default,) {final _that = this;
 switch (_that) {
 case _Clip() when $default != null:
-return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.language,_that.slides,_that.tags,_that.careerIds,_that.order);case _:
+return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.language,_that.videoUrl,_that.slides,_that.tags,_that.careerIds,_that.order);case _:
   return null;
 
 }
@@ -244,7 +249,7 @@ return $default(_that.id,_that.title,_that.summary,_that.durationSeconds,_that.l
 @JsonSerializable()
 
 class _Clip implements Clip {
-  const _Clip({required this.id, required this.title, required this.summary, required this.durationSeconds, required this.language, final  List<String> slides = const <String>[], final  List<String> tags = const <String>[], final  List<String> careerIds = const <String>[], required this.order}): _slides = slides,_tags = tags,_careerIds = careerIds;
+  const _Clip({required this.id, required this.title, required this.summary, required this.durationSeconds, required this.language, this.videoUrl, final  List<String> slides = const <String>[], final  List<String> tags = const <String>[], final  List<String> careerIds = const <String>[], required this.order}): _slides = slides,_tags = tags,_careerIds = careerIds;
   factory _Clip.fromJson(Map<String, dynamic> json) => _$ClipFromJson(json);
 
 /// The stable identifier.
@@ -257,6 +262,11 @@ class _Clip implements Clip {
 @override final  int durationSeconds;
 /// The language code the clip is spoken in, `mr` or `hi`.
 @override final  String language;
+/// An optional link to a video version of the clip.
+///
+/// When it is present the Learn screen offers a "watch video" action next
+/// to the voice playback. Only links to real, official videos belong here.
+@override final  String? videoUrl;
 /// The text of each slide, shown next to the voice.
  final  List<String> _slides;
 /// The text of each slide, shown next to the voice.
@@ -300,16 +310,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Clip&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.durationSeconds, durationSeconds) || other.durationSeconds == durationSeconds)&&(identical(other.language, language) || other.language == language)&&const DeepCollectionEquality().equals(other._slides, _slides)&&const DeepCollectionEquality().equals(other._tags, _tags)&&const DeepCollectionEquality().equals(other._careerIds, _careerIds)&&(identical(other.order, order) || other.order == order));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Clip&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.durationSeconds, durationSeconds) || other.durationSeconds == durationSeconds)&&(identical(other.language, language) || other.language == language)&&(identical(other.videoUrl, videoUrl) || other.videoUrl == videoUrl)&&const DeepCollectionEquality().equals(other._slides, _slides)&&const DeepCollectionEquality().equals(other._tags, _tags)&&const DeepCollectionEquality().equals(other._careerIds, _careerIds)&&(identical(other.order, order) || other.order == order));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,title,summary,durationSeconds,language,const DeepCollectionEquality().hash(_slides),const DeepCollectionEquality().hash(_tags),const DeepCollectionEquality().hash(_careerIds),order);
+int get hashCode => Object.hash(runtimeType,id,title,summary,durationSeconds,language,videoUrl,const DeepCollectionEquality().hash(_slides),const DeepCollectionEquality().hash(_tags),const DeepCollectionEquality().hash(_careerIds),order);
 
 @override
 String toString() {
-  return 'Clip(id: $id, title: $title, summary: $summary, durationSeconds: $durationSeconds, language: $language, slides: $slides, tags: $tags, careerIds: $careerIds, order: $order)';
+  return 'Clip(id: $id, title: $title, summary: $summary, durationSeconds: $durationSeconds, language: $language, videoUrl: $videoUrl, slides: $slides, tags: $tags, careerIds: $careerIds, order: $order)';
 }
 
 
@@ -320,7 +330,7 @@ abstract mixin class _$ClipCopyWith<$Res> implements $ClipCopyWith<$Res> {
   factory _$ClipCopyWith(_Clip value, $Res Function(_Clip) _then) = __$ClipCopyWithImpl;
 @override @useResult
 $Res call({
- String id, LocalizedText title, LocalizedText summary, int durationSeconds, String language, List<String> slides, List<String> tags, List<String> careerIds, int order
+ String id, LocalizedText title, LocalizedText summary, int durationSeconds, String language, String? videoUrl, List<String> slides, List<String> tags, List<String> careerIds, int order
 });
 
 
@@ -337,14 +347,15 @@ class __$ClipCopyWithImpl<$Res>
 
 /// Create a copy of Clip
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? title = null,Object? summary = null,Object? durationSeconds = null,Object? language = null,Object? slides = null,Object? tags = null,Object? careerIds = null,Object? order = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? title = null,Object? summary = null,Object? durationSeconds = null,Object? language = null,Object? videoUrl = freezed,Object? slides = null,Object? tags = null,Object? careerIds = null,Object? order = null,}) {
   return _then(_Clip(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
 as LocalizedText,summary: null == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
 as LocalizedText,durationSeconds: null == durationSeconds ? _self.durationSeconds : durationSeconds // ignore: cast_nullable_to_non_nullable
 as int,language: null == language ? _self.language : language // ignore: cast_nullable_to_non_nullable
-as String,slides: null == slides ? _self._slides : slides // ignore: cast_nullable_to_non_nullable
+as String,videoUrl: freezed == videoUrl ? _self.videoUrl : videoUrl // ignore: cast_nullable_to_non_nullable
+as String?,slides: null == slides ? _self._slides : slides // ignore: cast_nullable_to_non_nullable
 as List<String>,tags: null == tags ? _self._tags : tags // ignore: cast_nullable_to_non_nullable
 as List<String>,careerIds: null == careerIds ? _self._careerIds : careerIds // ignore: cast_nullable_to_non_nullable
 as List<String>,order: null == order ? _self.order : order // ignore: cast_nullable_to_non_nullable

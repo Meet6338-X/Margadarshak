@@ -107,9 +107,51 @@ class LocalOpportunityRepository implements OpportunityRepository {
       all.addAll(statePack.map((dto) => dto.toDomainModel()));
     }
 
-    _cache = all;
-    await _mirror(all);
-    return Result<List<Opportunity>>.success(all);
+    final merged = await _applyOverrides(all);
+    _cache = merged;
+    await _mirror(merged);
+    return Result<List<Opportunity>>.success(merged);
+  }
+
+  @override
+  void invalidateCache() {
+    _cache = null;
+  }
+
+  /// Replaces pack records with the edited versions saved by the admin console.
+  Future<List<Opportunity>> _applyOverrides(List<Opportunity> opportunities) async {
+    final database = _database;
+    if (database == null) return opportunities;
+    try {
+      final allRows = await database.select(database.contentOverrideRows).get();
+      final rows =
+          allRows.where((row) => row.id.startsWith('opportunity:')).toList();
+      if (rows.isEmpty) return opportunities;
+
+      final overrides = <String, Opportunity>{};
+      for (final row in rows) {
+        final opportunity = _decodeOpportunity(row.payload);
+        if (opportunity != null) overrides[opportunity.id] = opportunity;
+      }
+      if (overrides.isEmpty) return opportunities;
+
+      return [
+        for (final opportunity in opportunities) overrides[opportunity.id] ?? opportunity,
+      ];
+    } catch (error) {
+      // A broken edit must never hide the verified pack content.
+      AppLogger.warning('The saved opportunity edits could not be applied.', data: error);
+      return opportunities;
+    }
+  }
+
+  Opportunity? _decodeOpportunity(String payload) {
+    try {
+      return Opportunity.fromJson((jsonDecode(payload) as Map).cast<String, Object?>());
+    } catch (error) {
+      AppLogger.warning('A saved opportunity edit could not be read.', data: error);
+      return null;
+    }
   }
 
   Future<void> _mirror(List<Opportunity> opportunities) async {

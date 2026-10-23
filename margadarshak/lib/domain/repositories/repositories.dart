@@ -29,6 +29,9 @@ abstract interface class OpportunityRepository {
 
   /// The version of the data pack currently loaded.
   Future<Result<String>> getDataPackVersion();
+
+  /// Forgets any cached copy so local edits are picked up on the next read.
+  void invalidateCache();
 }
 
 /// Reads the curated career catalogue.
@@ -47,6 +50,36 @@ abstract interface class ClipRepository {
 
   /// Returns one clip by its identifier.
   Future<Result<Clip>> getById(String id);
+
+  /// Forgets any cached copy so local edits are picked up on the next read.
+  void invalidateCache();
+}
+
+/// Manages the students and the local content edits of the admin console.
+abstract interface class AdminRepository {
+  /// Returns every student profile stored on this device.
+  Future<Result<List<StudentProfile>>> listStudents();
+
+  /// Removes a student and everything stored for them on this device.
+  Future<Result<void>> deleteStudent(String studentId);
+
+  /// Saves an edited clip as a local override.
+  Future<Result<void>> saveClipOverride(Clip clip);
+
+  /// Removes the local override of [clipId].
+  Future<Result<void>> clearClipOverride(String clipId);
+
+  /// Saves an edited opportunity as a local override.
+  Future<Result<void>> saveOpportunityOverride(Opportunity opportunity);
+
+  /// Removes the local override of [opportunityId].
+  Future<Result<void>> clearOpportunityOverride(String opportunityId);
+
+  /// The identifiers of the records that carry a local edit.
+  Future<Result<Set<String>>> overriddenContentIds();
+
+  /// Removes every local edit and restores the shipped records.
+  Future<Result<void>> clearAllOverrides();
 }
 
 /// Reads and writes the student profile and the learning progress.
