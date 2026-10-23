@@ -1,0 +1,176 @@
+[
+  {
+    "id": "naps_apprenticeship",
+    "kind": "apprenticeship",
+    "title": {
+      "en": "National Apprenticeship Promotion Scheme (NAPS)",
+      "hi": "राष्ट्रीय शिक्षुता प्रोत्साहन योजना",
+      "mr": "राष्ट्रीय कौशल्य प्रशिक्षण प्रोत्साहन योजना"
+    },
+    "summary": {
+      "en": "Apprenticeships in real companies with a monthly stipend, and a government share of the wage paid to the company.",
+      "hi": "असली कंपनियों में मासिक वजीफ़े के साथ शिक्षुता, और कंपनी को दी जाने वाली मज़दूरी का सरकारी हिस्सा।",
+      "mr": "खर्‍या कंपन्यांत मासिक वेतनासह कौशल्य प्रशिक्षण, आणि कंपनीला दिल्या जाणाऱ्या वेतनाचा सरकारी हिस्सा."
+    },
+    "officialSourceName": "Apprenticeship India, Ministry of Skill Development and Entrepreneurship",
+    "officialSourceUrl": "https://www.apprenticeshipindia.gov.in/",
+    "lastVerifiedAt": "2026-10-23",
+    "scope": "national",
+    "categories": ["apprenticeship", "skill", "vocational", "employment"],
+    "careerIds": [
+      "career_electrician",
+      "career_plumber",
+      "career_automobile",
+      "career_tailoring",
+      "career_food_processing",
+      "career_mobile_repair"
+    ],
+    "amountDisclosed": true,
+    "eligibilityRules": [
+      {
+        "id": "stage",
+        "field": "education_stage",
+        "operator": "one_of",
+        "values": ["secondary", "higher_secondary", "graduation"],
+        "reasonKey": "rule_stage_school",
+        "isBlocking": true
+      },
+      {
+        "id": "class",
+        "field": "current_class",
+        "operator": "at_least",
+        "values": ["9"],
+        "reasonKey": "rule_class_at_least_9",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "aadhaar",
+        "label": {
+          "en": "Aadhaar or any government photo identity document",
+          "hi": "आधार या कोई सरकारी फ़ोटो पहचान पत्र",
+          "mr": "आधार किंवा कोणतेही सरकारी फोटो ओळखपत्र"
+        },
+        "whereToGet": {
+          "en": "Enrolment centre; Aadhaar is free for the first enrolment.",
+          "hi": "नामांकन केंद्र; पहली बार नामांकन में आधार निःशुल्क है।",
+          "mr": "नोंदणी केंद्र; पहिल्या नोंदणीत आधार मोफत आहे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      },
+      {
+        "id": "class_10_marksheet",
+        "label": {
+          "en": "Class 10 marksheet",
+          "hi": "कक्षा 10 अंक पत्र",
+          "mr": "10वीचे गुणपत्र"
+        },
+        "whereToGet": {
+          "en": "Your school office.",
+          "hi": "आपके स्कूल कार्यालय से।",
+          "mr": "तुमच्या शालेच्या कार्यालयातून."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "apprenticeship_india_portal",
+    "kind": "apprenticeship",
+    "title": {
+      "en": "Apprenticeship India — contract opportunities",
+      "hi": "अप्रेंटिसशिप इंडिया — अनुबंध के अवसर",
+      "mr": "अप्रेंटिशिप इंडिया — कराराच्या संधी"
+    },
+    "summary": {
+      "en": "The single portal where companies post apprenticeship vacancies and students apply directly.",
+      "hi": "वह एकल पोर्टल जहाँ कंपनियाँ शिक्षुता के रिक्त पद देती हैं और विद्यार्थी सीधे आवेदन करते हैं।",
+      "mr": "एकच पोर्टल जिथे कंपन्या कौशल्य प्रशिक्षणाच्या रिक्त जागा देतात आणि विद्यार्थी थेट अर्ज करतात."
+    },
+    "officialSourceName": "Ministry of Skill Development and Entrepreneurship",
+    "officialSourceUrl": "https://www.apprenticeshipindia.gov.in/",
+    "lastVerifiedAt": "2026-10-23",
+    "scope": "national",
+    "categories": ["apprenticeship", "employment", "skill"],
+    "careerIds": ["career_automobile", "career_electrician", "career_accounting", "career_mobile_repair"],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "class",
+        "field": "current_class",
+        "operator": "at_least",
+        "values": ["9"],
+        "reasonKey": "rule_class_at_least_9",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "aadhaar",
+        "label": {
+          "en": "Aadhaar or any government photo identity document",
+          "hi": "आधार या कोई सरकारी फ़ोटो पहचान पत्र",
+          "mr": "आधार किंवा कोणतेही सरकारी फोटो ओळखपत्र"
+        },
+        "whereToGet": {
+          "en": "Enrolment centre; Aadhaar is free for the first enrolment.",
+          "hi": "नामांकन केंद्र; पहली बार नामांकन में आधार निःशुल्क है।",
+          "mr": "नोंदणी केंद्र; पहिल्या नोंदणीत आधार मोफत आहे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  },
+  {
+    "id": "ddugky_kaushalya",
+    "kind": "apprenticeship",
+    "title": {
+      "en": "DDU-GKY (rural skill and placement programme)",
+      "hi": "डीडीयू-जीकेयाई (ग्रामीण कौशल्य और नौकरी योजना)",
+      "mr": "DDU-GKY (ग्रामीण कौशल्य व नौकरी योजना)"
+    },
+    "summary": {
+      "en": "Free residential skill training with guaranteed placement support, run with industry partners.",
+      "hi": "उद्योग साझेदारों के साथ निःशुल्क आवासीय कौशल्य प्रशिक्षण और नौकरी की गारंटी सहायता।",
+      "mr": "उद्योग भागीदारांसोबत मोफत रहिवासी कौशल्य प्रशिक्षण व नौकरीची हमी सहाय्य."
+    },
+    "officialSourceName": "Ministry of Rural Development, Government of India",
+    "officialSourceUrl": "https://ddugky.gov.in/",
+    "lastVerifiedAt": "2026-09-06",
+    "scope": "national",
+    "categories": ["apprenticeship", "skill", "rural", "employment"],
+    "careerIds": ["career_food_processing", "career_tailoring", "career_electrician", "career_accounting"],
+    "amountDisclosed": false,
+    "eligibilityRules": [
+      {
+        "id": "class",
+        "field": "current_class",
+        "operator": "at_least",
+        "values": ["8"],
+        "reasonKey": "rule_class_at_least_8",
+        "isBlocking": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "id": "aadhaar",
+        "label": {
+          "en": "Aadhaar or any government photo identity document",
+          "hi": "आधार या कोई सरकारी फ़ोटो पहचान पत्र",
+          "mr": "आधार किंवा कोणतेही सरकारी फोटो ओळखपत्र"
+        },
+        "whereToGet": {
+          "en": "Enrolment centre; Aadhaar is free for the first enrolment.",
+          "hi": "नामांकन केंद्र; पहली बार नामांकन में आधार निःशुल्क है।",
+          "mr": "नोंदणी केंद्र; पहिल्या नोंदणीत आधार मोफत आहे."
+        },
+        "isMandatory": true,
+        "careerIds": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,289 @@
+{
+  "scope": "bi",
+  "stateName": {
+    "en": "Bihar",
+    "hi": "बिहार",
+    "mr": "बिहार"
+  },
+  "lastVerifiedAt": "2026-08-30",
+  "opportunities": [
+    {
+      "id": "bihar_student_credit_card",
+      "kind": "scheme",
+      "title": {
+        "en": "Bihar Student Credit Card",
+        "hi": "बिहार स्टूडेंट क्रेडिट कार्ड",
+        "mr": "बिहार स्टुडंट क्रेडिट कार्ड"
+      },
+      "summary": {
+        "en": "Education loan for students of Bihar pursuing higher studies, with repayment starting after the course.",
+        "hi": "बिहार के छात्रों के लिए शिक्षा ऋण, जिसका भुगतान पाठ्यक्रम के बाद शुरू होता है।",
+        "mr": "बिहारच्या विद्यार्थ्यांसाठी शैक्षणिक कर्ज, परतफेटी अभ्यासक्रमानंतर सुरू होते."
+      },
+      "officialSourceName": "Bihar Education Department",
+      "officialSourceUrl": "https://www.education.bihar.gov.in/",
+      "lastVerifiedAt": "2026-08-30",
+      "scope": "bi",
+      "categories": ["education", "loan"],
+      "careerIds": ["career_teacher", "career_nurse", "career_accounting"],
+      "amountDisclosed": true,
+      "minClass": 12,
+      "eligibilityRules": [
+        {
+          "id": "bihar_student_credit_card_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["higher_secondary", "graduation"],
+          "reasonKey": "rule_stage_after_class_12",
+          "isBlocking": true
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "class_12_marksheet",
+          "label": {
+            "en": "Class 12 marksheet",
+            "hi": "कक्षा 12 की मार्कशीट",
+            "mr": "इयत्ता १२ चे गुणपत्रक"
+          },
+          "whereToGet": {
+            "en": "Your school",
+            "hi": "आपका स्कूल",
+            "mr": "तुमची शाळा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "income_certificate",
+          "label": {
+            "en": "Income certificate",
+            "hi": "आय प्रमाण पत्र",
+            "mr": "उत्पन्न प्रमाणपत्र"
+          },
+          "whereToGet": {
+            "en": "Circle office or subdivisional office",
+            "hi": "अंचल कार्यालय या अनुमंडल कार्यालय",
+            "mr": "अंचल कार्यालय किंवा अनुमंडल कार्यालय"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "bank_account",
+          "label": {
+            "en": "Bank account linked to Aadhaar",
+            "hi": "आधार से जुड़ा बैंक खाता",
+            "mr": "आधाराशी जोडलेले बँक खाते"
+          },
+          "whereToGet": {
+            "en": "Your bank branch",
+            "hi": "आपकी बैंक शाखा",
+            "mr": "तुमची बँक शाखा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applyUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in/howToApply",
+      "applySteps": [
+        {
+          "en": "Apply online on the Nishchay Swayam Sahayata Bhata portal.",
+          "hi": "निश्चय स्वयं सहयोगी भत्ता पोर्टल पर ऑनलाइन आवेदन करें।",
+          "mr": "निश्चय स्वयंसहाय्यता भत्ता पोर्टलवर ऑनलाइन अर्ज करा."
+        },
+        {
+          "en": "Check that your college is on the approved college list.",
+          "hi": "अपने कॉलेज को मंजूर कॉलेज सूची में जाँचें।",
+          "mr": "तुमचे महाविद्यालय मंजूर यादीत आहे का ते पहा."
+        },
+        {
+          "en": "Follow the status on the BSCC student portal afterwards.",
+          "hi": "इसके बाद BSCC छात्र पोर्टल पर स्थिति देखें।",
+          "mr": "त्यानंतर BSCC विद्यार्थी पोर्टलवर स्थिती पहा."
+        }
+      ],
+      "applicationOpensAt": "2026-07-01",
+      "applicationClosesAt": "2026-12-31"
+    },
+    {
+      "id": "bihar_mukhyamantri_utthan",
+      "kind": "scholarship",
+      "title": {
+        "en": "Mukhyamantri Uthan Scholarship",
+        "hi": "मुख्यमंत्री उत्थान छात्रवृत्ति",
+        "mr": "मुख्यमंत्री उत्थान शिष्यवृत्ती"
+      },
+      "summary": {
+        "en": "Bihar state scholarship for students who completed intermediate or equivalent examination and are seeking higher studies.",
+        "hi": "बिहार राज्य छात्रवृत्ति उन विद्यार्थियों के लिए जिन्होंने इंटरमीडिएट या समकक्ष उत्तीर्ण किया है।",
+        "mr": "बिहार राज्य शिष्यवृत्ती त्या विद्यार्थ्यांसाठी ज्यांनी इंटरमीडिएट किंवा समतुल्य उत्तीर्ण केले आहे."
+      },
+      "officialSourceName": "Bihar Education Department",
+      "officialSourceUrl": "https://www.education.bihar.gov.in/",
+      "lastVerifiedAt": "2026-08-30",
+      "scope": "bi",
+      "categories": ["education", "scholarship"],
+      "careerIds": ["career_teacher", "career_nurse", "career_pharmacist"],
+      "amountDisclosed": true,
+      "minClass": 12,
+      "eligibilityRules": [
+        {
+          "id": "bihar_mukhyamantri_utthan_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["higher_secondary", "graduation"],
+          "reasonKey": "rule_stage_after_class_12",
+          "isBlocking": true
+        },
+        {
+          "id": "bihar_mukhyamantri_utthan_income",
+          "field": "income_band",
+          "operator": "at_most",
+          "values": ["2_5lakh_5lakh"],
+          "reasonKey": "rule_income_at_most",
+          "isBlocking": false
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "marksheet_12",
+          "label": {
+            "en": "Intermediate marksheet",
+            "hi": "इंटरमीडिएट मार्कशीट",
+            "mr": "इंटरमीडिएट गुणपत्रक"
+          },
+          "whereToGet": {
+            "en": "Your school",
+            "hi": "आपका स्कूल",
+            "mr": "तुमची शाळा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "income_certificate",
+          "label": {
+            "en": "Income certificate",
+            "hi": "आय प्रमाण पत्र",
+            "mr": "उत्पन्न प्रमाणपत्र"
+          },
+          "whereToGet": {
+            "en": "Circle office or subdivisional office",
+            "hi": "अंचल कार्यालय या अनुमंडल कार्यालय",
+            "mr": "अंचल कार्यालय किंवा अनुमंडल कार्यालय"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "bank_account",
+          "label": {
+            "en": "Bank account linked to Aadhaar",
+            "hi": "आधार से जुड़ा बैंक खाता",
+            "mr": "आधाराशी जोडलेले बँक खाते"
+          },
+          "whereToGet": {
+            "en": "Your bank branch",
+            "hi": "आपकी बैंक शाखा",
+            "mr": "तुमची बँक शाखा"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-09-01",
+      "applicationClosesAt": "2026-12-10"
+    },
+    {
+      "id": "bihar_7nishchay_yuva",
+      "kind": "scheme",
+      "title": {
+        "en": "7 Nishchay Yuva Mission",
+        "hi": "7 निश्चय युवा मिशन",
+        "mr": "७ निश्चय युवा मिशन"
+      },
+      "summary": {
+        "en": "Bihar mission providing free training and placement support for unemployed youth across the state.",
+        "hi": "बिहार मिशन जो बेरोजगार युवाओं को राज्य भर में मुफ्त प्रशिक्षण और नौकरी सहायता देता है।",
+        "mr": "बिहार मिशन जे राज्यभरातील बेरोजगार तरुणांना मोफत प्रशिक्षण आणि नोकरी सहाय्य देतो."
+      },
+      "officialSourceName": "7 Nishchay Yuva Mission, Bihar",
+      "officialSourceUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in/",
+      "lastVerifiedAt": "2026-10-22",
+      "applyUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in/howToApply",
+      "applySteps": [
+        {
+          "en": "Register online on the MNSSBY portal with your Aadhaar number.",
+          "hi": "आधार नंबर से MNSSBY पोर्टल पर ऑनलाइन पंजीकरण करें।",
+          "mr": "आधार क्रमांकाने MNSSBY पोर्टलवर ऑनलाइन नोंदणी करा."
+        },
+        {
+          "en": "Visit your District Registration and Counselling Centre (DRCC) with your documents within 60 days, between 10 am and 5 pm on working days.",
+          "hi": "कार्य दिवसों पर सुबह 10 से शाम 5 बजे के बीच, 60 दिनों के भीतर ज़रूरी दस्तावेज़ों के साथ अपने ज़िले के DRCC कार्यालय जाएँ।",
+          "mr": "कामकाजी दिवशी सकाळी 10 ते संध्याकाळी 5 या वेळेत, 60 दिवसांत आवश्यक कागजपत्रांसह तुमच्या जिल्ह्याच्या DRCC कार्यालयात जा."
+        },
+        {
+          "en": "Get your bank account linked to your Aadhaar so the benefit can reach your account.",
+          "hi": "बैंक खाते को आधार से सीडिंग करवाएँ, ताकि राशि आपके खाते तक पहुँच सके।",
+          "mr": "बँक खाते आधारशी सीडिंग करा, म्हणजे रक्कम तुमच्या खात्यात पोहोचेल."
+        }
+      ],
+      "scope": "bi",
+      "categories": ["employment", "skill"],
+      "careerIds": [
+        "career_electrician",
+        "career_plumber",
+        "career_mobile_repair",
+        "career_food_processing",
+        "career_web_designer"
+      ],
+      "amountDisclosed": false,
+      "minClass": 9,
+      "eligibilityRules": [
+        {
+          "id": "bihar_7nishchay_yuva_stage",
+          "field": "education_stage",
+          "operator": "one_of",
+          "values": ["secondary", "higher_secondary", "graduation"],
+          "reasonKey": "rule_stage_school",
+          "isBlocking": true
+        }
+      ],
+      "requiredDocuments": [
+        {
+          "id": "photo_id",
+          "label": {
+            "en": "Passport size photograph",
+            "hi": "पासपोर्ट आकार का फोटो",
+            "mr": "पासपोर्ट आकाराचा फोटो"
+          },
+          "whereToGet": {
+            "en": "Any photo studio",
+            "hi": "कोई फोटो स्टूडियो",
+            "mr": "कोणतीही फोटो स्टुडिओ"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        },
+        {
+          "id": "aadhaar",
+          "label": {
+            "en": "Aadhaar card",
+            "hi": "आधार कार्ड",
+            "mr": "आधार कार्ड"
+          },
+          "whereToGet": {
+            "en": "Common service centre or post office",
+            "hi": "जन सेवा केंद्र या डाकघर",
+            "mr": "जनसेवा केंद्र किंवा डाकघर"
+          },
+          "isMandatory": true,
+          "careerIds": []
+        }
+      ],
+      "applicationOpensAt": "2026-01-01",
+      "applicationClosesAt": "2027-03-31"
+    }
+  ]
+}

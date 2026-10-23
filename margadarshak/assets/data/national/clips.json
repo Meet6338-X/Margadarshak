@@ -1,0 +1,281 @@
+{
+  "version": "2026.10",
+  "clips": [
+    {
+      "id": "clip_ani_career",
+      "title": {
+        "en": "What is a career?",
+        "hi": "करियर क्या होता है?",
+        "mr": "करिअर म्हणजे काय?"
+      },
+      "summary": {
+        "en": "A short explanation of how a career is different from a job title.",
+        "hi": "करियर और नौकरी के नाम में अंतर का संक्षिप्त स्पष्टीकरण।",
+        "mr": "करिअर आणि नोबदाराच्या नावातील फरकाची थोडक्यात स्पष्टीकरण."
+      },
+      "durationSeconds": 45,
+      "language": "mr",
+      "order": 1,
+      "tags": ["basics", "career"],
+      "careerIds": [],
+      "slides": [
+        "करिअर म्हणजे एका दिशेने सतत अडत असणारी प्रगती.",
+        "नोबदार ही करिअराची एक पायरी असू शकते.",
+        "आज तुमची पहिली पायरी: काम तुम्हाला कसे वाटते ते ओळखा."
+      ]
+    },
+    {
+      "id": "clip_ani_naksha",
+      "title": {
+        "en": "Your first career map",
+        "hi": "आपका पहला करियर मानचित्र",
+        "mr": "तुमचा पहिला करिअर नकाशा"
+      },
+      "summary": {
+        "en": "Three simple questions that start building a career map.",
+        "hi": "करियर मानचित्र बनाने वाले तीन सरल प्रश्न।",
+        "mr": "करिअर नकाशा तयार करणारी तीन सोपी प्रश्ने."
+      },
+      "durationSeconds": 40,
+      "language": "mr",
+      "order": 2,
+      "tags": ["basics", "career"],
+      "careerIds": [],
+      "slides": [
+        "तुम्हाला कोणत्या कामात रस आहे?",
+        "तुमच्या घरात कोणी ती नेत्रक करतो का?",
+        "तुम्ही कोणत्या शहरात राहता आणि तिथे कोणत्या कामाची गरज आहे?"
+      ]
+    },
+    {
+      "id": "clip_nurse_kin",
+      "title": {
+        "en": "A day in the life of a nurse",
+        "hi": "नर्स का एक दिन",
+        "mr": "नर्सच्या जीवनाचा एक दिवस"
+      },
+      "summary": {
+        "en": "What a nurse actually does through a shift.",
+        "hi": "एक शिफ्ट में नर्स वास्तव में क्या करती है।",
+        "mr": "एका पालटीत नर्स खरंच काय करते."
+      },
+      "durationSeconds": 50,
+      "language": "mr",
+      "order": 3,
+      "tags": ["health", "career"],
+      "careerIds": ["career_nurse"],
+      "slides": [
+        "सकाळची पहिली पाळी: रुग्णांची तपासणी.",
+        "औषध देणे, कुटुंबांना समजावणे, नोंद ठेवणे.",
+        "शिक्षण: एन.एम.एस.सी. किंवा जी.एन.एम.सी. नंतर."
+      ]
+    },
+    {
+      "id": "clip_anm_kin",
+      "title": {
+        "en": "Auxiliary Nursing Midwife",
+        "hi": "ऑक्सिलियरी नर्सिंग मिडवाइफ",
+        "mr": "सहाय्यक नर्सिंग मिडवाइफ"
+      },
+      "summary": {
+        "en": "The ANM role is a fast route into healthcare work in rural areas.",
+        "hi": "ग्रामीण क्षेत्रों में स्वास्थ्य कार्य में ए.एन.एम. एक तेज़ रास्ता है।",
+        "mr": "ग्रामीण भागात आरोग्य कामात ए.एन.एम. हा लवकर मार्ग आहे."
+      },
+      "durationSeconds": 45,
+      "language": "mr",
+      "order": 4,
+      "tags": ["health", "career"],
+      "careerIds": ["career_anm"],
+      "slides": [
+        "ए.एन.एम. म्हणजे १२ वी उत्तीर्ण करून प्रशिक्षण घेणारी आरोग्य कर्मचारी.",
+        "प्रसूती सहायता, औषध वितरण, आरोग्य शिक्षण.",
+        "ग्रामातच रुग्णांपर्यंत पोहोचणारा पहिला संपर्क."
+      ]
+    },
+    {
+      "id": "clip_iti_electrician",
+      "title": {
+        "en": "ITI route into electrical work",
+        "hi": "बिजली के काम में आईटीआई का रास्ता",
+        "mr": "वीज कामात आयटीआयचा मार्ग"
+      },
+      "summary": {
+        "en": "How a technical institute course can lead to electrical work.",
+        "hi": "तकनीकी संस्थान का कोर्स बिजली के काम तक कैसे ले जाता है।",
+        "mr": "तांत्रिक संस्थेचा अभ्यासक्रम वीज कामाकडे कसे नेते."
+      },
+      "durationSeconds": 50,
+      "language": "mr",
+      "order": 5,
+      "tags": ["trades", "skill"],
+      "careerIds": ["career_electrician"],
+      "slides": [
+        "आयटीआयमध्ये इलेक्ट्रिकल ट्रेड असतो.",
+        "अभ्यासातून लगवट, वायरिंग आणि सुरक्षा शिकता येते.",
+        "नंतर प्रमाणपत्र घेऊन दुकान किंवा कंपनीत काम शक्य."
+      ]
+    },
+    {
+      "id": "clip_solar_kin",
+      "title": {
+        "en": "Solar installer: work that is growing",
+        "hi": "सोलर इंस्टॉलर: बढ़ता हुआ काम",
+        "mr": "सोलर इन्स्टॉलर: वाढणारे काम"
+      },
+      "summary": {
+        "en": "Why solar installation is a practical career choice.",
+        "hi": "सोलर इंस्टॉलेशन एक व्यावहारिक करियर विकल्प क्यों है।",
+        "mr": "सोलर इन्स्टॉलेशन हा व्यावहारिक करिअर पर्याय कसा आहे."
+      },
+      "durationSeconds": 45,
+      "language": "mr",
+      "order": 6,
+      "tags": ["green", "skill"],
+      "careerIds": ["career_solar_installer"],
+      "slides": [
+        "सौर ऊर्जा क्षेत्रात काम वाढत आहे.",
+        "छोट्या प्रकल्पांपासून सुरुवात करता येते.",
+        "अभ्यास आणि प्रमाणपत्र हे सुरुवातीचे अडचण दूर करते."
+      ]
+    },
+    {
+      "id": "clip_scheme_kyam",
+      "title": {
+        "en": "How a scholarship is actually checked",
+        "hi": "छात्रवृत्ति की जाँच असल्यात कैसे होती है",
+        "mr": "शिष्यवृत्तीची खरोच तपासणी कशी होते"
+      },
+      "summary": {
+        "en": "Every rule in this app is checked against your profile, step by step.",
+        "hi": "इस ऐप में हर नियम आपकी प्रोफ़ाइल से एक-एक करके जाँचा जाता है।",
+        "mr": "या अॅपमध्ये प्रत्येक नियम तुमच्या प्रोफाइलशी एक-एक करून तपासला जातो."
+      },
+      "durationSeconds": 55,
+      "language": "mr",
+      "order": 7,
+      "tags": ["schemes", "howitworks"],
+      "careerIds": [],
+      "slides": [
+        "आपला वर्ग, जात, उत्पन्न आणि राज्य याचा वापर होतो.",
+        "प्रत्येक नियमाचा निकाल स्क्रीनवर दिसतो.",
+        "नियम बदलला तर तो अधिकृत स्रोतावरून पुन्हा तपासला जातो."
+      ]
+    },
+    {
+      "id": "clip_documents_kin",
+      "title": {
+        "en": "Which documents to collect first",
+        "hi": "पहले कौन से दस्तावेज़ जुटाने हैं",
+        "mr": "प्रथम कोणते कागदपत्रे जमा करायची"
+      },
+      "summary": {
+        "en": "The four documents most applications need.",
+        "hi": "ज़्यादातर आवेदनों के लिए चार दस्तावेज़।",
+        "mr": "बहुतेक अर्जांसाठी चार कागदपत्रे."
+      },
+      "durationSeconds": 40,
+      "language": "mr",
+      "order": 8,
+      "tags": ["documents", "howitworks"],
+      "careerIds": [],
+      "slides": [
+        "जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र, आधार कार्ड आणि बँक खाते.",
+        "बँक खाते आधाराशी जोडलेले असावे.",
+        "हे कागदपत्र तहसील कार्यालयात मिळतात."
+      ]
+    },
+    {
+      "id": "clip_streak_kin",
+      "title": {
+        "en": "Your streak and the freeze",
+        "hi": "आपकी स्ट्रीक और फ़्रीज़",
+        "mr": "तुमची स्ट्रीक आणि फ्रीझ"
+      },
+      "summary": {
+        "en": "A missed day does not have to break your streak.",
+        "hi": "एक दिन छूटने पर भी आपकी स्ट्रीक टूट नहीं सकती।",
+        "mr": "एक दिवस चुकला तरी तुमची स्ट्रीक तुटत नाही."
+      },
+      "durationSeconds": 35,
+      "language": "mr",
+      "order": 9,
+      "tags": ["habit", "streak"],
+      "careerIds": [],
+      "slides": [
+        "रोज पाच छोटे क्लिप पहा आणि स्ट्रीक वाढवा.",
+        "एक दिवस चुकल्यास फ्रीझ वापरता येतो.",
+        "गुणवत्ता म्हणजे चुकीची नाही, प्रयत्नाची."
+      ]
+    },
+    {
+      "id": "clip_teacher_role",
+      "title": {
+        "en": "The village teacher as a career guide",
+        "hi": "गाँव के शिक्षक करियर मार्गदर्शक के रूप में",
+        "mr": "करिअर मार्गदर्शक म्हणून गावातला शिक्षक"
+      },
+      "summary": {
+        "en": "How a facilitator helps a whole class at once.",
+        "hi": "एक सुविधाप्रदाता एक साथ पूरी कक्षा की मदद कैसे करता है।",
+        "mr": "एक सुविधादाता एकदम संपूर्ण वर्गाची मदत कसा करतो."
+      },
+      "durationSeconds": 50,
+      "language": "hi",
+      "order": 10,
+      "tags": ["facilitator", "community"],
+      "careerIds": [],
+      "slides": [
+        "शिक्षक कक्षा को जोड़ता है, अभिभावकों को जोड़ता है.",
+        "एक साझा फ़ोन पर पूरी कक्षा का पंजीकरण संभव है.",
+        "शिक्षक को अपने मॉड्यूल बनाने का अवसर मिलता है."
+      ]
+    },
+    {
+      "id": "clip_apprenticeship_kin",
+      "title": {
+        "en": "Why apprenticeship matters now",
+        "hi": "अभी शिक्षुता क्यों मायने रखती है",
+        "mr": "सध्या शिक्षुता का काय महत्त्व आहे"
+      },
+      "summary": {
+        "en": "Learning while you earn, and what the national portal offers.",
+        "hi": "कमाई के साथ सीखना, और राष्ट्रीय पोर्टल क्या देता है।",
+        "mr": "कमाई करताना शिकणे, आणि राष्ट्रीय पोर्टल काय देतो."
+      },
+      "durationSeconds": 50,
+      "language": "hi",
+      "order": 11,
+      "tags": ["apprenticeship", "employment"],
+      "careerIds": ["career_electrician", "career_food_processing", "career_mobile_repair"],
+      "slides": [
+        "शिक्षुता म्हणजे काम आणि प्रशिक्षण एकत्र.",
+        "राष्ट्रीय शिक्षुता पोर्टलवर अनेक रिक्तपर्यंत आहेत.",
+        "आवेदन करताना कागदपत्रे आधीच तयार ठेवा."
+      ]
+    },
+    {
+      "id": "clip_first_application",
+      "title": {
+        "en": "Your first application, step by step",
+        "hi": "आपका पहला आवेदन, चरण दर चरण",
+        "mr": "तुमचा पहिला अर्ज, टप्प्याटप्प्याने"
+      },
+      "summary": {
+        "en": "A simple routine that gets a form filled correctly.",
+        "hi": "एक सरल दिनचर्या जिससे फ़ॉर्म सही भरा जाता है।",
+        "mr": "एक सोपी दिनचर्या ज्यामुळे फॉर्म अचूक भरला जातो."
+      },
+      "durationSeconds": 45,
+      "language": "hi",
+      "order": 12,
+      "tags": ["howitworks", "application"],
+      "careerIds": [],
+      "slides": [
+        "पहले अधिकृत स्रोत वाली वेबसाइट खोलिए.",
+        "चेकलिस्ट के अनुसार दस्तावेज़ तैयार रखिए.",
+        "आवेदन की तारीख से पहले ही शुरुआत कीजिए."
+      ]
+    }
+  ]
+}
