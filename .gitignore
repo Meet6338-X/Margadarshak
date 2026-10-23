@@ -3,6 +3,7 @@
 .claude/
 .opencode/
 agent/
+skills-lock.json
 
 # Dart / Flutter build output and caches.
 **/build/
