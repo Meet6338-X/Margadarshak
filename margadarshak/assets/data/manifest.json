@@ -1,0 +1,12 @@
+{
+  "version": "2026.10",
+  "generatedAt": "2026-10-01",
+  "supportedLocales": ["en", "hi", "mr"],
+  "scopes": {
+    "national": ["schemes", "exams", "apprenticeships"],
+    "states": {
+      "mh": ["schemes"],
+      "bi": ["schemes"]
+    }
+  }
+}

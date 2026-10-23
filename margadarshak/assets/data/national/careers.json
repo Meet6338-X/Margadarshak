@@ -1,0 +1,589 @@
+[
+  {
+    "id": "career_nurse",
+    "title": {
+      "en": "Staff Nurse",
+      "hi": "स्टाफ नर्स",
+      "mr": "स्टाफ नर्स"
+    },
+    "summary": {
+      "en": "Work in a hospital or health centre caring for patients. You can start with a GNM or BSc Nursing degree.",
+      "hi": "अस्पताल या आरोग्य केंद्रात रुग्णांची काळजी घ्या. जीएनएम किंवा बीएससी नर्सिंग पदवीने सुरुवात करता येते.",
+      "mr": "रुग्णालय किंवा आरोग्य केंद्रात रुग्णांची काळजी घ्या. जीएनएम किंवा बीएससी नर्सिंग पदवीने सुरुवात करता येते."
+    },
+    "category": "health",
+    "educationPath": ["Class 12 with Science", "GNM Diploma", "BSc Nursing"],
+    "interestTags": ["health", "people", "books"],
+    "relatedCareerIds": ["career_anm", "career_pharmacist", "career_lab_technician"],
+    "entrySteps": [
+      {
+        "en": "Check the nearest government nursing college admission notice.",
+        "hi": "अपने नज़दीकी सरकारी नर्सिंग कॉलेज की प्रवेश सूचना देखें।",
+        "mr": "जवळच्या सरकारी नर्सिंग कॉलेजची प्रवेश सूचना पहा."
+      },
+      {
+        "en": "Keep your Class 12 marks and health fitness ready.",
+        "hi": "कक्षा 12 के अंक और स्वास्थ्य जाँच की तैयारी रखें।",
+        "mr": "12वीचे गुण आणि आरोग्य तपासणी तयार ठेवा."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_anm",
+    "title": {
+      "en": "Auxiliary Nurse Midwife (ANM)",
+      "hi": "ऑक्सिलियरी नर्स मिडवाइफ",
+      "mr": "ऑक्सिलियरी नर्स मिडवाइफ"
+    },
+    "summary": {
+      "en": "Deliver babies and primary care in villages. The training is short and the job is close to home.",
+      "hi": "गाँवों में शिशुओं की डिलीवरी और प्राथमिक देखभाल करें। प्रशिक्षण अल्प है और काम घर के पास ही मिलता है।",
+      "mr": "गावात बाळांचा जन्म आणि प्राथमिक काळजी घ्या. प्रशिक्षण अल्प असते आणि काम घराजवळच मिळते."
+    },
+    "category": "health",
+    "educationPath": ["Class 12", "ANM Certificate Course"],
+    "interestTags": ["health", "people", "animals"],
+    "relatedCareerIds": ["career_nurse", "career_teacher"],
+    "entrySteps": [
+      {
+        "en": "Ask your health department about ANM admission dates.",
+        "hi": "स्वास्थ्य विभाग से ANM प्रवेश तिथियों के बारे में पूछें।",
+        "mr": "आरोग्य विभागाकडे ANM प्रवेश तारीख विचारा."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_pharmacist",
+    "title": {
+      "en": "Pharmacy Assistant",
+      "hi": "फ़ार्मेसी असिस्टेंट",
+      "mr": "फार्मसी असिस्टंट"
+    },
+    "summary": {
+      "en": "Run the counter of a medical store, help customers and keep records of stock.",
+      "hi": "दवा की दुकान पर काउंटर संभालें, ग्राहकों की मदद करें और स्टॉक का रिकॉर्ड रखें।",
+      "mr": "दवा दुकानेचे काउंटर सांभाळा, ग्राहकांना मदत करा आणि स्टॉकचा नोंदवही ठेवा."
+    },
+    "category": "health",
+    "educationPath": ["Class 12 with Science", "Diploma in Pharmacy"],
+    "interestTags": ["health", "numbers", "people"],
+    "relatedCareerIds": ["career_lab_technician", "career_shopkeeper"],
+    "entrySteps": [
+      {
+        "en": "Look for a diploma in pharmacy at a district government college.",
+        "hi": "ज़िले के सरकारी कॉलेज में फार्मेसी डिप्लोमा देखें।",
+        "mr": "जिल्ह्यातील सरकारी महाविद्यालयात फार्मसी डिप्लोमा पहा."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_lab_technician",
+    "title": {
+      "en": "Medical Lab Technician",
+      "hi": "मेडिकल लैब टेक्नीशियन",
+      "mr": "मेडिकल लॅब टेक्निशियन"
+    },
+    "summary": {
+      "en": "Run the tests behind every doctor's answer. Pathology and lab work is in demand everywhere.",
+      "hi": "हर डॉक्टर के जवाब के पीछे के टेस्ट आप करते हैं। लैब का काम हर जगह ज़रूरी है।",
+      "mr": "प्रत्येक डॉक्टरच्या उत्तरामागेचे चाचण्या तुम्ही करता. लॅबचे काम सर्वत्र आवश्यक आहे."
+    },
+    "category": "health",
+    "educationPath": ["Class 12 with Science", "DMLT or BMLT"],
+    "interestTags": ["health", "numbers", "machines"],
+    "relatedCareerIds": ["career_pharmacist", "career_nurse"],
+    "entrySteps": [
+      {
+        "en": "Ask for the DMLT admission form at your district hospital.",
+        "hi": "अपने ज़िला अस्पताल से DMLT प्रवेश फ़ॉर्म माँगें।",
+        "mr": "जिल्हा रुग्णालयाकडून DMLT अर्ज मागवा."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_teacher",
+    "title": {
+      "en": "Primary School Teacher",
+      "hi": "प्राथमिक शिक्षक",
+      "mr": "प्राथमिक शिक्षक"
+    },
+    "summary": {
+      "en": "Teach young children in a school. Many rural schools hire locally through the state teacher recruitment process.",
+      "hi": "स्कूल में छोटे बच्चों को पढ़ाइए। कई ग्रामीण स्कूल स्थानीय स्तर पर शिक्षक भर्ती से भर्ती करते हैं।",
+      "mr": "शालेय लहान मुलांना शिकवा. अनेक ग्रामीण शाला स्थानिक पातळ्यावर शिक्षक भरती करतात."
+    },
+    "category": "education",
+    "educationPath": ["Class 12", "B.Ed or D.El.Ed", "CTET"],
+    "interestTags": ["books", "teaching", "people", "drawing"],
+    "relatedCareerIds": ["career_anm", "career_counsellor"],
+    "entrySteps": [
+      {
+        "en": "Watch the state education department recruitment notice.",
+        "hi": "राज्य शिक्षा विभाग की भर्ती सूचना देखते रहें।",
+        "mr": "राज्य शिक्षा विभागाची भरती सूचना पहत रहा."
+      },
+      {
+        "en": "Prepare for CTET, the exam every state teacher recruitment accepts.",
+        "hi": "CTET की तैयारी करें, हर राज्य की भर्ती इसे मानती है।",
+        "mr": "CTET ची तयारी करा, प्रत्येक राज्याची भरती हे मानते."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_counsellor",
+    "title": {
+      "en": "School Counsellor / Career Guidance Assistant",
+      "hi": "स्कूल काउंसलर",
+      "mr": "शाला काउंन्सलर"
+    },
+    "summary": {
+      "en": "Help students choose a path and fill forms. Many schools and NGOs now hire people trained in guidance.",
+      "hi": "छात्रों को रास्ता चुनने और फ़ॉर्म भरने में मदद करें। कई स्कूल और एनजीओ अब प्रशिक्षित लोगों को रखते हैं।",
+      "mr": "विद्यार्थ्यांना मार्ग निवडण्यात आणि फॉर्म भरण्यात मदत करा. अनेक शाला आणि एनजीओ आता प्रशिक्षित व्यक्ती ठेवतात."
+    },
+    "category": "education",
+    "educationPath": ["Class 12", "B.Ed with Guidance", "Certificate in Career Counselling"],
+    "interestTags": ["people", "books", "teaching"],
+    "relatedCareerIds": ["career_teacher"],
+    "entrySteps": [
+      {
+        "en": "A short guidance certificate plus field work with an NGO is enough to start.",
+        "hi": "एनजीओ के साथ थोड़ा कार्य अनुभव और एक छोटा प्रमाणपत्र शुरू करने के लिए काफ़ी है।",
+        "mr": "एनजीओसोबत थोडे क्षेत्रकार्य आणि लहान प्रमाणपत्र पुरेसे आहे."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_electrician",
+    "title": {
+      "en": "Electrician",
+      "hi": "इलेक्ट्रीशियन",
+      "mr": "इलेक्ट्रिशियन"
+    },
+    "summary": {
+      "en": "Wire houses and repair machines. There is steady work in every village, and more with solar.",
+      "hi": "घरों में वायरिंग करें और मशीनें ठीक करें। हर गाँव में काम है, सोलर के साथ और भी।",
+      "mr": "घरात वायरिंग करा आणि यंत्रे दुरुस्त करा. प्रत्येक गावात काम आहे, सोलरसोबत अधिक."
+    },
+    "category": "trades",
+    "educationPath": ["Class 9 or 10", "ITI Electrician", "National Skill Certificate"],
+    "interestTags": ["machines", "repair", "numbers"],
+    "relatedCareerIds": ["career_solar_installer", "career_plumber", "career_automobile"],
+    "entrySteps": [
+      {
+        "en": "Apply for an ITI in your district; admission is on the basis of Class 10 marks.",
+        "hi": "अपने ज़िले के ITI में आवेदन करें; प्रवेश कक्षा 10 के अंकों पर होता है।",
+        "mr": "जिल्ह्यातील ITIत अर्ज करा; प्रवेश 10वीच्या गुणांवर होतो."
+      },
+      {
+        "en": "Get the National Skill Certificate after ITI; employers ask for it.",
+        "hi": "ITI के बाद नेशनल स्किल सर्टिफिकेट लें; नियोक्ता यही माँगते हैं।",
+        "mr": "ITIनंतर राष्ट्रीय कौशल्य प्रमाणपत्र घ्या; नियोक्ते हेच मागतात."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_solar_installer",
+    "title": {
+      "en": "Solar Panel Installation Technician",
+      "hi": "सोलर पैनल इंस्टॉलर",
+      "mr": "सोलर पॅनेल इन्स्टॉलर"
+    },
+    "summary": {
+      "en": "Install and maintain solar systems for homes and small shops. Work is growing fast in villages.",
+      "hi": "घरों और दुकानों के लिए सोलर सिस्टम लगाएँ और रखरखाव करें। गाँवों में यह काम तेज़ी से बढ़ रहा है।",
+      "mr": "घरे आणि दुकानांसाठी सोलार सिस्टम बसवा व देखभाल करा. गावात हे काम वेगाने वाढत आहे."
+    },
+    "category": "green",
+    "educationPath": ["Class 9 or 10", "Solar Installation Training", "ITI Electrician"],
+    "interestTags": ["machines", "solar", "repair", "numbers"],
+    "relatedCareerIds": ["career_electrician"],
+    "entrySteps": [
+      {
+        "en": "Look for a short solar technician course from a state skill mission.",
+        "hi": "राज्य कौशल्य मिशन से छोटा सोलर तकनीशियन कोर्स देखें।",
+        "mr": "राज्य कौशल्य मिशनाकडून लहान सोलर टेक्निशियन अभ्यासक्रम पहा."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_plumber",
+    "title": {
+      "en": "Plumber / Pipe Fitting",
+      "hi": "प्लंबर",
+      "mr": "प्लंबर"
+    },
+    "summary": {
+      "en": "Fit and repair water lines and fittings. Every new building and every leaking tap needs one.",
+      "hi": "पानी की लाइन और फ़िटिंग लगाएँ और ठीक करें। हर नई बिल्डिंग और हर खराब नल को एक की ज़रूरत होती है।",
+      "mr": "पाण्याच्या वाहिन्या फिटिंग करा आणि दुरुस्त करा. प्रत्येक नवीन इमारतीला आणि प्रत्येक दुंदर नळाला एक जरूर असते."
+    },
+    "category": "trades",
+    "educationPath": ["Class 9 or 10", "ITI Plumber", "National Skill Certificate"],
+    "interestTags": ["repair", "machines", "craft"],
+    "relatedCareerIds": ["career_electrician"],
+    "entrySteps": [
+      {
+        "en": "ITI or a skill course under the national skills mission.",
+        "hi": "ITI या राष्ट्रीय कौशल्य मिशन के अंतर्गत कौशल्य कोर्स।",
+        "mr": "ITI किंवा राष्ट्रीय कौशल्य मिशनअंतर्गत कौशल्य अभ्यासक्रम."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_automobile",
+    "title": {
+      "en": "Automobile Technician",
+      "hi": "ऑटोमोबाइल तकनीशियन",
+      "mr": "ऑटोमोबाइल तेक्निशियन"
+    },
+    "summary": {
+      "en": "Service two-wheelers and cars. Vehicle repair shops need hands in every town.",
+      "hi": "दोपहिया और कारों की सर्विस करें। हर शहर में वाहन मरम्मत दुकानों को हाथ चाहिए।",
+      "mr": "दुचाके वाहनांची सर्व्हिस करा. प्रत्येक शहरात वाहन दुरुस्ती दुकानांना हात लागतो."
+    },
+    "category": "trades",
+    "educationPath": ["Class 9 or 10", "ITI Motor Mechanic", "National Skill Certificate"],
+    "interestTags": ["machines", "motors", "repair"],
+    "relatedCareerIds": ["career_electrician", "career_mobile_repair"],
+    "entrySteps": [
+      {
+        "en": "ITI Motor Mechanic trade; then take the National Skill Certificate.",
+        "hi": "ITI मोटर मैकेनिक ट्रेड; फिर नेशनल स्किल सर्टिफिकेट लें।",
+        "mr": "ITI मोटर मेकेनिक ट्रेड; नंतर राष्ट्रीय कौशल्य प्रमाणपत्र घ्या."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_mobile_repair",
+    "title": {
+      "en": "Mobile Phone Repair",
+      "hi": "मोबाइल फ़ोन रिपेयर",
+      "mr": "मोबाइल फोन दुरुस्ती"
+    },
+    "summary": {
+      "en": "Repair phones and sell accessories. A low-cost stall is a realistic first step.",
+      "hi": "फ़ोन ठीक करें और एक्सेसरीज़ बेचें। कम लागत वाला स्टॉल पहला कदम हो सकता है।",
+      "mr": "फोन दुरुस्त करा आणि अॅक्सेसरी विका. कमी खर्चाचे स्टॉल हा पहिला पाऊ असू शकतो."
+    },
+    "category": "trades",
+    "educationPath": ["Class 9 or 10", "Mobile Repair Training"],
+    "interestTags": ["phones", "repair", "machines"],
+    "relatedCareerIds": ["career_automobile", "career_web_designer"],
+    "entrySteps": [
+      {
+        "en": "Take a short mobile repair course, then practise on old handsets.",
+        "hi": "छोटा मोबाइल रिपेयर कोर्स करें, फिर पुराने फ़ोनों पर अभ्यास करें।",
+        "mr": "लहान मोबाइल दुरुस्ती अभ्यासक्रम करा, नंतर जुन्या फोनवर अभ्यास करा."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_dairy",
+    "title": {
+      "en": "Dairy Farming",
+      "hi": "डेयरी फ़ार्मिंग",
+      "mr": "दुग्धव्यवसाय"
+    },
+    "summary": {
+      "en": "Raise cows or buffaloes and sell milk. You can start with one or two animals and grow.",
+      "hi": "गाय या भैंस पालें और दूध बेचें। एक-दो जानवरों से शुरू किया जा सकता है।",
+      "mr": "गाय किंवा म्हैस पाळा आणि दूध विका. एक-दो जनावरांपासून सुरुवात करता येते."
+    },
+    "category": "agriculture",
+    "educationPath": ["Class 9 or 10", "Dairy training", "KVK dairy guidance"],
+    "interestTags": ["animals", "farming", "numbers"],
+    "relatedCareerIds": ["career_poultry", "career_organic_farming", "career_food_processing"],
+    "entrySteps": [
+      {
+        "en": "Visit your nearest Krishi Vigyan Kendra (KVK) — they run free dairy training.",
+        "hi": "अपने नज़दीकी कृषि विज्ञान केंद्र (KVK) जाएँ — वहाँ मुफ़्त डेयरी प्रशिक्षण होता है।",
+        "mr": "जवळच्या कृषी विज्ञान केंद्राला (KVK) जा — तिथे मोफत दुग्धव्यवसाय प्रशिक्षण होते."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": true
+  },
+  {
+    "id": "career_poultry",
+    "title": {
+      "en": "Poultry Farming",
+      "hi": "पोल्ट्री फ़ार्मिंग",
+      "mr": "पोल्ट्री शेती"
+    },
+    "summary": {
+      "en": "Raise chickens for eggs or meat. Small units can be started on a family budget.",
+      "hi": "अंडे या मांस के लिए मुर्गी पालें। परिवार के बजट में छोटी इकाई शुरू हो सकती है।",
+      "mr": "अंडी किंवा मांसासाठी कोंबड्या पाळा. कुटुंबाच्या अर्थसंकल्पात छोटी सुरुवात शक्य आहे."
+    },
+    "category": "agriculture",
+    "educationPath": ["Class 9 or 10", "Poultry training", "KVK guidance"],
+    "interestTags": ["animals", "farming"],
+    "relatedCareerIds": ["career_dairy", "career_organic_farming"],
+    "entrySteps": [
+      {
+        "en": "Ask the animal husbandry department about the poultry unit subsidy.",
+        "hi": "पशुधन विभाग से पोल्ट्री इकाई सब्सिडी के बारे में पूछें।",
+        "mr": "पशुधन विभागाकडे पोल्ट्री इकाई अनुदानाबाबत विचारा."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": true
+  },
+  {
+    "id": "career_organic_farming",
+    "title": {
+      "en": "Organic Farming & Agro-processing",
+      "hi": "जैविक खेती और कृषि प्रसंस्करण",
+      "mr": "सेंद्रिय कृषी व कृषी प्रक्रिया"
+    },
+    "summary": {
+      "en": "Grow crops without chemicals and sell processed produce. There is real demand for it in cities.",
+      "hi": "बिना रसायन के फ़सल उगाएँ और प्रसंस्कृत उत्पाद बेचें। शहरों में इसकी अच्छी माँग है।",
+      "mr": "रसायनाशिवाय पीक घ्या आणि प्रक्रिया केलेले उत्पादन विका. शहरांत चांगली मागणी आहे."
+    },
+    "category": "agriculture",
+    "educationPath": ["Class 9 or 10", "Organic farming training", "Agro-processing training"],
+    "interestTags": ["farming", "food", "cooking", "numbers"],
+    "relatedCareerIds": ["career_food_processing", "career_dairy"],
+    "entrySteps": [
+      {
+        "en": "Join a local farmer producer organisation; they give training and buyers.",
+        "hi": "स्थानीय किसान उत्पादक संगठन से जुड़ें; वे प्रशिक्षण और ख़रीदार दोनों देते हैं।",
+        "mr": "स्थानिक शेतकरी उत्पादक संघामध्ये सामील व्हा; ते प्रशिक्षण आणि खरेदीदार देतात."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": true
+  },
+  {
+    "id": "career_food_processing",
+    "title": {
+      "en": "Food Processing Technician",
+      "hi": "फ़ूड प्रोसेसिंग तकनीशियन",
+      "mr": "फूड प्रोसेसिंग तेक्निशियन"
+    },
+    "summary": {
+      "en": "Turn raw produce into packaged products. This is where farm income actually grows.",
+      "hi": "कच्चे उत्पादन को पैक किए उत्पाद में बदलें। यहीं कृषि आय सचमुच बढ़ती है।",
+      "mr": "कच्चे उत्पादन पॅकेज्ड मालात रूपांतरित करा. नेमकंत शेती उत्पन्न खरेदी खरेदी वाढते."
+    },
+    "category": "agriculture",
+    "educationPath": ["Class 10", "ITI Food Processing", "NSDC food processing course"],
+    "interestTags": ["cooking", "food", "machines", "numbers"],
+    "relatedCareerIds": ["career_organic_farming", "career_dairy"],
+    "entrySteps": [
+      {
+        "en": "PMFME scheme gives a 35% subsidy on food processing machinery.",
+        "hi": "पीएमएफ़एमई योजना में खाद्य प्रसंस्करण मशीनरी पर 35% सब्सिडी मिलती है।",
+        "mr": "पीएमएफएमई योजनेत अन्नप्रक्रिया यंत्रावर 35% अनुदान मिळते."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_tailoring",
+    "title": {
+      "en": "Tailoring & Garment Making",
+      "hi": "सिलाई और परिधान निर्माण",
+      "mr": "शिवणकाम व कापड निर्मिती"
+    },
+    "summary": {
+      "en": "Stitch clothes and take orders. A machine and a small room are enough to begin.",
+      "hi": "कपड़े सिलें और ऑर्डर लें। एक मशीन और छोटा कमरा शुरू करने के लिए काफ़ी है।",
+      "mr": "कापड शिवा आणि ऑर्डर घ्या. एक मशीन आणि छोटी खोली पुरेशी आहे."
+    },
+    "category": "trades",
+    "educationPath": ["Class 9 or 10", "ITI Tailoring", "National Skill Certificate"],
+    "interestTags": ["fashion", "craft", "design"],
+    "relatedCareerIds": ["career_beauty", "career_shopkeeper"],
+    "entrySteps": [
+      {
+        "en": "Learn on a tailoring machine, then take orders on WhatsApp for the whole village.",
+        "hi": "सिलाई मशीन पर सीखें, फिर पूरे गाँव के लिए WhatsApp पर ऑर्डर लें।",
+        "mr": "शिवण यंत्रावर शिका, नंतर संपूर्ण गावासाठी WhatsApp वर ऑर्डर घ्या."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": true
+  },
+  {
+    "id": "career_beauty",
+    "title": {
+      "en": "Beauty & Wellness Services",
+      "hi": "ब्यूटी और वेलनेस सेवाएँ",
+      "mr": "सौंदर्य व वेलनेस सेवा"
+    },
+    "summary": {
+      "en": "Provide hair, skin and bridal services. Training is short and the work never leaves the village.",
+      "hi": "बाल, त्वचा और शादी के सेवाएँ दें। प्रशिक्षण अल्प है और काम गाँव से बाहर नहीं जाता।",
+      "mr": "केस, त्वचा आणि लग्न सेवा द्या. प्रशिक्षण अल्प असते आणि काम गावाबाहेर जात नाही."
+    },
+    "category": "trades",
+    "educationPath": ["Class 9 or 10", "Beauty therapist course", "National Skill Certificate"],
+    "interestTags": ["beauty", "fashion", "people", "craft"],
+    "relatedCareerIds": ["career_tailoring", "career_shopkeeper"],
+    "entrySteps": [
+      {
+        "en": "A government recognised beauty course with a certificate lets you work and teach.",
+        "hi": "सरकार से मान्यता प्राप्त ब्यूटी कोर्स और प्रमाणपत्र से आप काम और पढ़ा दोनों सकते हैं।",
+        "mr": "सरकार मान्यता प्राप्त ब्युटी अभ्यासक्रम व प्रमाणपत्रामुळे काम व अध्यापन दोन्ही शक्य."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_shopkeeper",
+    "title": {
+      "en": "Retail Shop / Kirana Management",
+      "hi": "खुदरा दुकान / किराना प्रबंधन",
+      "mr": "किराणा दुकान व्यवस्थापन"
+    },
+    "summary": {
+      "en": "Run a small shop and keep simple accounts. Many women in villages run their own shop.",
+      "hi": "छोटी दुकान चलाएँ और सरल हिसाब रखें। गाँव की बहुत से महिलाएँ अपनी दुकान चलाती हैं।",
+      "mr": "लहान दुकान चालवा आणि सोपे हिशेब ठेवा. गावातील बहीत महिला स्वतःची दुकान चालवतात."
+    },
+    "category": "business",
+    "educationPath": ["Class 9 or 10", "Retail training", "Udyam registration"],
+    "interestTags": ["numbers", "people", "computers"],
+    "relatedCareerIds": ["career_accounting", "career_beauty"],
+    "entrySteps": [
+      {
+        "en": "Register on Udyam to get a business identity and benefit from schemes.",
+        "hi": "उद्यम पर पंजीकरण कराएँ, व्यापार की पहचान मिलेगी और योजनाओं का लाभ होगा।",
+        "mr": "उद्यमावर नोंदणी करा, व्यवसायाची ओळख मिळेल आणि योजनांचा लाभ होईल."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_accounting",
+    "title": {
+      "en": "Computer Accounting & Tally",
+      "hi": "कंप्यूटर अकाउंटिंग",
+      "mr": "संगणक लेखाशिक्त"
+    },
+    "summary": {
+      "en": "Keep the books for small businesses. Tally is what most shops in town ask for.",
+      "hi": "छोटे व्यवसायों के हिसाब रखें। शहर के अधिकांश दुकानों को टैली चाहिए।",
+      "mr": "लहान व्यवसायांचे हिशेब ठेवा. शहरातील बहुतेक दुकानांना टॅली हवी असते."
+    },
+    "category": "business",
+    "educationPath": ["Class 12", "ITI Accounts Assistant", "Tally certification"],
+    "interestTags": ["numbers", "computers", "people"],
+    "relatedCareerIds": ["career_shopkeeper", "career_web_designer"],
+    "entrySteps": [
+      {
+        "en": "Learn Tally and keep the books of two local shops as your portfolio.",
+        "hi": "टैली सीखें और दो स्थानीय दुकानों के हिसाब अपने पोर्टफोलिओ के रूप में रखें।",
+        "mr": "टॅली शिका आणि दोन स्थानिक दुकानांचे हिशेब पोर्टफोलिओ म्हणून ठेवा."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_web_designer",
+    "title": {
+      "en": "Web Design & Digital Skills",
+      "hi": "वेब डिज़ाइन और डिजिटल कौशल",
+      "mr": "वेब डिझाइन व डिजिटल कौशल्ये"
+    },
+    "summary": {
+      "en": "Build simple websites and apps for local businesses, and work on digital marketing.",
+      "hi": "स्थानीय व्यवसायों के लिए सरल वेबसाइट और ऐप बनाएँ, डिजिटल मार्केटिंग करें।",
+      "mr": "स्थानिक व्यवसायांसाठी सोपी वेबसाइट व अॅप तयार करा, डिजिटल मार्केटिंग करा."
+    },
+    "category": "digital",
+    "educationPath": ["Class 12", "ITI Computer Operator", "NIIT or NSDC web course"],
+    "interestTags": ["computers", "design", "drawing"],
+    "relatedCareerIds": ["career_accounting", "career_mobile_repair"],
+    "entrySteps": [
+      {
+        "en": "Build one website for a shop you know and show it to people.",
+        "hi": "जाने-पहचाने दुकान के लिए एक वेबसाइट बनाएँ और लोगों को दिखाएँ।",
+        "mr": "ओळखीच्या दुकानासाठी एक वेबसाइट तयार करा आणि लोकांना दाखवा."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_agri_equipment",
+    "title": {
+      "en": "Farm Machinery Operator",
+      "hi": "कृषि उपकरण चालक",
+      "mr": "कृषी अवजारे चालक"
+    },
+    "summary": {
+      "en": "Drive and repair tractors and harvesters for other farmers. The season pays well.",
+      "hi": "दूसरे किसानों के लिए ट्रैक्टर और हार्वेस्टर चलाएँ और ठीक करें। मौसम में अच्छी कमाई होती है।",
+      "mr": "इतर शेतकऱ्यांसाठी ट्रॅक्टर व हार्वेस्टर चालवा व दुरुस्त करा. हंगामी हंगामात चांगला मिळकत."
+    },
+    "category": "agriculture",
+    "educationPath": ["Class 9 or 10", "Agri mechanic ITI", "Tractor driving licence"],
+    "interestTags": ["machines", "motors", "farming", "driving"],
+    "relatedCareerIds": ["career_automobile", "career_dairy"],
+    "entrySteps": [
+      {
+        "en": "A tractor driving licence plus ITI agri mechanic work opens the best paying work.",
+        "hi": "ट्रैक्टर ड्राइविंग लाइसेंस और ITI कृषि मैकेनिक प्रशिक्षण से अच्छी आमदनी वाला काम मिलता है।",
+        "mr": "ट्रॅक्टर ड्रायव्हिंग लाइसन्स आणि ITI कृषी यांत्रिक प्रशिक्षणाने चांगल्या उत्पन्नाचे काम मिळते."
+      }
+    ],
+    "nonStem": false,
+    "localTraditionalSkill": false
+  },
+  {
+    "id": "career_construction",
+    "title": {
+      "en": "Construction Technician / Mason",
+      "hi": "निर्माण तकनीशियन / राजकार",
+      "mr": "बांधकाम तेक्निशियन / गवंडी"
+    },
+    "summary": {
+      "en": "Work on building sites. Untrained workers also get certified through the skill mission.",
+      "hi": "निर्माण स्थल पर काम करें। बिना प्रशिक्षण के श्रमिक भी कौशल्य मिशन से प्रमाणित हो सकते हैं।",
+      "mr": "बांधकाम क्षेत्रात काम करा. प्रशिक्षण नसलेले कामगारही कौशल्य मिशनमार्फत प्रमाणित होतात."
+    },
+    "category": "trades",
+    "educationPath": ["Class 9", "ITI Mason", "National Skill Certificate"],
+    "interestTags": ["machines", "craft", "numbers"],
+    "relatedCareerIds": ["career_electrician", "career_plumber"],
+    "entrySteps": [
+      {
+        "en": "Register for the Recognition of Prior Learning test in your trade.",
+        "hi": "अपने ट्रेड में Recognition of Prior Learning टेस्ट के लिए पंजीकरण करें।",
+        "mr": "तुमच्या व्यवसायात पूर्वीचे अध्ययन मान्यता (RPL) चाचणीसाठी नोंदणी करा."
+      }
+    ],
+    "nonStem": true,
+    "localTraditionalSkill": true
+  }
+]
