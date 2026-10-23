@@ -1,10 +1,3 @@
-# Agent tooling mirrors kept out of version control.
-.agents/
-.claude/
-.opencode/
-agent/
-skills-lock.json
-
 # Dart / Flutter build output and caches.
 **/build/
 **/.dart_tool/
