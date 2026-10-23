@@ -1,0 +1,21 @@
+# Agent tooling mirrors kept out of version control.
+.agents/
+.claude/
+.opencode/
+agent/
+
+# Dart / Flutter build output and caches.
+**/build/
+**/.dart_tool/
+**/.idea/
+**/.vscode/
+**/*.iml
+
+# Symbols emitted by --obfuscate --split-debug-info (publish these to a crash
+# service, never to git).
+margadarshak/build/debug-info/
+*.symbols*
+
+# OS noise.
+Thumbs.db
+.DS_Store

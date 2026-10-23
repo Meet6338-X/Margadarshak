@@ -870,7 +870,7 @@
     },
     "officialSourceName": "Ministry of Labour and Employment, Government of India",
     "officialSourceUrl": "https://www.ncs.gov.in/",
-    "lastVerifiedAt": "2026-09-08",
+    "lastVerifiedAt": "2026-10-23",
     "scope": "national",
     "categories": [
       "employment",
@@ -899,6 +899,23 @@
         },
         "isMandatory": true,
         "careerIds": []
+      }
+    ],
+    "applySteps": [
+      {
+        "en": "Register as a jobseeker on the National Career Service portal; the site shows a registration flowchart before you create your profile.",
+        "hi": "राष्ट्रीय कैरियर सेवा पोर्टल पर जॉबसीकर के रूप में पंजीकरण करें; प्रोफ़ाइल बनाने से पहले वेबसाइट पंजीकरण फ़्लोचार्ट दिखाती है।",
+        "mr": "राष्ट्रीय कारिअर सेवा पोर्टलवर जॉबसीकर म्हणून नोंदणी करा; प्रोफाइल बनवण्यापूर्वी संकेतस्थळ नोंदणी फ्लोचार्ट दाखवते."
+      },
+      {
+        "en": "Complete your profile with your education and skill details so you can search for jobs and book counselling.",
+        "hi": "अपनी शिक्षा और कौशल विवरण के साथ प्रोफ़ाइल पूरी करें ताकि नौकरियाँ खोज सकें और परामर्श बुक कर सकें।",
+        "mr": "तुमच्या शिक्षण आणि कौशल्याची माहिती भरून प्रोफाइल पूर्ण करा, म्हणजे नोकऱ्या शोधू शकता आणि मार्गदर्शन घेऊ शकता."
+      },
+      {
+        "en": "Call the free helpline 1514 or visit a nearby career centre for guided registration if the portal is hard to use.",
+        "hi": "अगर पोर्टल उपयोग करना मुश्किल हो तो निःशुल्क हेल्पलाइन 1514 पर कॉल करें या निकटतम करियर केंद्र जाएँ।",
+        "mr": "पोर्टल वापरणे अवघड वाटल्यास मोफत हेल्पलाइन 1514 वर कॉल करा किंवा जवळच्या कारिउर केंद्राला भेट द्या."
       }
     ]
   },

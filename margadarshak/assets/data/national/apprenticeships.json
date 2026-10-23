@@ -14,7 +14,7 @@
     },
     "officialSourceName": "Apprenticeship India, Ministry of Skill Development and Entrepreneurship",
     "officialSourceUrl": "https://www.apprenticeshipindia.gov.in/",
-    "lastVerifiedAt": "2026-09-10",
+    "lastVerifiedAt": "2026-10-23",
     "scope": "national",
     "categories": ["apprenticeship", "skill", "vocational", "employment"],
     "careerIds": [
@@ -92,7 +92,7 @@
     },
     "officialSourceName": "Ministry of Skill Development and Entrepreneurship",
     "officialSourceUrl": "https://www.apprenticeshipindia.gov.in/",
-    "lastVerifiedAt": "2026-09-10",
+    "lastVerifiedAt": "2026-10-23",
     "scope": "national",
     "categories": ["apprenticeship", "employment", "skill"],
     "careerIds": ["career_automobile", "career_electrician", "career_accounting", "career_mobile_repair"],

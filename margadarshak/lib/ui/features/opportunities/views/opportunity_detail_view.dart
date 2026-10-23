@@ -150,7 +150,7 @@ class _DetailBody extends StatelessWidget {
               const SizedBox(height: 4),
               Text(
                 '${l10n.commonLastVerified}: '
-                '${l10n.oppLastVerifiedOn(formatDate(opportunity.lastVerifiedAt, languageCode))}',
+                '${formatDate(opportunity.lastVerifiedAt, languageCode)}',
                 style: Theme.of(context).textTheme.bodySmall,
               ),
               const SizedBox(height: 12),
@@ -212,7 +212,7 @@ class _DetailBody extends StatelessWidget {
                 Expanded(
                   child: Text(
                     '${l10n.oppDeadline}: '
-                    '${l10n.oppLastVerifiedOn(formatDate(opportunity.applicationClosesAt!, languageCode))}',
+                    '${formatDate(opportunity.applicationClosesAt!, languageCode)}',
                   ),
                 ),
                 if (opportunity.isOpenOn(now))
