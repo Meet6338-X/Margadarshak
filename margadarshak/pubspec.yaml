@@ -1,0 +1,68 @@
+name: margadarshak
+description: "Margadarshak — career and scholarship guidance for rural and semi-urban Indian students."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  meta: ^1.16.0
+
+  # Navigation
+  go_router: ^17.0.0
+
+  # State management (ViewModels extend ChangeNotifier)
+  provider: ^6.1.5+1
+
+  # Immutable domain models
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+
+  # Local persistence (local source of truth)
+  drift: ^2.31.0
+  drift_flutter: ^0.2.8
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+  # Localization + formatting
+  intl: ^0.20.2
+
+  # Networking (REST adapters, optional / off by default)
+  http: ^1.6.0
+
+  # Firebase — auth + small user-scoped documents (enabled via --dart-define)
+  firebase_core: ^5.0.0
+  firebase_auth: ^7.0.0
+  cloud_firestore: ^7.0.0
+  flutter_tts: ^4.2.5
+  speech_to_text: ^7.4.0
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  build_runner: ^2.15.1
+  drift_dev: ^2.31.0
+  freezed: ^3.2.3
+  json_serializable: ^6.11.2
+  mocktail: ^1.0.5
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/data/
+    - assets/data/national/
+    - assets/data/states/mh/
+    - assets/data/states/bi/
