@@ -47,6 +47,8 @@
   "onbInterestsHint": "कमालीचे पाच निवडा. हे नंतर बदलता येईल.",
   "onbDistrictQuestion": "तुम्ही कोणत्या जिल्ह्यात आहात?",
   "onbDistrictHint": "तुमच्या जिल्ह्याचे नाव लिहा",
+  "onbVoiceInput": "Answer by voice",
+  "onbVoiceListening": "Listening...",
   "onbCategoryQuestion": "तुमची सामाजिक श्रेणी",
   "onbIncomeQuestion": "तुमच्या कुटुंबाची वार्षिक उत्पन्न",
   "onbGenderQuestion": "तुमचा लिंग",

@@ -382,6 +382,10 @@ abstract class AppLocalizations {
   /// **'Type the name of your district'**
   String get onbDistrictHint;
 
+  String get onbVoiceInput;
+
+  String get onbVoiceListening;
+
   /// No description provided for @onbCategoryQuestion.
   ///
   /// In en, this message translates to:

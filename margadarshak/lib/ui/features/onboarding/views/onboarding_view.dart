@@ -224,11 +224,32 @@ class _PlaceStep extends StatelessWidget {
       children: <Widget>[
         Text(l10n.onbDistrictQuestion, style: Theme.of(context).textTheme.titleMedium),
         const SizedBox(height: 12),
-        TextField(
-          controller: controller,
-          onChanged: viewModel.setDistrict,
-          textInputAction: TextInputAction.done,
-          decoration: InputDecoration(hintText: l10n.onbDistrictHint),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Expanded(
+              child: TextField(
+                controller: controller,
+                onChanged: viewModel.setDistrict,
+                textInputAction: TextInputAction.done,
+                decoration: InputDecoration(hintText: l10n.onbDistrictHint),
+              ),
+            ),
+            const SizedBox(width: 8),
+            IconButton.filledTonal(
+              tooltip: viewModel.isListening ? l10n.onbVoiceListening : l10n.onbVoiceInput,
+              onPressed: viewModel.isListening
+                  ? null
+                  : () async {
+                      await viewModel.listenForDistrict(languageCode: context.languageCode);
+                      controller.text = viewModel.district;
+                      controller.selection = TextSelection.collapsed(
+                        offset: controller.text.length,
+                      );
+                    },
+              icon: Icon(viewModel.isListening ? Icons.mic : Icons.mic_none),
+            ),
+          ],
         ),
         const SizedBox(height: 24),
         Text(l10n.label_state, style: Theme.of(context).textTheme.titleSmall),

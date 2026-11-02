@@ -46,6 +46,7 @@ class _MargadarshakAppState extends State<MargadarshakApp> {
     _auth = AuthViewModel(authRepository: widget.dependencies.authRepository);
     _onboarding = OnboardingViewModel(
       studentRepository: widget.dependencies.studentRepository,
+      speechService: widget.dependencies.speechService,
     );
     _router = createRouter(_session);
     _session.start();
