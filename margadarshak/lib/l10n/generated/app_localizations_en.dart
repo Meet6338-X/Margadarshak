@@ -174,6 +174,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   String get onbVoiceListening => 'Listening...';
 
+
+  String get onbVoiceNoSpeech => "No speech was detected. Please try again.";
+
   @override
   String get onbCategoryQuestion => 'Your social category';
 

@@ -385,6 +385,7 @@ abstract class AppLocalizations {
   String get onbVoiceInput;
 
   String get onbVoiceListening;
+  String get onbVoiceNoSpeech;
 
   /// No description provided for @onbCategoryQuestion.
   ///

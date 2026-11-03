@@ -79,6 +79,7 @@
   "onbDistrictHint": "Type the name of your district",
   "onbVoiceInput": "Answer by voice",
   "onbVoiceListening": "Listening...",
+"onbVoiceNoSpeech": "No speech was detected. Please try again.",
   "onbCategoryQuestion": "Your social category",
   "onbIncomeQuestion": "Your family's yearly income",
   "onbGenderQuestion": "Your gender",

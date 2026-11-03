@@ -6,13 +6,6 @@
 library;
 
 import '../../core/result.dart';
-/// Handles speech input and output without coupling the domain to a vendor.
-abstract interface class SpeechService {
-  Future<Result<void>> speak({required String text, required String languageCode});
-  Future<void> stop();
-  Future<Result<String>> listen({required String languageCode});
-  bool get isListening;
-}
 import '../models/auth_user.dart';
 import '../models/career.dart';
 import '../models/clip.dart';
@@ -22,6 +15,13 @@ import '../models/facilitator.dart';
 import '../models/opportunity.dart';
 import '../models/progress.dart';
 import '../models/student_profile.dart';
+/// Handles speech input and output without coupling the domain to a vendor.
+abstract interface class SpeechService {
+  Future<Result<void>> speak({required String text, required String languageCode});
+  Future<void> stop();
+  Future<Result<String>> listen({required String languageCode});
+  bool get isListening;
+}
 
 /// Reads scholarships, schemes, examinations and apprenticeships.
 abstract interface class OpportunityRepository {

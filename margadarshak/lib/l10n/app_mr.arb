@@ -49,6 +49,7 @@
   "onbDistrictHint": "तुमच्या जिल्ह्याचे नाव लिहा",
   "onbVoiceInput": "आवाजाने उत्तर द्या",
   "onbVoiceListening": "ऐकत आहे…",
+"onbVoiceNoSpeech": "आवाज ऐकू आली नाही. कृपया पुन्हा प्रयत्न करा.",
   "onbCategoryQuestion": "तुमची सामाजिक श्रेणी",
   "onbIncomeQuestion": "तुमच्या कुटुंबाची वार्षिक उत्पन्न",
   "onbGenderQuestion": "तुमचा लिंग",

@@ -49,6 +49,7 @@
   "onbDistrictHint": "अपने ज़िले का नाम लिखिए",
   "onbVoiceInput": "आवाज़ से जवाब दें",
   "onbVoiceListening": "सुन रहे हैं…",
+"onbVoiceNoSpeech": "आवाज़ सुनाई नहीं दी। कृपया फिर कोशिश करें。",
   "onbCategoryQuestion": "आपकी सामाजिक श्रेणी",
   "onbIncomeQuestion": "आपके परिवार की सालाना आय",
   "onbGenderQuestion": "आपका लिंग",

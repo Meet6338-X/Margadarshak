@@ -135,7 +135,7 @@ class OnboardingViewModel extends ChangeNotifier {
   }
 
   /// Fills the district from one short on-device speech utterance.
-  Future<void> listenForDistrict({required String languageCode}) async {
+  Future<void> listenForDistrict({required String languageCode, required String noSpeechMessage}) async {
     if (_listening) return;
     _listening = true;
     _failure = null;
@@ -146,7 +146,7 @@ class OnboardingViewModel extends ChangeNotifier {
     if (words != null && words.isNotEmpty) {
       _district = words;
     } else {
-      _failure = result.failureOrNull ?? Failure.unavailable('No speech was detected. Please try again.');
+      _failure = result.failureOrNull ?? Failure.unavailable(noSpeechMessage);
     }
     notifyListeners();
   }

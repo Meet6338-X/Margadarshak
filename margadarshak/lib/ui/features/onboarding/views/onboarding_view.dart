@@ -241,7 +241,7 @@ class _PlaceStep extends StatelessWidget {
               onPressed: viewModel.isListening
                   ? null
                   : () async {
-                      await viewModel.listenForDistrict(languageCode: context.languageCode);
+                      await viewModel.listenForDistrict(languageCode: context.languageCode, noSpeechMessage: context.l10n.onbVoiceNoSpeech);
                       controller.text = viewModel.district;
                       controller.selection = TextSelection.collapsed(
                         offset: controller.text.length,

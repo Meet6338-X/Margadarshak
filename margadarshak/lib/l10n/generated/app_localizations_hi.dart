@@ -166,13 +166,16 @@ class AppLocalizationsHi extends AppLocalizations {
   String get onbDistrictQuestion => 'आप किस ज़िले में हैं?';
 
   @override
-  String get onbDistrictHint => 'District name';
+  String get onbDistrictHint => 'अपने ज़िले का नाम लिखिए';
 
 
-  String get onbVoiceInput => 'Answer by voice';
+  String get onbVoiceInput => 'आवाज़ से जवाब दें';
 
 
-  String get onbVoiceListening => 'Listening...';
+  String get onbVoiceListening => 'सुन रहे हैं…';
+
+
+  String get onbVoiceNoSpeech => 'आवाज़ सुनाई नहीं दी। कृपया फिर कोशिश करें।';
 
   @override
   String get onbCategoryQuestion => 'आपकी सामाजिक श्रेणी';
