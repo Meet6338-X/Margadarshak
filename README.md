@@ -6,6 +6,8 @@
 
 **Career guidance for rural Indian students that never invents a scheme.**
 
+[**Explore the project site →**](https://meet6338-x.github.io/Margadarshak/) · How it decides, what it covers, and why the empty answer is the honest one.
+
 ![Flutter](https://img.shields.io/badge/Flutter-3.32-02569B?logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.8-0175C2?logo=dart&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
