@@ -15,24 +15,7 @@ import 'package:speech_to_text/speech_to_text.dart' as stt;
 
 import '../../core/failure.dart';
 import '../../core/result.dart';
-
-/// Turns text into speech and speech into text.
-abstract interface class SpeechService {
-  /// Speaks [text] in [languageCode].
-  Future<Result<void>> speak({
-    required String text,
-    required String languageCode,
-  });
-
-  /// Stops any speech that is currently playing.
-  Future<void> stop();
-
-  /// Listens for a single utterance and returns the recognised words.
-  Future<Result<String>> listen({required String languageCode});
-
-  /// Whether the microphone is currently capturing audio.
-  bool get isListening;
-}
+import '../../domain/repositories/repositories.dart';
 
 /// Maps an ISO language code to the locale identifier the platform expects.
 String speechLocaleFor(String languageCode) => switch (languageCode) {

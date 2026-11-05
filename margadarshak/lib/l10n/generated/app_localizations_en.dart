@@ -168,6 +168,15 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onbDistrictHint => 'Type the name of your district';
 
+
+  String get onbVoiceInput => 'Answer by voice';
+
+
+  String get onbVoiceListening => 'Listening...';
+
+
+  String get onbVoiceNoSpeech => "No speech was detected. Please try again.";
+
   @override
   String get onbCategoryQuestion => 'Your social category';
 

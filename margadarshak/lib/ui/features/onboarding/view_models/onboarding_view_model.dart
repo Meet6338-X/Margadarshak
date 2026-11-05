@@ -18,9 +18,14 @@ const int kOnboardingStepCount = 4;
 /// for no phone number, no name of the parent and no address.
 class OnboardingViewModel extends ChangeNotifier {
   /// Creates the view model.
-  OnboardingViewModel({required StudentRepository studentRepository}) : _studentRepository = studentRepository;
+  OnboardingViewModel({
+    required StudentRepository studentRepository,
+    required SpeechService speechService,
+  })  : _studentRepository = studentRepository,
+        _speechService = speechService;
 
   final StudentRepository _studentRepository;
+  final SpeechService _speechService;
 
   int _step = 0;
   EducationStage _stage = EducationStage.secondary;
@@ -33,6 +38,7 @@ class OnboardingViewModel extends ChangeNotifier {
   Gender _gender = Gender.female;
   bool _firstGenerationLearner = false;
   bool _busy = false;
+  bool _listening = false;
   Failure? _failure;
 
   /// The step the form is on, starting at zero.
@@ -74,6 +80,9 @@ class OnboardingViewModel extends ChangeNotifier {
 
   /// Whether the profile is being saved.
   bool get isBusy => _busy;
+
+  /// Whether the microphone is currently listening for the district name.
+  bool get isListening => _listening;
 
   /// The last failure, if any.
   Failure? get failure => _failure;
@@ -122,6 +131,23 @@ class OnboardingViewModel extends ChangeNotifier {
   /// Stores the district.
   void setDistrict(String value) {
     _district = value;
+    notifyListeners();
+  }
+
+  /// Fills the district from one short on-device speech utterance.
+  Future<void> listenForDistrict({required String languageCode, required String noSpeechMessage}) async {
+    if (_listening) return;
+    _listening = true;
+    _failure = null;
+    notifyListeners();
+    final result = await _speechService.listen(languageCode: languageCode);
+    _listening = false;
+    final words = result.valueOrNull?.trim();
+    if (words != null && words.isNotEmpty) {
+      _district = words;
+    } else {
+      _failure = result.failureOrNull ?? Failure.unavailable(noSpeechMessage);
+    }
     notifyListeners();
   }
 
